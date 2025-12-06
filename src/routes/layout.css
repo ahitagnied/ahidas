@@ -1,0 +1,41 @@
+@import 'tailwindcss';
+@plugin '@tailwindcss/typography';
+
+@layer base {
+	html {
+		@apply w-full;
+	}
+
+	body {
+		@apply min-h-screen w-full bg-white text-[13px] leading-[1.6] font-normal tracking-[-0.01em] text-gray-800 md:text-[15px];
+		font-family:
+			Diatype Variable,
+			ui-sans-serif,
+			system-ui,
+			sans-serif;
+		font-feature-settings:
+			'kern' 1,
+			'liga' 1;
+		text-rendering: optimizeLegibility;
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+	}
+
+	h1 {
+		@apply mb-[1.2em] text-[12px] text-gray-500 uppercase;
+	}
+}
+
+@layer components {
+	.page-container {
+		@apply mx-auto min-h-screen w-full max-w-[900px] bg-white px-6 py-12;
+	}
+
+	.page-container p {
+		@apply mb-[1.2em] leading-[1.6] text-gray-800;
+	}
+
+	.page-container a {
+		@apply text-gray-800 underline decoration-gray-900 underline-offset-3;
+	}
+}
