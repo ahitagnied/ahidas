@@ -128,6 +128,14 @@
 			color: rgb(24, 27, 32);
 		}
 
+		.prose .katex-display {
+			overflow-x: auto;
+			overflow-y: hidden;
+			max-width: 100%;
+			margin: 1em 0;
+			padding: 0.5em 0;
+		}
+
 		@media (min-width: 768px) {
 			.prose {
 				font-size: 15px;
