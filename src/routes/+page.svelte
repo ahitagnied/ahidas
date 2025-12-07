@@ -109,7 +109,7 @@
 
 	<div class="separator"></div>
 
-	<h1>Research</h1>
+	<h1><a href="/research" class="no-underline">Research</a></h1>
 
 	{#each displayItems as item}
 		<ResearchItem {item} />
@@ -117,7 +117,7 @@
 
 	<div class="separator"></div>
 
-	<h1>Essays</h1>
+	<h1><a href="/essays" class="no-underline">Essays</a></h1>
 
 	{#each displayEssays as essay}
 		<EssayItem item={essay} />
