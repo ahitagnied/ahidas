@@ -1,5 +1,11 @@
 <script>
 	import Icon from '@iconify/svelte';
+	import ResearchItem from '$lib/components/ResearchItem.svelte';
+	import researchData from '$lib/data/research.yml?raw';
+	import yaml from 'js-yaml';
+
+	const researchItems = yaml.load(researchData);
+	const displayItems = researchItems.slice(0, 5);
 </script>
 
 <svelte:head>
@@ -42,10 +48,12 @@
 			</a>
 		</div>
 
-		<div>adas [at] rice [dot] edu</div>
+		<div class="text-[12px] md:text-[14px]">adas [at] rice [dot] edu</div>
 
 		<div></div>
 	</div>
+
+	<div class="separator"></div>
 
 	<h1>ABOUT</h1>
 
@@ -93,4 +101,12 @@
 			>IIT Guwahati</a
 		>.
 	</p>
+
+	<div class="separator"></div>
+
+	<h1>Research</h1>
+
+	{#each displayItems as item}
+		<ResearchItem {item} />
+	{/each}
 </div>
