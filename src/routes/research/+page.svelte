@@ -17,4 +17,3 @@
 		<ResearchItem {item} />
 	{/each}
 </div>
-
