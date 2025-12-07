@@ -28,7 +28,7 @@
 
 @layer components {
 	.page-container {
-		@apply mx-auto min-h-screen w-full max-w-[900px] bg-white px-6 py-12;
+		@apply mx-auto min-h-screen w-full max-w-[850px] bg-white px-6 py-12;
 	}
 
 	.page-container p {
@@ -44,5 +44,9 @@
 		display: grid;
 		grid-template-columns: 1fr 1fr;
 		grid-template-rows: 1fr 1fr;
+	}
+
+	.separator {
+		@apply my-[1.2em] border-t border-gray-300;
 	}
 }
