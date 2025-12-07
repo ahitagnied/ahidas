@@ -1,11 +1,16 @@
 <script>
 	import Icon from '@iconify/svelte';
 	import ResearchItem from '$lib/components/ResearchItem.svelte';
+	import EssayItem from '$lib/components/EssayItem.svelte';
 	import researchData from '$lib/data/research.yml?raw';
 	import yaml from 'js-yaml';
+	import { loadEssays } from '$lib/utils/essays.js';
 
 	const researchItems = yaml.load(researchData);
 	const displayItems = researchItems.slice(0, 5);
+
+	const essays = loadEssays();
+	const displayEssays = essays.slice(0, 5);
 </script>
 
 <svelte:head>
@@ -108,5 +113,13 @@
 
 	{#each displayItems as item}
 		<ResearchItem {item} />
+	{/each}
+
+	<div class="separator"></div>
+
+	<h1>Essays</h1>
+
+	{#each displayEssays as essay}
+		<EssayItem item={essay} />
 	{/each}
 </div>
