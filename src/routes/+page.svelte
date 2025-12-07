@@ -1,4 +1,52 @@
+<script>
+	import Icon from '@iconify/svelte';
+</script>
+
+<svelte:head>
+	<title>Ahitagni D | Home</title>
+</svelte:head>
+
 <div class="page-container">
+	<div class="grid">
+		<div class="text-[16px] md:text-[18px] font-medium text-gray-00">
+			Ahitagni D.
+		</div>
+
+		<div class="flex gap-2 items-center justify-end">
+			<a
+				href="https://github.com/ahitagnied"
+				target="_blank"
+				rel="noopener noreferrer"
+				class="text-gray-600 hover:text-gray-800"
+				aria-label="GitHub"
+			>
+				<Icon icon="mdi:github" class="w-6 h-6" />
+			</a>
+			<a
+				href="https://linkedin.com/in/ahitagnid"
+				target="_blank"
+				rel="noopener noreferrer"
+				class="text-gray-600 hover:text-gray-800"
+				aria-label="LinkedIn"
+			>
+				<Icon icon="mdi:linkedin" class="w-6 h-6" />
+			</a>
+			<a
+				href="https://x.com/ahitagnied"
+				target="_blank"
+				rel="noopener noreferrer"
+				class="text-gray-600 hover:text-gray-800"
+				aria-label="Twitter"
+			>
+				<Icon icon="mdi:twitter" class="w-6 h-6" />
+			</a>
+		</div>
+
+		<div>adas [at] rice [dot] edu</div>
+
+		<div></div>
+	</div>
+
 	<h1>ABOUT</h1>
 
 	<p>
@@ -7,7 +55,7 @@
 		>. Optica is building CV tools to solve the information assymetry problem
 		in the American Metal Industry. We are backed by Lightspeed and Neo. If you
 		are interested in joining,
-		<a href="https://calendly.com/ahitagnid/new-meeting">reach out</a>
+		<a href="https://calendly.com/ahitagnid/new-meeting">reach out</a>.
 	</p>
 
 	<p>
@@ -16,7 +64,7 @@
 		for <a href="https://www.clayvc.io/">Clay VC</a> where we invest as early
 		as possible, and were among the first investors of companies like
 		<a href="https://elevenlabs.io/">Eleven Labs</a> and
-		<a href="https://mistral.ai/">Mistral AI</a>
+		<a href="https://mistral.ai/">Mistral AI</a>.
 	</p>
 
 	<p>
