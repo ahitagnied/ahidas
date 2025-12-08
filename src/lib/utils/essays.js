@@ -14,9 +14,15 @@ export function loadEssays() {
 			slug,
 			title: frontmatter?.match(/title:\s*(.+)/)?.[1]?.trim() || slug,
 			date: frontmatter?.match(/date:\s*(.+)/)?.[1]?.trim() || '',
+			published:
+				frontmatter?.match(/published:\s*(.+)/)?.[1]?.trim() === 'true',
 			content: text
 		};
 	});
+}
+
+export function getPublishedEssays() {
+	return loadEssays().filter((essay) => essay.published !== false);
 }
 
 export function getEssayBySlug(/** @type {string} */ slug) {
