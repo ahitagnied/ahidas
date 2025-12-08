@@ -2,6 +2,7 @@
 title: Treasure Trove
 date: November 2025
 published: true
+image: /images/essays/treasure-trove.webp
 ---
 
 This is a collection of articles, blogs, and pages I keep coming back to. Most are tutorials or curated lists of other great reads.
