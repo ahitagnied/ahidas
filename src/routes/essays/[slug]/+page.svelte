@@ -32,21 +32,21 @@
 					displayMode: true,
 					throwOnError: false
 				});
-			} catch (e) {
+			} catch {
 				return match;
 			}
 		}
 	);
 
 	processedContent = processedContent.replace(
-		/\$([^\$\n]+?)\$/g,
+		/\$([^$\n]+?)\$/g,
 		(match, math) => {
 			try {
 				return katex.renderToString(math.trim(), {
 					displayMode: false,
 					throwOnError: false
 				});
-			} catch (e) {
+			} catch {
 				return match;
 			}
 		}

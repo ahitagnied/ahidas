@@ -1,14 +1,8 @@
 ---
 title: Treasure Trove
 date: November 2025
+published: true
 ---
-
-<style>
-  .essay-content a {
-    text-decoration: none;
-    color:rgb(54, 109, 146);
-  }
-</style>
 
 This is a collection of articles, blogs, and pages I keep coming back to. Most are tutorials or curated lists of other great reads.
 

@@ -4,12 +4,12 @@
 	import EssayItem from '$lib/components/EssayItem.svelte';
 	import researchData from '$lib/data/research.yml?raw';
 	import yaml from 'js-yaml';
-	import { loadEssays } from '$lib/utils/essays.js';
+	import { getPublishedEssays } from '$lib/utils/essays.js';
 
 	const researchItems = yaml.load(researchData);
 	const displayItems = researchItems.slice(0, 5);
 
-	const essays = loadEssays();
+	const essays = getPublishedEssays();
 	const displayEssays = essays.slice(0, 5);
 </script>
 
@@ -109,17 +109,27 @@
 
 	<div class="separator"></div>
 
-	<h1><a href="/research" class="no-underline">Research</a></h1>
+	<h1>
+		<a href="/research" class="no-underline inline-flex items-center gap-1">
+			Research
+			<Icon icon="mdi:arrow-top-right" class="w-3 h-4" />
+		</a>
+	</h1>
 
-	{#each displayItems as item}
+	{#each displayItems as item (item.title)}
 		<ResearchItem {item} />
 	{/each}
 
 	<div class="separator"></div>
 
-	<h1><a href="/essays" class="no-underline">Essays</a></h1>
+	<h1>
+		<a href="/essays" class="no-underline inline-flex items-center gap-1">
+			Essays
+			<Icon icon="mdi:arrow-top-right" class="w-3 h-4" />
+		</a>
+	</h1>
 
-	{#each displayEssays as essay}
+	{#each displayEssays as essay (essay.slug)}
 		<EssayItem item={essay} />
 	{/each}
 </div>
