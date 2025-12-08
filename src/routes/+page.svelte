@@ -84,8 +84,9 @@
 		Previously, I was an ML Engineer at <a href="https://personainc.ai/"
 			>Persona AI</a
 		>, where I worked on Robot Learning and MLOps. Persona is building
-		humanoids to automate industrial workflows and currently has a deal with HD
-		Hundai. I also worked on Video Understanding and low-latency CV at
+		humanoids to automate industrial workflows starting with welding in
+		shipyards for HD Hundai. I also worked on Video Understanding and
+		low-latency CV at
 		<a href="https://www.sievedata.com/">Sieve Data</a> powering video datasets for
 		Frontier AI Labs.
 	</p>
