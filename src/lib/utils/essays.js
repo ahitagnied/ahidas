@@ -16,6 +16,7 @@ export function loadEssays() {
 			date: frontmatter?.match(/date:\s*(.+)/)?.[1]?.trim() || '',
 			published:
 				frontmatter?.match(/published:\s*(.+)/)?.[1]?.trim() === 'true',
+			image: frontmatter?.match(/image:\s*(.+)/)?.[1]?.trim() || '',
 			content: text
 		};
 	});

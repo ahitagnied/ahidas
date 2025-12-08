@@ -2,6 +2,7 @@
 title: Taste Is a Loss Function
 date: August 2025
 published: true
+image: /images/essays/taste-is-a-loss-function.webp
 ---
 
 I like video models and I like art. Recently, these two things have been converging in a way that makes me uneasy.[^1]
