@@ -111,9 +111,9 @@
 	<div class="separator"></div>
 
 	<h1>
-		<a href="/research" class="no-underline inline-flex items-center gap-1">
+		<a href="/research" class="section-link group">
 			Research
-			<Icon icon="mdi:arrow-top-right" class="w-3 h-4" />
+			<Icon icon="mdi:arrow-top-right" class="arrow-icon-right" />
 		</a>
 	</h1>
 
@@ -124,9 +124,9 @@
 	<div class="separator"></div>
 
 	<h1>
-		<a href="/essays" class="no-underline inline-flex items-center gap-1">
+		<a href="/essays" class="section-link group">
 			Essays
-			<Icon icon="mdi:arrow-top-right" class="w-3 h-4" />
+			<Icon icon="mdi:arrow-top-right" class="arrow-icon-right" />
 		</a>
 	</h1>
 
