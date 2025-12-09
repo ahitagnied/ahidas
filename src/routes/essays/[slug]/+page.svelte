@@ -1,4 +1,5 @@
 <script>
+	import Icon from '@iconify/svelte';
 	import { page } from '$app/stores';
 	import MarkdownIt from 'markdown-it';
 	import markdownItFootnote from 'markdown-it-footnote';
@@ -157,10 +158,10 @@
 </svelte:head>
 
 <div class="page-container">
-	<a
-		href="/essays"
-		class="text-gray-600 hover:text-gray-800 no-underline mb-4 block">← Back</a
-	>
+	<a href="/essays" class="back-link mb-4 group">
+		<Icon icon="mdi:arrow-bottom-left" class="arrow-icon-left" />
+		Back
+	</a>
 
 	<div class="mb-6">
 		<div class="text-[16px] md:text-[18px] font-medium text-gray-600 mb-1">

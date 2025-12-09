@@ -39,6 +39,14 @@
 		@apply text-gray-600 underline decoration-gray-700 underline-offset-3;
 	}
 
+	.page-container h1 a {
+		@apply no-underline;
+	}
+
+	.page-container .back-link {
+		@apply no-underline;
+	}
+
 	.grid {
 		@apply mb-[1.2em] text-gray-600;
 		display: grid;
@@ -48,5 +56,21 @@
 
 	.separator {
 		@apply my-[1.2em] border-t border-gray-300;
+	}
+
+	.section-link {
+		@apply no-underline inline-flex items-center gap-1 hover:text-gray-800 transition-colors;
+	}
+
+	.back-link {
+		@apply text-gray-600 hover:text-gray-800 no-underline text-[12px] inline-flex items-center gap-1 transition-colors;
+	}
+
+	.arrow-icon-right {
+		@apply h-4 w-3 transition-transform group-hover:rotate-45;
+	}
+
+	.arrow-icon-left {
+		@apply h-4 w-3 transition-transform group-hover:rotate-45;
 	}
 }
