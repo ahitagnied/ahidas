@@ -13,8 +13,6 @@ Knight's memoir strips away the myth of Nike's inevitability. What emerges is co
 
 His management philosophy is anti-bureaucratic: set direction, then get out of the way. Trust people to solve problems you didn't anticipate. The book's power is in its honesty about fear, failure, and the randomness of success.
 
----
-
 "The cowards never started, and the weak died along the way. That leaves us."
 
 "Every runner knows this. You run and run, mile after mile, and you never quite know why. You tell yourself that you're running toward some goal, chasing some rush, but really you run because the alternative, stopping, scares you to death."

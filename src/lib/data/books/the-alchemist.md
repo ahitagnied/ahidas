@@ -11,8 +11,6 @@ rating: 7/10
 
 Santiago pursues omens across deserts only to find his treasure buried where he started. The allegory is transparent: searching reveals what was always present. Coelho's prose is simple and lyrical, effective for parable. The disappointment is structural. The ending arrives abruptly, deflating the journey's momentum. The idea works better than the execution.
 
----
-
 "It's this: that at a certain point in our lives, we lose control of what's happening to us, and our lives become controlled by fate. That's the world's greatest lie."
 
 "Because I don't live in either my past or my future. I'm interested only in the present. If you can concentrate always on the present, you'll be a happy man."

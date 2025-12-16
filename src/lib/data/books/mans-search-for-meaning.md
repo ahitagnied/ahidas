@@ -13,8 +13,6 @@ Frankl argues that meaning emerges not from pleasure or power, but from how we r
 
 What strikes me most is his refusal to romanticize trauma. Suffering doesn't automatically create meaning. Only our response to it does. This reframes every setback as a choice point: will this break me or reveal what I'm capable of? The book became my compass during difficult periods, not because it promises easy answers, but because it insists we always retain the freedom to choose our stance.
 
----
-
 "Everything can be taken from a man but one thing: the last of the human freedoms: to choose one's attitude in any given set of circumstances, to choose one's own way."
 
 "Those who have a 'why' to live, can bear with almost any 'how'."
