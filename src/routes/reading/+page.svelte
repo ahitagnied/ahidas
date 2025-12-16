@@ -1,10 +1,9 @@
 <script>
 	import Icon from '@iconify/svelte';
-	import readingData from '$lib/data/reading.yml?raw';
-	import yaml from 'js-yaml';
+	import { loadBooks } from '$lib/utils/books';
 	import { onDestroy } from 'svelte';
 
-	const books = yaml.load(readingData);
+	const books = loadBooks();
 	
 	let selectedIndex = -1;
 	let container;
