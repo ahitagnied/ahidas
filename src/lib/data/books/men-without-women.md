@@ -6,7 +6,8 @@ textColor: "#423e32"
 coverImage: "https://m.media-amazon.com/images/I/61jE8ravkbL._SL1500_.jpg"
 author: Haruki Murakami
 read: March 10, 2025
-rating: 6.5/10
+importance: 6.5/10
+enjoyment: 6.5/10
 ---
 
 Seven stories of men navigating absence: widowed surgeons, reserved bartenders, all processing loss through memory and silence. Murakami's surrealism stays subtle; the emotional landscape precise. Each protagonist confronts the impossibility of return: places, people, selves all shift imperceptibly. The prose is spare, the affect subdued. Strong on mood, light on event.

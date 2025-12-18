@@ -6,7 +6,8 @@ textColor: "#255054"
 coverImage: "https://m.media-amazon.com/images/I/71tdb1udZnL._SL1500_.jpg"
 author: Viktor E. Frankl
 read: August 20, 2025
-rating: 9/10
+importance: 9/10
+enjoyment: 9/10
 ---
 
 Frankl argues that meaning emerges not from pleasure or power, but from how we respond to unavoidable suffering. Writing from Auschwitz, he observes that those who survived had something to live for: a task, a person, a future worth enduring hell for. The insight cuts through therapeutic abstractions: meaning isn't found, it's chosen.

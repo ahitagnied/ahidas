@@ -6,7 +6,8 @@ textColor: "#255054"
 coverImage: "https://m.media-amazon.com/images/I/41nS26MN37L._SY445_SX342_.jpg"
 author: Hector Garcia and Francesc Miralles
 read: June 10, 2025
-rating: 8.7/10
+importance: 8.7/10
+enjoyment: 8.7/10
 ---
 
 Ikigai locates purpose not in grand callings but in daily rituals: tea with neighbors, morning walks, communal dance. Garcia and Miralles study Okinawan centenarian to show how meaning emerges from consistency, not ambition. Purpose becomes social, not heroic.

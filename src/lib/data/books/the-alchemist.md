@@ -6,7 +6,8 @@ textColor: "#F5F3E7"
 coverImage: "https://m.media-amazon.com/images/I/81ioPZFMeUL._SL1500_.jpg"
 author: Paulo Coelho
 read: April 10, 2025
-rating: 7/10
+importance: 7/10
+enjoyment: 7/10
 ---
 
 Santiago pursues omens across deserts only to find his treasure buried where he started. The allegory is transparent: searching reveals what was always present. Coelho's prose is simple and lyrical, effective for parable. The disappointment is structural. The ending arrives abruptly, deflating the journey's momentum. The idea works better than the execution.

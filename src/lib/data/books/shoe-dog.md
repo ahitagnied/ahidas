@@ -6,7 +6,8 @@ textColor: "#F1E9DA"
 coverImage: "https://m.media-amazon.com/images/I/81lxD2yoNRL._SL1500_.jpg"
 author: Phil Knight
 read: May 1, 2025
-rating: 8.5/10
+importance: 8.5/10
+enjoyment: 8.5/10
 ---
 
 Knight's memoir strips away the myth of Nike's inevitability. What emerges is contingency: cash flow crises, supplier betrayals, lawsuits, near-death moments. The company survives not through vision but through stubborn endurance and improvisation. The lesson isn't about passion or purpose. It's about continuing when stopping seems rational.

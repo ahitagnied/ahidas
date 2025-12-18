@@ -6,7 +6,8 @@ textColor: "#ffffff"
 coverImage: "https://m.media-amazon.com/images/I/41PbdH-FFEL._SY445_SX342_.jpg"
 author: Jeff Hawkins
 read: July 1, 2025
-rating: 9.3/10
+importance: 9.3/10
+enjoyment: 9.3/10
 ---
 
 Hawkins argues intelligence is prediction, not pattern matching. The neocortex runs one hierarchical, sparse algorithm everywhere: modeling sequences, anticipating next steps, correcting errors. This theory unifies perception, action, and understanding under a single framework: building and maintaining a temporal world model.
