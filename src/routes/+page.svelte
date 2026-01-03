@@ -65,8 +65,8 @@
 	<p>
 		I am the founding engineer at <a href="https://optica.industries/"
 			>Optica Industries</a
-		>. Optica is building CV tools to solve the information assymetry problem
-		in the American Metal Industry. We are backed by Lightspeed and Neo. If you
+		>, leading Thorin and Kili - our CV platforms to solve the information asymmetry 
+		problem in the American Metal Industry. We are backed by Lightspeed & Neo. If you
 		are interested in joining,
 		<a href="https://calendly.com/ahitagnid/new-meeting">reach out</a>.
 	</p>
@@ -75,26 +75,25 @@
 		I love ML and consumer AI exploring new ways to interact with reality &
 		imagination. I am a part of <a href="https://neo.com/">Neo</a> and scout
 		for <a href="https://www.clayvc.io/">Clay VC</a> where we invest as early
-		as possible, and were among the first investors of companies like
-		<a href="https://elevenlabs.io/">Eleven Labs</a> and
+		as possible. Clay was among the first investors
+		<a href="https://elevenlabs.io/">Eleven Labs</a> &
 		<a href="https://mistral.ai/">Mistral AI</a>.
 	</p>
 
 	<p>
-		Previously, I was an ML Engineer at <a href="https://personainc.ai/"
-			>Persona AI</a
-		>, where I worked on Robot Learning and MLOps. Persona is building
-		humanoids to automate industrial workflows starting with welding in
-		shipyards for HD Hundai. I also worked on Video Understanding and
-		low-latency CV at
-		<a href="https://www.sievedata.com/">Sieve Data</a> powering video datasets for
-		Frontier AI Labs.
+		Previously, I worked on Robot Learning and MLOps at <a href="https://personainc.ai/"
+		>Persona AI</a>. Persona is building Industrial Humanoids, starting with 
+		welding in shipyards for HD Hyundai. Before that, I researched Video 
+		Understanding at <a href="https://www.sievedata.com/">Sieve Data</a> to build 
+		Petabyte-scale Video Datasets for Frontier AI Labs.
 	</p>
 
 	<p>
-		I am interested in novel methods to represent and interact with reality. My
-		interests include but are not limited to Neural Radiance Fields, World
-		Modelling, & JEPAs. I research Gaussian Splatting at the <a
+		My current interests in research are 3D Vision & World Modelling, particularly 
+		using <a href="https://openreview.net/pdf?id=BZ5a1r-kVsf">JEPAs</a>. 
+		I research Multimodal JEPAs with 
+		<a href="https://scholar.google.com/citations?user=S1x_xqcAAAAJ&hl=en">Dr. 
+		Randall Balesteiero</a> and Gaussian Splatting at the <a
 			href="https://computationalimaging.rice.edu/"
 			>Computational Imaging Group</a
 		>. Previously, I worked on Colloidal Robotics at the
