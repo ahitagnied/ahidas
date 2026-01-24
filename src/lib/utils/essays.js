@@ -6,9 +6,9 @@ export function loadEssays() {
 
 	return Object.entries(essayModules).map(([path, content]) => {
 		const slug = path.split('/').pop()?.replace('.md', '') || '';
-		const text = /** @type {any} */ (content)?.default || content;
+		const text = typeof content === 'string' ? content : (/** @type {any} */ (content)?.default || '');
 		const [, frontmatter] =
-			/** @type {string} */ (text).match(/^---\n([\s\S]*?)\n---/) || [];
+			text.match(/^---\n([\s\S]*?)\n---/) || [];
 
 		return {
 			slug,

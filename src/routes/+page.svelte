@@ -19,7 +19,7 @@
 
 <div class="page-container">
 	<div class="grid">
-		<div class="text-[16px] md:text-[18px] font-medium text-gray-00">
+		<div class="text-[15px] md:text-[17px] font-medium text-gray-00">
 			Ahitagni D.
 		</div>
 
@@ -53,7 +53,7 @@
 			</a>
 		</div>
 
-		<div class="text-[12px] md:text-[14px]">adas [at] rice [dot] edu</div>
+		<div class="text-[11px] md:text-[13px]">adas [at] rice [dot] edu</div>
 
 		<div></div>
 	</div>
@@ -65,43 +65,34 @@
 	<p>
 		I am the founding engineer at <a href="https://optica.industries/"
 			>Optica Industries</a
-		>, leading Thorin and Kili - our CV platforms to solve the information asymmetry 
-		problem in the American Metal Industry. We are backed by Lightspeed & Neo. If you
-		are interested in joining,
+		>, building the next American Metal Company. We are backed by 
+		Lightspeed & Neo. If you are interested in joining,
 		<a href="https://calendly.com/ahitagnid/new-meeting">reach out</a>.
 	</p>
 
 	<p>
-		I love ML and consumer AI exploring new ways to interact with reality &
-		imagination. I am a part of <a href="https://neo.com/">Neo</a> and scout
-		for <a href="https://www.clayvc.io/">Clay VC</a> where we invest as early
-		as possible. Clay was among the first investors
-		<a href="https://elevenlabs.io/">Eleven Labs</a> &
-		<a href="https://mistral.ai/">Mistral AI</a>.
+		I am a part of <a href="https://neo.com/">Neo</a> and scout
+		pre-seed startups for <a href="https://www.clayvc.io/">Clay VC</a>. Previously, 
+		I worked on Robot Learning and MLOps at <a href="https://personainc.ai/"
+		>Persona AI</a> to build Industrial Humanoids and researched Video 
+		Understanding powering Petabyte-scale Video Datasets for Frontier AI Labs
+		 at <a href="https://www.sievedata.com/">Sieve Data</a>.
 	</p>
 
 	<p>
-		Previously, I worked on Robot Learning and MLOps at <a href="https://personainc.ai/"
-		>Persona AI</a>. Persona is building Industrial Humanoids, starting with 
-		welding in shipyards for HD Hyundai. Before that, I researched Video 
-		Understanding at <a href="https://www.sievedata.com/">Sieve Data</a> to build 
-		Petabyte-scale Video Datasets for Frontier AI Labs.
-	</p>
-
-	<p>
-		My current interests in research are 3D Vision & World Modelling, particularly 
+		My current research interest is World Modelling, particularly 
 		using <a href="https://openreview.net/pdf?id=BZ5a1r-kVsf">JEPAs</a>. 
 		I research Multimodal JEPAs with 
-		<a href="https://scholar.google.com/citations?user=S1x_xqcAAAAJ&hl=en">Dr. 
-		Randall Balesteiero</a> and Gaussian Splatting at the <a
-			href="https://computationalimaging.rice.edu/"
-			>Computational Imaging Group</a
+		<a href="https://scholar.google.com/citations?user=S1x_xqcAAAAJ&hl=en"> 
+		Randall Balesteiero</a> and <a
+			href="https://vivekboominathan.com/"
+			>Vivek Boominathan</a
 		>. Previously, I worked on Colloidal Robotics at the
 		<a
 			href="https://www.media.mit.edu/groups/nano-cybernetic-biotrek/overview/"
 			>MIT Media Lab</a
-		>, researched Li/Na-ion batteries at the
-		<a href="https://ajayan.rice.edu/">Ajayan Group</a>, and energy devices at
+		>, and Li/Na-ion batteries at the
+		<a href="https://ajayan.rice.edu/">Ajayan Group</a> &
 		<a href="https://scholar.google.com/citations?user=JlmilbMAAAAJ&hl=en"
 			>IIT Guwahati</a
 		>.

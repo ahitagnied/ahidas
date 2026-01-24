@@ -65,7 +65,7 @@
 	<style>
 		.prose {
 			color: #374151;
-			font-size: 13px;
+			font-size: 12px;
 		}
 		.prose a {
 			text-decoration: none;
@@ -75,19 +75,19 @@
 			font-weight: 500;
 		}
 		.prose h1 {
-			font-size: 16px;
+			font-size: 15px;
 			margin: 40px 0 20px;
 		}
 		.prose h2 {
-			font-size: 15px;
+			font-size: 14px;
 			margin: 32px 0 16px;
 		}
 		.prose h3 {
-			font-size: 14px;
+			font-size: 13px;
 			margin: 24px 0 12px;
 		}
 		.prose h4 {
-			font-size: 12px;
+			font-size: 11px;
 			margin: 16px 0 8px;
 		}
 		.prose hr {
@@ -106,7 +106,7 @@
 			margin: 0;
 		}
 		.prose .footnotes li {
-			font-size: 11px;
+			font-size: 10px;
 			color: rgb(36, 38, 42);
 			counter-increment: footnote;
 			margin: 0;
@@ -117,7 +117,7 @@
 		}
 		.prose .footnotes li::before {
 			content: '[' counter(footnote) ']';
-			font-size: 8px;
+			font-size: 7px;
 			vertical-align: super;
 			margin-right: 4px;
 		}
@@ -125,7 +125,7 @@
 			display: inline;
 		}
 		.prose sup {
-			font-size: 10px;
+			font-size: 9px;
 			color: rgb(24, 27, 32);
 		}
 
@@ -139,19 +139,19 @@
 
 		@media (min-width: 768px) {
 			.prose {
-				font-size: 15px;
+				font-size: 14px;
 			}
 			.prose h1 {
-				font-size: 18px;
-			}
-			.prose h2 {
 				font-size: 17px;
 			}
-			.prose h3 {
+			.prose h2 {
 				font-size: 16px;
 			}
+			.prose h3 {
+				font-size: 15px;
+			}
 			.prose h4 {
-				font-size: 14px;
+				font-size: 13px;
 			}
 		}
 	</style>
@@ -164,10 +164,10 @@
 	</a>
 
 	<div class="mb-6">
-		<div class="text-[16px] md:text-[18px] font-medium text-gray-600 mb-1">
+		<div class="text-[15px] md:text-[17px] font-medium text-gray-600 mb-1">
 			{title}
 		</div>
-		<div class="text-gray-400 text-[12px]">{date}</div>
+		<div class="text-gray-400 text-[11px]">{date}</div>
 	</div>
 
 	<div class="prose prose-sm max-w-none">
