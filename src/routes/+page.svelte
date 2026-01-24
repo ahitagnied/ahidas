@@ -83,16 +83,16 @@
 		My current research interest is World Modelling, particularly 
 		using <a href="https://openreview.net/pdf?id=BZ5a1r-kVsf">JEPAs</a>. 
 		I research Multimodal JEPAs with 
-		<a href="https://scholar.google.com/citations?user=S1x_xqcAAAAJ&hl=en">Dr. 
-		Randall Balesteiero</a> and Gaussian Splatting at the <a
-			href="https://computationalimaging.rice.edu/"
-			>Computational Imaging Group</a
+		<a href="https://scholar.google.com/citations?user=S1x_xqcAAAAJ&hl=en"> 
+		Randall Balesteiero</a> and <a
+			href="https://vivekboominathan.com/"
+			>Vivek Boominathan</a
 		>. Previously, I worked on Colloidal Robotics at the
 		<a
 			href="https://www.media.mit.edu/groups/nano-cybernetic-biotrek/overview/"
 			>MIT Media Lab</a
 		>, and Li/Na-ion batteries at the
-		<a href="https://ajayan.rice.edu/">Ajayan Group</a>, and
+		<a href="https://ajayan.rice.edu/">Ajayan Group</a> &
 		<a href="https://scholar.google.com/citations?user=JlmilbMAAAAJ&hl=en"
 			>IIT Guwahati</a
 		>.
