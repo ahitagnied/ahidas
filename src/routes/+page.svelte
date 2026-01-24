@@ -65,7 +65,7 @@
 	<p>
 		I am the founding engineer at <a href="https://optica.industries/"
 			>Optica Industries</a
-		>, helping build the next American Metal Industry. We are backed by 
+		>, building the next American Metal Company. We are backed by 
 		Lightspeed & Neo. If you are interested in joining,
 		<a href="https://calendly.com/ahitagnid/new-meeting">reach out</a>.
 	</p>
