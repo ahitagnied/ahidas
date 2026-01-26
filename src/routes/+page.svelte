@@ -19,7 +19,7 @@
 
 <div class="page-container">
 	<div class="grid">
-		<div class="text-[15px] md:text-[17px] font-medium text-gray-00">
+		<div class="text-[15px] md:text-[17px] font-[500] text-gray-00">
 			Ahitagni D.
 		</div>
 

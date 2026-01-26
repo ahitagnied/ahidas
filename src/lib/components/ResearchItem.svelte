@@ -10,7 +10,7 @@
 		class="no-underline block group"
 	>
 		<div
-			class="font-medium text-gray-600 group-hover:text-gray-800 transition-colors"
+			class="font-[500] text-gray-600 group-hover:text-gray-800 transition-colors"
 		>
 			{item.title}
 		</div>

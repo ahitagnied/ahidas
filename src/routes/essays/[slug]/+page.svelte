@@ -106,7 +106,7 @@
 			margin: 0;
 		}
 		.prose .footnotes li {
-			font-size: 10px;
+			font-size: 11px;
 			color: rgb(36, 38, 42);
 			counter-increment: footnote;
 			margin: 0;
@@ -117,7 +117,7 @@
 		}
 		.prose .footnotes li::before {
 			content: '[' counter(footnote) ']';
-			font-size: 7px;
+			font-size: 8px;
 			vertical-align: super;
 			margin-right: 4px;
 		}
@@ -125,7 +125,7 @@
 			display: inline;
 		}
 		.prose sup {
-			font-size: 9px;
+			font-size: 8px;
 			color: rgb(24, 27, 32);
 		}
 
@@ -164,7 +164,7 @@
 	</a>
 
 	<div class="mb-6">
-		<div class="text-[15px] md:text-[17px] font-medium text-gray-600 mb-1">
+		<div class="text-[15px] md:text-[17px] font-[500] text-gray-600 mb-1">
 			{title}
 		</div>
 		<div class="text-gray-400 text-[11px]">{date}</div>
