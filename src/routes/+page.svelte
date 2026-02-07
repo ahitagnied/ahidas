@@ -98,6 +98,13 @@
 		>.
 	</p>
 
+	<p>
+		I grew up in Kolkata, orbiting Astrophotography, Oil Painting, and Japanese
+		Ceramics. The arts still shape how I move through the world. These days it is
+		more hiking than shooting, but the images live here in
+		<a href="/photography">Photography</a>.
+	</p>
+
 	<div class="separator"></div>
 
 	<h1>
