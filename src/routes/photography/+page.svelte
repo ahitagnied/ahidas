@@ -97,7 +97,7 @@
 		</a>
 	</div>
 
-	<div class="mx-auto w-full max-w-[450px]">
+	<div class="mx-auto w-full max-w-[600px]">
 		<div class="flex flex-col gap-8">
 			{#each images as image, index (image.src)}
 				<button
