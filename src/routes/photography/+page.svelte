@@ -149,15 +149,23 @@
 		</button>
 
 		<div
-			class="max-h-[90vh] w-full max-w-[90vw] sm:max-w-[80vw]"
-			on:click|stopPropagation
+			class="max-h-[90vh] w-full max-w-[90vw] sm:max-w-[80vw] cursor-pointer outline-none focus:outline-none focus-visible:outline-none"
+			role="button"
+			tabindex="-1"
+			on:click={(e) => {
+				e.stopPropagation();
+				const rect = e.currentTarget.getBoundingClientRect();
+				const mid = rect.left + rect.width / 2;
+				if (e.clientX < mid) prev();
+				else next();
+			}}
 			on:touchstart={handleTouchStart}
 			on:touchend={handleTouchEnd}
 		>
 			<img
 				src={images[currentIndex].src}
 				alt={toAlt(images[currentIndex])}
-				class="max-h-[90vh] w-full select-none object-contain"
+				class="max-h-[90vh] w-full select-none object-contain outline-none"
 				draggable="false"
 			/>
 		</div>

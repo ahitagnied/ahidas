@@ -49,7 +49,7 @@
 				class="text-gray-600 hover:text-gray-800"
 				aria-label="Twitter"
 			>
-				<Icon icon="mdi:twitter" class="w-6 h-6" />
+				<Icon icon="simple-icons:x" class="h-5 w-5" />
 			</a>
 		</div>
 
@@ -58,9 +58,7 @@
 		<div></div>
 	</div>
 
-	<div class="separator"></div>
-
-	<h1>ABOUT</h1>
+	<h1 class="pt-[20px]">ABOUT</h1>
 
 	<p>
 		I am the founding engineer at <a href="https://optica.industries/"
@@ -105,9 +103,7 @@
 		<a href="/photography">Photography</a>.
 	</p>
 
-	<div class="separator"></div>
-
-	<h1>
+	<h1 class="pt-[25px]">
 		<a href="/research" class="section-link group">
 			Research
 			<Icon icon="mdi:arrow-top-right" class="arrow-icon-right" />
@@ -118,9 +114,7 @@
 		<ResearchItem {item} />
 	{/each}
 
-	<div class="separator"></div>
-
-	<h1>
+	<h1 class="pt-[25px]">
 		<a href="/essays" class="section-link group">
 			Essays
 			<Icon icon="mdi:arrow-top-right" class="arrow-icon-right" />
