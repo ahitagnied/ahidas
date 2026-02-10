@@ -31,7 +31,7 @@
 				class="text-gray-600 hover:text-gray-800"
 				aria-label="GitHub"
 			>
-				<Icon icon="mdi:github" class="w-6 h-6" />
+				<Icon icon="simple-icons:github" class="w-5 h-5" />
 			</a>
 			<a
 				href="https://linkedin.com/in/ahitagnid"
@@ -40,16 +40,16 @@
 				class="text-gray-600 hover:text-gray-800"
 				aria-label="LinkedIn"
 			>
-				<Icon icon="mdi:linkedin" class="w-6 h-6" />
+				<Icon icon="simple-icons:linkedin" class="w-5 h-5" />
 			</a>
 			<a
 				href="https://x.com/ahitagnied"
 				target="_blank"
 				rel="noopener noreferrer"
 				class="text-gray-600 hover:text-gray-800"
-				aria-label="Twitter"
+				aria-label="X"
 			>
-				<Icon icon="simple-icons:x" class="h-5 w-5" />
+				<Icon icon="simple-icons:x" class="w-5 h-5" />
 			</a>
 		</div>
 
