@@ -18,47 +18,15 @@
 </svelte:head>
 
 <div class="page-container">
-	<div class="grid">
-		<div class="text-[15px] md:text-[17px] font-[500] text-gray-00">
-			Ahitagni D.
+	<div class="flex justify-between items-center mb-3">
+		<div class="text-[15px] md:text-[17px] font-[500] text-body">Ahitagni D.</div>
+		<div class="flex gap-4 text-[11px] md:text-[13px]">
+			<a href="#about" class="text-secondary hover:text-body no-underline transition-colors">About</a>
+			<a href="#contact" class="text-secondary hover:text-body no-underline transition-colors">Contact</a>
 		</div>
-
-		<div class="flex gap-2 items-center justify-end">
-			<a
-				href="https://github.com/ahitagnied"
-				target="_blank"
-				rel="noopener noreferrer"
-				class="text-gray-600 hover:text-gray-800"
-				aria-label="GitHub"
-			>
-				<Icon icon="simple-icons:github" class="w-5 h-5" />
-			</a>
-			<a
-				href="https://linkedin.com/in/ahitagnid"
-				target="_blank"
-				rel="noopener noreferrer"
-				class="text-gray-600 hover:text-gray-800"
-				aria-label="LinkedIn"
-			>
-				<Icon icon="simple-icons:linkedin" class="w-5 h-5" />
-			</a>
-			<a
-				href="https://x.com/ahitagnied"
-				target="_blank"
-				rel="noopener noreferrer"
-				class="text-gray-600 hover:text-gray-800"
-				aria-label="X"
-			>
-				<Icon icon="simple-icons:x" class="w-5 h-5" />
-			</a>
-		</div>
-
-		<div class="text-[11px] md:text-[13px]">adas [at] rice [dot] edu</div>
-
-		<div></div>
 	</div>
 
-	<h1 class="pt-[20px]">ABOUT</h1>
+	<h1 id="about" class="pt-[25px]">ABOUT</h1>
 
 	<p>
 		I am the founding engineer at <a href="https://optica.industries/"
@@ -97,9 +65,9 @@
 	</p>
 
 	<p>
-		I grew up in Kolkata, orbiting Astrophotography, Oil Painting, and Japanese
-		Ceramics. The arts still shape how I move through the world. These days it is
-		more hiking than shooting, but the images live here in
+		I grew up in Kolkata, orbiting Physics, Astrophotography, & Oil Painting. 
+		The arts still shape how I move through the world. These days it is more 
+		hiking than shooting, but the images live here in
 		<a href="/photography">Photography</a>.
 	</p>
 
@@ -124,4 +92,22 @@
 	{#each displayEssays as essay (essay.slug)}
 		<EssayItem item={essay} />
 	{/each}
+
+	<h1 id="contact" class="pt-[25px]">CONTACT</h1>
+
+	<img
+		src="/images/banner.webp"
+		alt="Banner"
+		class="w-full h-auto block select-none mb-3"
+		draggable="false"
+	/>
+
+	<p>
+		I am easy to reach — book a <a href="https://calendly.com/ahitagnid/new-meeting">meeting</a>
+		with a short blurb about what you want to talk about, or write to me at
+		adas [at] rice [dot] edu. I am also on
+		<a href="https://x.com/ahitagnied" target="_blank" rel="noopener noreferrer">Twitter</a>,
+		<a href="https://github.com/ahitagnied" target="_blank" rel="noopener noreferrer">GitHub</a>, and
+		<a href="https://linkedin.com/in/ahitagnid" target="_blank" rel="noopener noreferrer">LinkedIn</a>.
+	</p>
 </div>

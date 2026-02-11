@@ -22,7 +22,7 @@
 	}
 
 	h1 {
-		@apply mb-[1.2em] text-[11px] text-gray-500 uppercase;
+		@apply mb-[8px] text-[11px] text-gray-500 uppercase;
 	}
 }
 

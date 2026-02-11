@@ -1,5 +1,5 @@
 <script lang="ts">
-	import favicon from '$lib/assets/favicon.webp';
+	import favicon from '$lib/assets/favicon.svg';
 	import { fly } from 'svelte/transition';
 	import { page } from '$app/stores';
 	import { onMount } from 'svelte';
