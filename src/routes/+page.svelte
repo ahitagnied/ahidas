@@ -41,14 +41,14 @@
 		pre-seed startups for <a href="https://www.clayvc.io/">Clay VC</a>. Previously, 
 		I worked on Robot Learning and MLOps at <a href="https://personainc.ai/"
 		>Persona AI</a> to build Industrial Humanoids and researched Video 
-		Understanding powering Petabyte-scale Video Datasets for Frontier AI Labs
-		 at <a href="https://www.sievedata.com/">Sieve Data</a>.
+		Understanding at <a href="https://www.sievedata.com/">Sieve Data</a> that powered
+		Petabyte-scale video datasets for Frontier AI Labs.
 	</p>
 
 	<p>
 		My current research interest is World Modelling, particularly 
 		using <a href="https://openreview.net/pdf?id=BZ5a1r-kVsf">JEPAs</a>. 
-		I research Multimodal JEPAs with 
+		I research Multimodal JEPAs, 3D Vision, & Computational Imaging with 
 		<a href="https://scholar.google.com/citations?user=S1x_xqcAAAAJ&hl=en"> 
 		Randall Balesteiero</a> and <a
 			href="https://vivekboominathan.com/"
@@ -65,10 +65,8 @@
 	</p>
 
 	<p>
-		I grew up in Kolkata, orbiting Physics, Astrophotography, & Oil Painting. 
-		The arts still shape how I move through the world. These days it is more 
-		hiking than shooting, but the images live here in
-		<a href="/photography">Photography</a>.
+		Grew up in Kolkata wanting to be a Theoretical Physicist — turns out building
+		things is just as fun. When I'm not, I'm sailing, hiking or traveling somewhere new.
 	</p>
 
 	<h1 class="pt-[25px]">
