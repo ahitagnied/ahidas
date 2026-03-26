@@ -93,13 +93,6 @@
 
 	<h1 id="contact" class="pt-[25px]">CONTACT</h1>
 
-	<img
-		src="/images/banner.webp"
-		alt="Banner"
-		class="w-full h-auto block select-none mb-3"
-		draggable="false"
-	/>
-
 	<p>
 		I am easy to reach — book a <a href="https://calendly.com/ahitagnid/new-meeting">meeting</a>
 		with a short blurb about what you want to talk about, or write to me at
@@ -108,4 +101,13 @@
 		<a href="https://github.com/ahitagnied" target="_blank" rel="noopener noreferrer">GitHub</a>, and
 		<a href="https://linkedin.com/in/ahitagnid" target="_blank" rel="noopener noreferrer">LinkedIn</a>.
 	</p>
+
+	<div class="flex justify-end mt-[1.2em]">
+		<img
+			src="/images/stamp.webp"
+			alt="Stamp"
+			class="h-[50px] md:h-[60px] w-auto select-none block"
+			draggable="false"
+		/>
+	</div>
 </div>
