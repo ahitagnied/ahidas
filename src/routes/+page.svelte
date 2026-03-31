@@ -19,11 +19,7 @@
 
 <div class="page-container">
 	<div class="flex justify-between items-center mb-3">
-		<div class="text-[15px] md:text-[17px] font-[500] text-body">Ahitagni D.</div>
-		<div class="flex gap-4 text-[11px] md:text-[13px]">
-			<a href="#about" class="text-secondary hover:text-body no-underline transition-colors">About</a>
-			<a href="#contact" class="text-secondary hover:text-body no-underline transition-colors">Contact</a>
-		</div>
+		<div class="text-[15px] md:text-[17px] font-[500] text-body">Hi, I am Ahitagni!</div>
 	</div>
 
 	<h1 id="about" class="pt-[25px]">ABOUT</h1>
