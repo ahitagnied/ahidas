@@ -1,13 +1,32 @@
 @import 'tailwindcss';
 @plugin '@tailwindcss/typography';
 
+/*
+  Typography scale (rem relative to browser default, usually 16px).
+  All steps move together when you change `html` font-size below.
+  Tweak individual steps in :root, or nudge everything with the html clamp.
+*/
+:root {
+	--text-micro: 0.5rem; /* 8px */
+	--text-label: 0.6875rem; /* 11px */
+	--text-body: 0.75rem; /* 12px */
+	--text-body-lg: 0.8125rem; /* 13px */
+	--text-body-xl: 0.875rem; /* 14px */
+	--text-lead: 0.9375rem; /* 15px */
+	--text-title: 1rem; /* 16px */
+	--text-display: 1.0625rem; /* 17px */
+}
+
 @layer base {
 	html {
 		@apply w-full;
+		/* Finer than +1px per breakpoint: whole UI scales slightly with viewport */
+		font-size: clamp(1rem, 0.18vw + 0.985rem, 1.046875rem);
 	}
 
 	body {
-		@apply min-h-screen w-full bg-white text-[12px] leading-[1.6] font-[500] tracking-[-0.01em] text-gray-600 md:text-[14px];
+		@apply min-h-screen w-full bg-white leading-[1.6] font-[500] tracking-[-0.01em] text-gray-600;
+		font-size: var(--text-body);
 		font-family:
 			Diatype Variable,
 			ui-sans-serif,
@@ -21,8 +40,15 @@
 		-moz-osx-font-smoothing: grayscale;
 	}
 
+	@media (min-width: 768px) {
+		body {
+			font-size: var(--text-body-xl);
+		}
+	}
+
 	h1 {
-		@apply mb-[8px] text-[11px] text-gray-500 uppercase;
+		@apply mb-[8px] text-gray-500 uppercase;
+		font-size: var(--text-label);
 	}
 }
 
@@ -63,7 +89,8 @@
 	}
 
 	.back-link {
-		@apply text-gray-600 hover:text-gray-800 no-underline text-[11px] inline-flex items-center gap-1 transition-colors;
+		@apply text-gray-600 hover:text-gray-800 no-underline inline-flex items-center gap-1 transition-colors;
+		font-size: var(--text-label);
 	}
 
 	.arrow-icon-right {

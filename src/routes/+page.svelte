@@ -19,7 +19,11 @@
 
 <div class="page-container">
 	<div class="flex justify-between items-center mb-3">
-		<div class="text-[15px] md:text-[17px] font-[500] text-body">Hi, I am Ahitagni!</div>
+		<div
+			class="font-[500] text-[length:var(--text-lead)] md:text-[length:var(--text-display)]"
+		>
+			Hi, I am Ahitagni!
+		</div>
 	</div>
 
 	<h1 id="about" class="pt-[25px]">ABOUT</h1>

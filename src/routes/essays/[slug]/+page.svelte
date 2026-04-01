@@ -65,7 +65,7 @@
 	<style>
 		.prose {
 			color: #374151;
-			font-size: 12px;
+			font-size: var(--text-body);
 		}
 		.prose a {
 			text-decoration: none;
@@ -75,19 +75,19 @@
 			font-weight: 500;
 		}
 		.prose h1 {
-			font-size: 15px;
+			font-size: var(--text-lead);
 			margin: 40px 0 20px;
 		}
 		.prose h2 {
-			font-size: 14px;
+			font-size: var(--text-body-xl);
 			margin: 32px 0 16px;
 		}
 		.prose h3 {
-			font-size: 13px;
+			font-size: var(--text-body-lg);
 			margin: 24px 0 12px;
 		}
 		.prose h4 {
-			font-size: 11px;
+			font-size: var(--text-label);
 			margin: 16px 0 8px;
 		}
 		.prose hr {
@@ -106,7 +106,7 @@
 			margin: 0;
 		}
 		.prose .footnotes li {
-			font-size: 11px;
+			font-size: var(--text-label);
 			color: rgb(36, 38, 42);
 			counter-increment: footnote;
 			margin: 0;
@@ -117,7 +117,7 @@
 		}
 		.prose .footnotes li::before {
 			content: '[' counter(footnote) ']';
-			font-size: 8px;
+			font-size: var(--text-micro);
 			vertical-align: super;
 			margin-right: 4px;
 		}
@@ -125,7 +125,7 @@
 			display: inline;
 		}
 		.prose sup {
-			font-size: 8px;
+			font-size: var(--text-micro);
 			color: rgb(24, 27, 32);
 		}
 
@@ -139,19 +139,19 @@
 
 		@media (min-width: 768px) {
 			.prose {
-				font-size: 14px;
+				font-size: var(--text-body-xl);
 			}
 			.prose h1 {
-				font-size: 17px;
+				font-size: var(--text-display);
 			}
 			.prose h2 {
-				font-size: 16px;
+				font-size: var(--text-title);
 			}
 			.prose h3 {
-				font-size: 15px;
+				font-size: var(--text-lead);
 			}
 			.prose h4 {
-				font-size: 13px;
+				font-size: var(--text-body-lg);
 			}
 		}
 	</style>
@@ -164,10 +164,12 @@
 	</a>
 
 	<div class="mb-6">
-		<div class="text-[15px] md:text-[17px] font-[500] text-gray-600 mb-1">
+		<div
+			class="mb-1 font-[500] text-gray-600 text-[length:var(--text-lead)] md:text-[length:var(--text-display)]"
+		>
 			{title}
 		</div>
-		<div class="text-gray-400 text-[11px]">{date}</div>
+		<div class="text-[length:var(--text-label)] text-gray-400">{date}</div>
 	</div>
 
 	<div class="prose prose-sm max-w-none">
