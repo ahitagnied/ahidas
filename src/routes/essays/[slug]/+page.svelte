@@ -70,25 +70,17 @@
 		.prose a {
 			text-decoration: none;
 		}
-		.prose :is(h1, h2, h3, h4) {
+		.prose :is(h1, h2) {
 			color: #1f2937;
 			font-weight: 500;
 		}
 		.prose h1 {
-			font-size: var(--text-lead);
+			font-size: var(--text-title);
 			margin: 40px 0 20px;
 		}
 		.prose h2 {
-			font-size: var(--text-body-xl);
+			font-size: var(--text-lead);
 			margin: 32px 0 16px;
-		}
-		.prose h3 {
-			font-size: var(--text-body-lg);
-			margin: 24px 0 12px;
-		}
-		.prose h4 {
-			font-size: var(--text-label);
-			margin: 16px 0 8px;
 		}
 		.prose hr {
 			display: none;
@@ -139,19 +131,13 @@
 
 		@media (min-width: 768px) {
 			.prose {
-				font-size: var(--text-body-xl);
+				font-size: var(--text-lead);
 			}
 			.prose h1 {
 				font-size: var(--text-display);
 			}
 			.prose h2 {
-				font-size: var(--text-title);
-			}
-			.prose h3 {
-				font-size: var(--text-lead);
-			}
-			.prose h4 {
-				font-size: var(--text-body-lg);
+				font-size: var(--text-display);
 			}
 		}
 	</style>

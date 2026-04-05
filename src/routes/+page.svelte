@@ -20,7 +20,7 @@
 <div class="page-container">
 	<div class="flex justify-between items-center mb-3">
 		<div
-			class="font-[500] text-[length:var(--text-lead)] md:text-[length:var(--text-display)]"
+			class="font-[500] text-[1rem] md:text-[1.125rem]"
 		>
 			Hi, I am Ahitagni!
 		</div>
@@ -29,9 +29,9 @@
 	<h1 id="about" class="pt-[25px]">ABOUT</h1>
 
 	<p>
-		I am the founding engineer at <a href="https://optica.industries/"
+		I am the Founding Engineer at <a href="https://optica.industries/"
 			>Optica Industries</a
-		>, building the next American Metal Company. We are backed by 
+		>, building the next American Metal Factory. We are backed by 
 		Lightspeed & Neo. If you are interested in joining,
 		<a href="https://calendly.com/ahitagnid/new-meeting">reach out</a>.
 	</p>
@@ -39,7 +39,7 @@
 	<p>
 		I am a part of <a href="https://neo.com/">Neo</a> and scout
 		pre-seed startups for <a href="https://www.clayvc.io/">Clay VC</a>. Previously, 
-		I worked on Robot Learning and MLOps at <a href="https://personainc.ai/"
+		I worked on Robot Learning at <a href="https://personainc.ai/"
 		>Persona AI</a> to build Industrial Humanoids and researched Video 
 		Understanding at <a href="https://www.sievedata.com/">Sieve Data</a> that powered
 		Petabyte-scale video datasets for Frontier AI Labs.
@@ -53,12 +53,11 @@
 		Randall Balesteiero</a> and <a
 			href="https://vivekboominathan.com/"
 			>Vivek Boominathan</a
-		>. Previously, I worked on Colloidal Robotics at the
+		>. Previously, I worked on Colloidal Robotics & Nanoelectronics at the
 		<a
 			href="https://www.media.mit.edu/groups/nano-cybernetic-biotrek/overview/"
 			>MIT Media Lab</a
-		>, and Li/Na-ion batteries at the
-		<a href="https://ajayan.rice.edu/">Ajayan Group</a> &
+		>, <a href="https://ajayan.rice.edu/">Ajayan Group</a> &
 		<a href="https://scholar.google.com/citations?user=JlmilbMAAAAJ&hl=en"
 			>IIT Guwahati</a
 		>.
