@@ -149,6 +149,114 @@ html.dark {
 	}
 }
 
+/* Prose (essays, about) */
+
+.prose {
+	color: var(--color-text);
+	font-size: var(--text-body);
+}
+
+.prose a {
+	text-decoration: none;
+}
+
+.prose :is(h1, h2) {
+	color: var(--color-text-hover);
+	font-weight: 500;
+}
+
+.prose h1 {
+	font-size: var(--text-title);
+	margin: 40px 0 20px;
+}
+
+.prose h2 {
+	font-size: var(--text-lead);
+	margin: 32px 0 16px;
+}
+
+.prose hr {
+	display: none;
+}
+
+.prose ul {
+	list-style: disc;
+	padding-left: 1.4em;
+	margin: 0.5em 0 1em;
+}
+
+.prose ul li {
+	margin: 0.25em 0;
+	line-height: 1.6;
+}
+
+.prose ul ul {
+	margin: 0.25em 0;
+}
+
+.prose .footnotes {
+	margin-top: 24px;
+	padding-top: 12px;
+	border-top: 1px solid var(--color-border);
+}
+
+.prose .footnotes ol {
+	list-style: none;
+	counter-reset: footnote;
+	padding: 0;
+	margin: 0;
+}
+
+.prose .footnotes li {
+	font-size: var(--text-label);
+	color: var(--color-text);
+	counter-increment: footnote;
+	margin: 0;
+	line-height: 1.4;
+}
+
+.prose .footnotes li + li {
+	margin-top: 2px;
+}
+
+.prose .footnotes li::before {
+	content: '[' counter(footnote) ']';
+	font-size: var(--text-micro);
+	vertical-align: super;
+	margin-right: 4px;
+}
+
+.prose .footnotes li p {
+	display: inline;
+}
+
+.prose sup {
+	font-size: var(--text-micro);
+	color: var(--color-text);
+}
+
+.prose .katex-display {
+	overflow-x: auto;
+	overflow-y: hidden;
+	max-width: 100%;
+	margin: 1em 0;
+	padding: 0.5em 0;
+}
+
+@media (min-width: 768px) {
+	.prose {
+		font-size: var(--text-lead);
+	}
+
+	.prose h1 {
+		font-size: var(--text-display);
+	}
+
+	.prose h2 {
+		font-size: var(--text-display);
+	}
+}
+
 /* Prose links — @tailwindcss/typography sets color in @layer utilities, so override unlayered */
 html.dark .prose a {
 	color: var(--color-text);

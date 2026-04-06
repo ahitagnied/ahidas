@@ -1,32 +1,30 @@
 export function loadEssays() {
-	const essayModules = import.meta.glob('$lib/data/essays/*.md', {
+	const modules = import.meta.glob('$lib/data/essays/*.md', {
 		query: '?raw',
+		import: 'default',
 		eager: true
 	});
 
-	return Object.entries(essayModules).map(([path, content]) => {
-		const slug = path.split('/').pop()?.replace('.md', '') || '';
-		const text = typeof content === 'string' ? content : (/** @type {any} */ (content)?.default || '');
-		const [, frontmatter] =
-			text.match(/^---\n([\s\S]*?)\n---/) || [];
+	return Object.entries(modules).map(([path, content]) => {
+		const slug = path.split('/').pop()?.replace('.md', '') ?? '';
+		const text = /** @type {string} */ (content);
+		const [, frontmatter] = text.match(/^---\n([\s\S]*?)\n---/) ?? [];
 
 		return {
 			slug,
-			title: frontmatter?.match(/title:\s*(.+)/)?.[1]?.trim() || slug,
-			date: frontmatter?.match(/date:\s*(.+)/)?.[1]?.trim() || '',
-			published:
-				frontmatter?.match(/published:\s*(.+)/)?.[1]?.trim() === 'true',
-			image: frontmatter?.match(/image:\s*(.+)/)?.[1]?.trim() || '',
-			content: text
+			title: frontmatter?.match(/title:\s*(.+)/)?.[1]?.trim() ?? slug,
+			date: frontmatter?.match(/date:\s*(.+)/)?.[1]?.trim() ?? '',
+			published: frontmatter?.match(/published:\s*(.+)/)?.[1]?.trim() === 'true',
+			image: frontmatter?.match(/image:\s*(.+)/)?.[1]?.trim() ?? '',
+			body: text.replace(/^---\n[\s\S]*?\n---\n/, '')
 		};
 	});
 }
 
 export function getPublishedEssays() {
-	return loadEssays().filter((essay) => essay.published !== false);
+	return loadEssays().filter((essay) => essay.published);
 }
 
 export function getEssayBySlug(/** @type {string} */ slug) {
-	const essays = loadEssays();
-	return essays.find((essay) => essay.slug === slug);
+	return loadEssays().find((essay) => essay.slug === slug);
 }
