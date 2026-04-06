@@ -9,11 +9,9 @@
 		rel="noopener noreferrer"
 		class="no-underline block group"
 	>
-		<div
-			class="font-[500] text-gray-600 group-hover:text-gray-800 transition-colors"
-		>
+		<div class="font-[500] text-body">
 			{item.title}
 		</div>
-		<div class="text-gray-400">{item.journal}, {item.year}</div>
+		<div class="text-muted">{item.journal}, {item.year}</div>
 	</a>
 </div>

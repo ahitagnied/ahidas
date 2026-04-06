@@ -15,12 +15,10 @@
 			style="height: calc(1em * 1.6 * 2);"
 		/>
 		<div class="flex-1 min-w-0">
-			<div
-				class="font-[500] text-gray-600 group-hover:text-gray-800 transition-colors"
-			>
+			<div class="font-[500] text-body">
 				{item.title}
 			</div>
-			<div class="text-gray-400">{item.date}</div>
+			<div class="text-muted">{item.date}</div>
 		</div>
 	</a>
 </div>

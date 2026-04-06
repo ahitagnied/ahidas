@@ -5,12 +5,30 @@
 	import researchData from '$lib/data/research.yml?raw';
 	import yaml from 'js-yaml';
 	import { getPublishedEssays } from '$lib/utils/essays.js';
+	import { onMount } from 'svelte';
 
 	const researchItems = yaml.load(researchData);
 	const displayItems = researchItems.slice(0, 5);
 
 	const essays = getPublishedEssays();
 	const displayEssays = essays.slice(0, 5);
+
+	let dark = $state(false);
+
+	onMount(() => {
+		dark = document.documentElement.classList.contains('dark');
+	});
+
+	function toggleTheme() {
+		dark = !dark;
+		if (dark) {
+			document.documentElement.classList.add('dark');
+			localStorage.setItem('theme', 'dark');
+		} else {
+			document.documentElement.classList.remove('dark');
+			localStorage.setItem('theme', 'light');
+		}
+	}
 </script>
 
 <svelte:head>
@@ -24,6 +42,16 @@
 		>
 			Hi, I am Ahitagni!
 		</div>
+		<button
+			class="theme-toggle"
+			onclick={toggleTheme}
+			aria-label={dark ? 'Switch to light mode' : 'Switch to dark mode'}
+		>
+			<Icon
+				icon={dark ? 'mdi:weather-sunny' : 'mdi:weather-night'}
+				class="h-[1.1rem] w-[1.1rem]"
+			/>
+		</button>
 	</div>
 
 	<h1 id="about" class="pt-[25px]">ABOUT</h1>
@@ -34,7 +62,7 @@
 	</p>
 
 	<p>
-		I am a part of <a href="https://neo.com/">Neo</a> and scout for
+		I am a part of <a href="https://neo.com/">Neo</a> & scout for
 		<a href="https://www.clayvc.io/">Clay VC</a>. Previously, I worked on Robot Learning for
 		Industrial Humanoids at <a href="https://personainc.ai/">Persona AI</a> & researched Video
 		Understanding at <a href="https://www.sievedata.com/">Sieve Data</a> that powered
@@ -44,9 +72,9 @@
 	<p>
 		My current research interest is World Modelling &
 		<a href="https://openreview.net/pdf?id=BZ5a1r-kVsf">JEPAs</a>.
-		I research Multimodal JEPAs, 3D Vision, & Computational Imaging with
+		I research Multimodal JEPAs, 3D Vision, & Imaging with
 		<a href="https://scholar.google.com/citations?user=S1x_xqcAAAAJ&hl=en">Randall Balesteiero</a>,
-		<a href="https://vivekboominathan.com/">Vivek Boominathan</a>, and
+		<a href="https://vivekboominathan.com/">Vivek Boominathan</a>, &
 		<a href="https://computationalimaging.rice.edu/team/ashok-veeraraghavan/">Ashok Veeraradhavan</a>.
 		Previously, I worked on Colloidal Robotics & Nanoelectronics at the
 		<a href="https://www.media.mit.edu/groups/nano-cybernetic-biotrek/overview/">MIT Media Lab</a>,
@@ -66,7 +94,7 @@
 	<h1 class="pt-[25px]">
 		<a href="/research" class="section-link group">
 			Research
-			<Icon icon="mdi:arrow-top-right" class="arrow-icon-right" />
+			<Icon icon="mdi:arrow-top-right" class="arrow-icon" />
 		</a>
 	</h1>
 
@@ -77,7 +105,7 @@
 	<h1 class="pt-[25px]">
 		<a href="/essays" class="section-link group">
 			Essays
-			<Icon icon="mdi:arrow-top-right" class="arrow-icon-right" />
+			<Icon icon="mdi:arrow-top-right" class="arrow-icon" />
 		</a>
 	</h1>
 
@@ -92,7 +120,7 @@
 		with a short blurb about what you want to talk about, or write to me at
 		adas [at] rice [dot] edu. I am also on
 		<a href="https://x.com/ahitagnied" target="_blank" rel="noopener noreferrer">Twitter</a>,
-		<a href="https://github.com/ahitagnied" target="_blank" rel="noopener noreferrer">GitHub</a>, and
+		<a href="https://github.com/ahitagnied" target="_blank" rel="noopener noreferrer">GitHub</a>, &
 		<a href="https://linkedin.com/in/ahitagnid" target="_blank" rel="noopener noreferrer">LinkedIn</a>.
 	</p>
 
