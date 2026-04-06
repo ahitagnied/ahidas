@@ -25,6 +25,7 @@
 		"@tailwindcss/typography": "^0.5.19",
 		"@tailwindcss/vite": "^4.1.17",
 		"@types/js-yaml": "^4.0.9",
+		"@types/markdown-it-footnote": "^3.0.4",
 		"@types/node": "^22",
 		"eslint": "^9.39.1",
 		"eslint-config-prettier": "^10.1.8",
