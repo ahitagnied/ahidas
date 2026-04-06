@@ -1,5 +1,6 @@
 <script>
 	import Icon from '@iconify/svelte';
+	import ThemeToggle from '$lib/components/ThemeToggle.svelte';
 	import { page } from '$app/stores';
 	import MarkdownIt from 'markdown-it';
 	import markdownItFootnote from 'markdown-it-footnote';
@@ -64,14 +65,14 @@
 	/>
 	<style>
 		.prose {
-			color: #374151;
+			color: var(--color-text);
 			font-size: var(--text-body);
 		}
 		.prose a {
 			text-decoration: none;
 		}
 		.prose :is(h1, h2) {
-			color: #1f2937;
+			color: var(--color-text-hover);
 			font-weight: 500;
 		}
 		.prose h1 {
@@ -89,7 +90,7 @@
 		.prose .footnotes {
 			margin-top: 24px;
 			padding-top: 12px;
-			border-top: 1px solid #d1d5db;
+			border-top: 1px solid var(--color-border);
 		}
 		.prose .footnotes ol {
 			list-style: none;
@@ -99,7 +100,7 @@
 		}
 		.prose .footnotes li {
 			font-size: var(--text-label);
-			color: rgb(36, 38, 42);
+			color: var(--color-text);
 			counter-increment: footnote;
 			margin: 0;
 			line-height: 1.4;
@@ -118,7 +119,7 @@
 		}
 		.prose sup {
 			font-size: var(--text-micro);
-			color: rgb(24, 27, 32);
+			color: var(--color-text);
 		}
 
 		.prose .katex-display {
@@ -144,18 +145,19 @@
 </svelte:head>
 
 <div class="page-container">
-	<a href="/essays" class="back-link mb-4 group">
-		<Icon icon="mdi:arrow-bottom-left" class="arrow-icon-left" />
-		Back
-	</a>
+	<div class="flex justify-between items-center mb-4">
+		<a href="/essays" class="back-link group">
+			<Icon icon="mdi:arrow-bottom-left" class="arrow-icon" />
+			Back
+		</a>
+		<ThemeToggle />
+	</div>
 
 	<div class="mb-6">
-		<div
-			class="mb-1 font-[500] text-gray-600 text-[length:var(--text-lead)] md:text-[length:var(--text-display)]"
-		>
+		<div class="mb-1 font-[500] text-body text-[length:var(--text-lead)] md:text-[length:var(--text-display)]">
 			{title}
 		</div>
-		<div class="text-[length:var(--text-label)] text-gray-400">{date}</div>
+		<div class="text-muted text-[length:var(--text-label)]">{date}</div>
 	</div>
 
 	<div class="prose prose-sm max-w-none">

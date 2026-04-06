@@ -2,14 +2,30 @@
 @plugin '@tailwindcss/typography';
 
 :root {
-	--text-micro: 0.5rem; /* 8px */
-	--text-label: 0.6875rem; /* 11px */
-	--text-body: 0.8125rem; /* 13px */
-	--text-lead: 0.9375rem; /* 15px */
-	--text-title: 1rem; /* 16px */
+	--text-micro:   0.5rem;    /* 8px */
+	--text-label:   0.6875rem; /* 11px */
+	--text-body:    0.8125rem; /* 13px */
+	--text-lead:    0.9375rem; /* 15px */
+	--text-title:   1rem;      /* 16px */
 	--text-display: 1.0625rem; /* 17px */
 
 	--font-size: 16px;
+
+	--color-bg:           #ffffff; /* page background */
+	--color-text:         #4b5563; /* body copy, links, essay title */
+	--color-text-heading: #6b7280; /* section labels (ABOUT, RESEARCH…), section-link arrows */
+	--color-text-muted:   #9ca3af; /* dates, journal names, secondary info */
+	--color-border:       #d1d5db; /* footnote divider line */
+	--color-text-hover:   #1f2937; /* hover state, prose h1/h2 */
+}
+
+html.dark {
+	--color-bg:           #100F0F; /* Flexoki bg */
+	--color-text:         #CECDC3; /* Flexoki tx — primary text */
+	--color-text-heading: #878580; /* Flexoki tx-2 — section labels: ABOUT, RESEARCH… */
+	--color-text-muted:   #878580; /* Flexoki tx-2 — muted (dates, journals) */
+	--color-border:       #282726; /* Flexoki ui — borders */
+	--color-text-hover:   #DAD8CE; /* Flexoki base-150 — hover/emphasis */
 }
 
 @layer base {
@@ -22,7 +38,9 @@
 	}
 
 	body {
-		@apply min-h-screen w-full bg-white leading-[1.6] font-[500] tracking-[-0.01em] text-gray-600;
+		@apply min-h-screen w-full leading-[1.6] font-[500] tracking-[-0.01em];
+		background-color: var(--color-bg);
+		color: var(--color-text);
 		font-size: var(--text-body);
 		font-family:
 			Diatype Variable,
@@ -44,57 +62,99 @@
 	}
 
 	h1 {
-		@apply mb-[8px] text-gray-500 uppercase;
+		@apply mb-[8px] uppercase;
+		color: var(--color-text-heading);
 		font-size: 0.75rem;
 	}
 }
 
 @layer components {
 	.page-container {
-		@apply mx-auto min-h-screen w-full max-w-[700px] bg-white px-6 py-12;
+		@apply mx-auto min-h-screen w-full max-w-[700px] px-6 py-12;
 	}
 
 	.page-container p {
-		@apply mb-[1.2em] leading-[1.6] text-gray-600;
+		@apply mb-[1.2em] leading-[1.6];
+		color: var(--color-text);
 	}
 
 	.page-container a {
-		@apply text-gray-600 underline decoration-gray-700 underline-offset-3;
+		@apply underline underline-offset-3;
+		color: var(--color-text);
+		text-decoration-color: var(--color-text);
 	}
 
 	.page-container h1 a {
 		@apply no-underline;
+		color: var(--color-text-heading);
+	}
+
+	.page-container h1 a:hover {
+		color: var(--color-text-hover);
 	}
 
 	.page-container .back-link {
 		@apply no-underline;
 	}
 
-	.grid {
-		@apply mb-[1.2em] text-gray-600;
-		display: grid;
-		grid-template-columns: 1fr 1fr;
-		grid-template-rows: 1fr 1fr;
+	/* Replaces text-gray-600 + group-hover:text-gray-800 in component markup */
+	.text-body {
+		color: var(--color-text);
+		transition: color 0.15s;
 	}
 
-	.separator {
-		@apply my-[1.2em] border-t border-gray-300;
+	.group:hover .text-body {
+		color: var(--color-text-hover);
+	}
+
+	/* Replaces text-gray-400 in component markup */
+	.text-muted {
+		color: var(--color-text-muted);
 	}
 
 	.section-link {
-		@apply no-underline inline-flex items-center gap-1 hover:text-gray-800 transition-colors;
+		@apply no-underline inline-flex items-center gap-1 transition-colors;
+		color: var(--color-text-heading);
+	}
+
+	.section-link:hover {
+		color: var(--color-text-hover);
 	}
 
 	.back-link {
-		@apply text-gray-600 hover:text-gray-800 no-underline inline-flex items-center gap-1 transition-colors;
+		@apply no-underline inline-flex items-center gap-1 transition-colors;
+		color: var(--color-text);
 		font-size: var(--text-label);
 	}
 
-	.arrow-icon-right {
+	.back-link:hover {
+		color: var(--color-text-hover);
+	}
+
+	.arrow-icon {
 		@apply h-4 w-3 transition-transform group-hover:rotate-45;
 	}
 
-	.arrow-icon-left {
-		@apply h-4 w-3 transition-transform group-hover:rotate-45;
+	.theme-toggle {
+		@apply inline-flex items-center justify-center transition-colors cursor-pointer;
+		color: var(--color-text-muted);
+		background: none;
+		border: none;
+		padding: 0;
+		line-height: 1;
 	}
+
+	.theme-toggle:hover {
+		color: var(--color-text-hover);
+	}
+}
+
+/* Prose links — @tailwindcss/typography sets color in @layer utilities, so override unlayered */
+html.dark .prose a {
+	color: var(--color-text);
+	text-decoration-color: var(--color-text);
+}
+
+html.dark .prose a:hover {
+	color: var(--color-text-hover);
 }
