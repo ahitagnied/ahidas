@@ -2,33 +2,16 @@
 	import Icon from '@iconify/svelte';
 	import ResearchItem from '$lib/components/ResearchItem.svelte';
 	import EssayItem from '$lib/components/EssayItem.svelte';
+	import ThemeToggle from '$lib/components/ThemeToggle.svelte';
 	import researchData from '$lib/data/research.yml?raw';
 	import yaml from 'js-yaml';
 	import { getPublishedEssays } from '$lib/utils/essays.js';
-	import { onMount } from 'svelte';
 
 	const researchItems = yaml.load(researchData);
 	const displayItems = researchItems.slice(0, 5);
 
 	const essays = getPublishedEssays();
 	const displayEssays = essays.slice(0, 5);
-
-	let dark = $state(false);
-
-	onMount(() => {
-		dark = document.documentElement.classList.contains('dark');
-	});
-
-	function toggleTheme() {
-		dark = !dark;
-		if (dark) {
-			document.documentElement.classList.add('dark');
-			localStorage.setItem('theme', 'dark');
-		} else {
-			document.documentElement.classList.remove('dark');
-			localStorage.setItem('theme', 'light');
-		}
-	}
 </script>
 
 <svelte:head>
@@ -42,16 +25,7 @@
 		>
 			Hi, I am Ahitagni!
 		</div>
-		<button
-			class="theme-toggle"
-			onclick={toggleTheme}
-			aria-label={dark ? 'Switch to light mode' : 'Switch to dark mode'}
-		>
-			<Icon
-				icon={dark ? 'mdi:weather-sunny' : 'mdi:weather-night'}
-				class="h-[1.1rem] w-[1.1rem]"
-			/>
-		</button>
+		<ThemeToggle />
 	</div>
 
 	<h1 id="about" class="pt-[25px]">ABOUT</h1>
@@ -124,12 +98,4 @@
 		<a href="https://linkedin.com/in/ahitagnid" target="_blank" rel="noopener noreferrer">LinkedIn</a>.
 	</p>
 
-	<div class="flex justify-end mt-[1.2em]">
-		<img
-			src="/images/stamp.webp"
-			alt="Stamp"
-			class="h-[50px] md:h-[60px] w-auto select-none block"
-			draggable="false"
-		/>
-	</div>
 </div>

@@ -1,5 +1,6 @@
 <script>
 	import Icon from '@iconify/svelte';
+	import ThemeToggle from '$lib/components/ThemeToggle.svelte';
 	import { page } from '$app/stores';
 	import MarkdownIt from 'markdown-it';
 	import markdownItFootnote from 'markdown-it-footnote';
@@ -144,10 +145,13 @@
 </svelte:head>
 
 <div class="page-container">
-	<a href="/essays" class="back-link mb-4 group">
-		<Icon icon="mdi:arrow-bottom-left" class="arrow-icon" />
-		Back
-	</a>
+	<div class="flex justify-between items-center mb-4">
+		<a href="/essays" class="back-link group">
+			<Icon icon="mdi:arrow-bottom-left" class="arrow-icon" />
+			Back
+		</a>
+		<ThemeToggle />
+	</div>
 
 	<div class="mb-6">
 		<div class="mb-1 font-[500] text-body text-[length:var(--text-lead)] md:text-[length:var(--text-display)]">
