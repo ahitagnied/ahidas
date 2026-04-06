@@ -37,7 +37,7 @@ Most of this I learned by being wrong first. I'm probably still wrong about some
 - A complete theory of intelligence. How does understanding emerge from experience?
 	- Why certain arrangements of matter produce understanding at all. What is the physical basis of intelligence?
 - The simulation-to-reality gap. How do you build a robot that learns the real world without ever having to live in it?
-- Can a system develop a structured understanding of the world from pure sensory experience?
+- Large-scale self-supervised learning. Can we recover the latent structure of the world directly from observations?
 
 ---
 
