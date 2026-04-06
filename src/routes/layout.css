@@ -20,12 +20,12 @@
 }
 
 html.dark {
-	--color-bg:           #141414;
-	--color-text:         #f0f0f0;
-	--color-text-heading: #a8a8a8;
-	--color-text-muted:   #b4b4b4;
-	--color-border:       #2e2e2e;
-	--color-text-hover:   #ffffff;
+	--color-bg:           #100F0F; /* Flexoki bg */
+	--color-text:         #CECDC3; /* Flexoki tx — primary text */
+	--color-text-heading: #878580; /* Flexoki tx-2 — section labels: ABOUT, RESEARCH… */
+	--color-text-muted:   #878580; /* Flexoki tx-2 — muted (dates, journals) */
+	--color-border:       #282726; /* Flexoki ui — borders */
+	--color-text-hover:   #DAD8CE; /* Flexoki base-150 — hover/emphasis */
 }
 
 @layer base {
