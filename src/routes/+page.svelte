@@ -29,43 +29,38 @@
 	<h1 id="about" class="pt-[25px]">ABOUT</h1>
 
 	<p>
-		I am the Founding Engineer at <a href="https://optica.industries/"
-			>Optica Industries</a
-		>, building the next American Metal Factory. We are backed by 
-		Lightspeed & Neo. If you are interested in joining,
-		<a href="https://calendly.com/ahitagnid/new-meeting">reach out</a>.
+		I am the Founding Engineer at <a href="https://optica.industries/">Optica Industries</a>,
+		building the next American Metal Factory. We are backed by Lightspeed, SV Angel, & Neo.
 	</p>
 
 	<p>
-		I am a part of <a href="https://neo.com/">Neo</a> and scout
-		pre-seed startups for <a href="https://www.clayvc.io/">Clay VC</a>. Previously, 
-		I worked on Robot Learning at <a href="https://personainc.ai/"
-		>Persona AI</a> to build Industrial Humanoids and researched Video 
+		I am a part of <a href="https://neo.com/">Neo</a> and scout for
+		<a href="https://www.clayvc.io/">Clay VC</a>. Previously, I worked on Robot Learning for
+		Industrial Humanoids at <a href="https://personainc.ai/">Persona AI</a> & researched Video
 		Understanding at <a href="https://www.sievedata.com/">Sieve Data</a> that powered
 		Petabyte-scale video datasets for Frontier AI Labs.
 	</p>
 
 	<p>
-		My current research interest is World Modelling, particularly 
-		using <a href="https://openreview.net/pdf?id=BZ5a1r-kVsf">JEPAs</a>. 
-		I research Multimodal JEPAs, 3D Vision, & Computational Imaging with 
-		<a href="https://scholar.google.com/citations?user=S1x_xqcAAAAJ&hl=en"> 
-		Randall Balesteiero</a> and <a
-			href="https://vivekboominathan.com/"
-			>Vivek Boominathan</a
-		>. Previously, I worked on Colloidal Robotics & Nanoelectronics at the
-		<a
-			href="https://www.media.mit.edu/groups/nano-cybernetic-biotrek/overview/"
-			>MIT Media Lab</a
-		>, <a href="https://ajayan.rice.edu/">Ajayan Group</a> &
-		<a href="https://scholar.google.com/citations?user=JlmilbMAAAAJ&hl=en"
-			>IIT Guwahati</a
-		>.
+		My current research interest is World Modelling &
+		<a href="https://openreview.net/pdf?id=BZ5a1r-kVsf">JEPAs</a>.
+		I research Multimodal JEPAs, 3D Vision, & Computational Imaging with
+		<a href="https://scholar.google.com/citations?user=S1x_xqcAAAAJ&hl=en">Randall Balesteiero</a>,
+		<a href="https://vivekboominathan.com/">Vivek Boominathan</a>, and
+		<a href="https://computationalimaging.rice.edu/team/ashok-veeraraghavan/">Ashok Veeraradhavan</a>.
+		Previously, I worked on Colloidal Robotics & Nanoelectronics at the
+		<a href="https://www.media.mit.edu/groups/nano-cybernetic-biotrek/overview/">MIT Media Lab</a>,
+		<a href="https://ajayan.rice.edu/">Ajayan Group</a> &
+		<a href="https://scholar.google.com/citations?user=JlmilbMAAAAJ&hl=en">IIT Guwahati</a>.
 	</p>
 
 	<p>
-		Grew up in Kolkata wanting to be a Theoretical Physicist — turns out building
-		things is just as fun. When I'm not, I'm sailing, hiking or traveling somewhere new.
+		<a href="/">Here</a> is a longer informal bio. I also
+		<a href="https://www.ahidas.com/essays/">write</a> about things that interest me.
+	</p>
+
+	<p>
+		
 	</p>
 
 	<h1 class="pt-[25px]">
