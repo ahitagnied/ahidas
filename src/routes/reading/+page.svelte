@@ -3,9 +3,8 @@
 	import ThemeToggle from '$lib/components/ThemeToggle.svelte';
 	import booksData from '$lib/data/books.yml?raw';
 	import yaml from 'js-yaml';
-	import { onDestroy, onMount } from 'svelte';
+	import { onMount } from 'svelte';
 
-	/** @type {any[]} */
 	const books = yaml.load(booksData);
 
 	let bookIndex = -1;
@@ -13,116 +12,77 @@
 	let isScrolling = false;
 	let viewportWidth = 0;
 
-	// Arrow element refs — event listeners attached once in onMount (mirrors Adam's useEffect)
-	/** @type {HTMLDivElement} */
-	let scrollLeftEl;
-	/** @type {HTMLDivElement} */
-	let scrollRightEl;
+	/** @type {HTMLDivElement} */ let scrollLeftEl;
+	/** @type {HTMLDivElement} */ let scrollRightEl;
+	/** @type {ReturnType<typeof setInterval>} */ let scrollTimer;
 
-	const W = 41.5;  // spine width px
-	const H = 220;   // book height px
-	const COVER = W * 4; // 166px
-	const BOOK  = W * 5; // 207.5px
+	const W = 41.5;
+	const H = 220;
+	const COVER = W * 4;
+	const BOOK  = W * 5;
+
+	const clamp = (v, lo, hi) => Math.max(lo, Math.min(hi, v));
 
 	$: booksInViewport = viewportWidth / (W + 11);
-	$: maxScroll = Math.max(
-		0,
-		(W + 12) * (books.length - booksInViewport) + (bookIndex > -1 ? COVER : 0) + 5
-	);
-	// Re-clamp when maxScroll shrinks (viewport resize). Mirrors Adam's viewportDimensions effect.
+	$: maxScroll = Math.max(0, (W + 12) * (books.length - booksInViewport) + (bookIndex > -1 ? COVER : 0) + 5);
 	$: if (scroll > maxScroll) scroll = maxScroll;
 
-	const clamp = (/** @type {number} */ v, /** @type {number} */ lo, /** @type {number} */ hi) =>
-		Math.max(lo, Math.min(hi, v));
-
-	/** @param {number} inc */
-	function boundedRelativeScroll(inc) {
-		const next = clamp(scroll + inc, 0, maxScroll);
-		scroll = next;
-		// Auto-stop when a bound is hit — prevents isScrolling getting stuck if the arrow
-		// element becomes display:none while the cursor is still over it (display:none does
-		// not reliably fire mouseleave in all browsers).
-		if (next === 0 || next === maxScroll) stopScroll();
+	function stopScroll() {
+		isScrolling = false;
+		clearInterval(scrollTimer);
 	}
 
-	/** @param {number} i */
 	function selectBook(i) {
 		if (i === bookIndex) {
 			bookIndex = -1;
-			// Clamp scroll atomically — mirrors Adam's boundedRelativeScroll(0).
 			const closedMax = Math.max(0, (W + 12) * (books.length - booksInViewport) + 5);
 			if (scroll > closedMax) scroll = closedMax;
 			return;
 		}
 		bookIndex = i;
 		const openMax = Math.max(0, (W + 12) * (books.length - booksInViewport) + COVER + 5);
-
-		// "Scroll just enough" — only move if the full open book (spine + cover) isn't
-		// already visible. This avoids pulling end-of-shelf books to the center.
 		const bookLeft = i * (W + 12);
 		const bookRight = bookLeft + BOOK;
 		if (bookRight > scroll + viewportWidth) {
-			// Cover would be clipped on the right — scroll right just enough to show it.
 			scroll = clamp(bookRight - viewportWidth, 0, openMax);
 		} else if (bookLeft < scroll) {
-			// Spine is off-screen left — scroll left to show it.
 			scroll = clamp(bookLeft, 0, openMax);
 		}
-		// else: full open book already fits in viewport — open in place, no scroll.
-	}
-
-	/** @type {ReturnType<typeof setInterval> | null} */
-	let scrollTimer = null;
-
-	function stopScroll() {
-		isScrolling = false;
-		if (scrollTimer) { clearInterval(scrollTimer); scrollTimer = null; }
 	}
 
 	onMount(() => {
-		// Mirrors Adam's useEffect([boundedRelativeScroll]) that attaches scroll arrow listeners.
-		// Keeping arrows always in the DOM (display:none when inactive) and attaching listeners
-		// once ensures mouseleave fires reliably and isScrolling is never left stuck.
-
-		/**
-		 * @param {HTMLDivElement} el
-		 * @param {number} dir
-		 */
 		function attachArrow(el, dir) {
 			const onStart = () => {
 				isScrolling = true;
-				if (scrollTimer) clearInterval(scrollTimer);
-				scrollTimer = setInterval(() => boundedRelativeScroll(dir * 3), 10);
+				clearInterval(scrollTimer);
+				scrollTimer = setInterval(() => {
+					const next = clamp(scroll + dir * 3, 0, maxScroll);
+					scroll = next;
+					if (next === 0 || next === maxScroll) stopScroll();
+				}, 10);
 			};
-			const onStop = () => stopScroll();
-
 			el.addEventListener('mouseenter', onStart);
-			el.addEventListener('mouseleave', onStop);
+			el.addEventListener('mouseleave', stopScroll);
 			el.addEventListener('touchstart', onStart);
-			el.addEventListener('touchend',   onStop);
-
+			el.addEventListener('touchend', stopScroll);
 			return () => {
-				onStop();
+				stopScroll();
 				el.removeEventListener('mouseenter', onStart);
-				el.removeEventListener('mouseleave', onStop);
+				el.removeEventListener('mouseleave', stopScroll);
 				el.removeEventListener('touchstart', onStart);
-				el.removeEventListener('touchend',   onStop);
+				el.removeEventListener('touchend', stopScroll);
 			};
 		}
-
 		const detachLeft  = attachArrow(scrollLeftEl,  -1);
 		const detachRight = attachArrow(scrollRightEl,  1);
 		return () => { detachLeft(); detachRight(); };
 	});
-
-	onDestroy(stopScroll);
 </script>
 
 <svelte:head>
 	<title>Reading | Ahitagni D</title>
 </svelte:head>
 
-<!-- SVG paper texture filter — referenced by url(#paper) on the overlay spans -->
 <svg class="paper-svg">
 	<defs>
 		<filter id="paper" x="0%" y="0%" width="100%" height="100%">
@@ -151,15 +111,9 @@
 	</div>
 
 	<div class="shelf">
-		<!-- Left arrow — always in DOM, display:none when not needed (matches Adam's approach) -->
-		<div
-			bind:this={scrollLeftEl}
-			class="arrow arrow-left"
+		<div bind:this={scrollLeftEl} class="arrow arrow-left"
 			style:display={scroll > 0 ? 'flex' : 'none'}
-			role="button"
-			tabindex="-1"
-			aria-label="Scroll left"
-		>
+			role="button" tabindex="-1" aria-label="Scroll left">
 			<Icon icon="mdi:chevron-left" width="12" height="12" />
 		</div>
 
@@ -176,22 +130,15 @@
 						aria-label="{book.title} by {book.author}"
 						aria-pressed={open}
 					>
-						<!-- Spine -->
-						<div
-							class="spine"
+						<div class="spine"
 							style:background-color={book.spineColor ?? '#555'}
 							style:color={book.textColor ?? '#fff'}
-							style:transform="translate3d(0,0,0) scale3d(1,1,1) rotateX(0deg) rotateY({open ? '-60deg' : '0deg'}) rotateZ(0deg) skew(0deg,0deg)"
-						>
+							style:transform="translate3d(0,0,0) rotateY({open ? '-60deg' : '0deg'})">
 							<span class="paper-overlay"></span>
 							<span class="title">{book.title}</span>
 						</div>
-
-						<!-- Cover -->
-						<div
-							class="cover"
-							style:transform="translate3d(0,0,0) scale3d(1,1,1) rotateX(0deg) rotateY({open ? '30deg' : '88.8deg'}) rotateZ(0deg) skew(0deg,0deg)"
-						>
+						<div class="cover"
+							style:transform="translate3d(0,0,0) rotateY({open ? '30deg' : '88.8deg'})">
 							<span class="paper-overlay cover-paper"></span>
 							<span class="binding"></span>
 							<img src={book.coverImage} alt="{book.title} cover" class="cover-img" loading="lazy" />
@@ -201,15 +148,9 @@
 			</div>
 		</div>
 
-		<!-- Right arrow — always in DOM, display:none when not needed -->
-		<div
-			bind:this={scrollRightEl}
-			class="arrow arrow-right"
+		<div bind:this={scrollRightEl} class="arrow arrow-right"
 			style:display={scroll < maxScroll ? 'flex' : 'none'}
-			role="button"
-			tabindex="-1"
-			aria-label="Scroll right"
-		>
+			role="button" tabindex="-1" aria-label="Scroll right">
 			<Icon icon="mdi:chevron-right" width="12" height="12" />
 		</div>
 	</div>
@@ -249,14 +190,11 @@
 		flex-shrink: 0;
 		height: var(--H);
 		perspective: 1000px;
-		-webkit-perspective: 1000px;
-		gap: 0;
 		border: none;
 		padding: 0;
 		background: none;
 		cursor: pointer;
 		outline: none;
-		will-change: auto;
 	}
 
 	.spine {
@@ -271,7 +209,6 @@
 		filter: brightness(0.8) contrast(2);
 		overflow: hidden;
 		transition: all 500ms ease;
-		will-change: auto;
 	}
 
 	.cover {
@@ -284,11 +221,9 @@
 		transform-style: preserve-3d;
 		filter: brightness(0.8) contrast(2);
 		transition: all 500ms ease;
-		will-change: auto;
 	}
 
-	/* position:fixed inside a CSS-transformed ancestor anchors to that ancestor, not the
-	   viewport — so these overlays cover their respective spine / cover panels. */
+	/* position:fixed inside a transformed ancestor anchors to that ancestor, not the viewport */
 	.paper-overlay {
 		pointer-events: none;
 		position: fixed;
@@ -326,14 +261,14 @@
 		z-index: 50;
 		background: linear-gradient(
 			to right,
-			rgba(255, 255, 255, 0)    2px,
-			rgba(255, 255, 255, 0.5)  3px,
-			rgba(255, 255, 255, 0.25) 4px,
-			rgba(255, 255, 255, 0.25) 6px,
-			transparent               7px,
-			transparent               9px,
-			rgba(255, 255, 255, 0.25) 9px,
-			transparent               12px
+			rgba(255,255,255,0)    2px,
+			rgba(255,255,255,0.5)  3px,
+			rgba(255,255,255,0.25) 4px,
+			rgba(255,255,255,0.25) 6px,
+			transparent            7px,
+			transparent            9px,
+			rgba(255,255,255,0.25) 9px,
+			transparent            12px
 		);
 	}
 
@@ -342,8 +277,6 @@
 		height: var(--H);
 		object-fit: cover;
 		display: block;
-		transition: all 500ms ease;
-		will-change: auto;
 	}
 
 	.arrow {
@@ -359,17 +292,8 @@
 		transition: color 0.15s;
 	}
 
-	.arrow:hover {
-		color: var(--color-text-hover);
-	}
+	.arrow:hover { color: var(--color-text-hover); }
 
-	.arrow-left {
-		left: 0;
-		background: linear-gradient(to right, var(--color-bg) 60%, transparent);
-	}
-
-	.arrow-right {
-		right: 0;
-		background: linear-gradient(to left, var(--color-bg) 60%, transparent);
-	}
+	.arrow-left  { left: 0;  background: linear-gradient(to right, var(--color-bg) 60%, transparent); }
+	.arrow-right { right: 0; background: linear-gradient(to left,  var(--color-bg) 60%, transparent); }
 </style>
