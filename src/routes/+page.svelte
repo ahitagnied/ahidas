@@ -57,8 +57,8 @@
 	</p>
 
 	<p>
-		<a href="/about">Here</a> is a longer informal bio. I also
-		<a href="https://www.ahidas.com/essays/">write</a> about things that interest me.
+		<a href="/about">Here</a> is a longer informal bio. I also like to <a href="/reading">read</a>
+		and <a href="https://www.ahidas.com/essays/">write</a> about things that interest me.
 	</p>
 
 	<h1 class="pt-[25px]">
