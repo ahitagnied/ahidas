@@ -156,11 +156,14 @@ import { onMount } from 'svelte';
 	{#if bookIndex === -1}
 		<div transition:fade={{ duration: 150 }}>
 			{#each sortedBooks as book, i}
+				{@const idx = books.indexOf(book)}
 				{#if i > 0}<hr class="divider" />{/if}
 				<div class="list-entry">
-					<img src={book.coverImage} alt={book.title} class="list-cover" />
+					<button class="list-cover-btn" onclick={() => selectBook(idx)} aria-label="Open {book.title}">
+						<img src={book.coverImage} alt={book.title} class="list-cover" />
+					</button>
 					<div class="list-info">
-						<div class="entry-title">{book.title}</div>
+						<button class="entry-title" onclick={() => selectBook(idx)}>{book.title}</button>
 						<div class="entry-author">{book.author}</div>
 						<div class="entry-meta">Read: {book.date} · {book.rating}/10</div>
 						<p class="entry-desc">{book.description}</p>
@@ -171,7 +174,7 @@ import { onMount } from 'svelte';
 	{:else}
 		{@const book = books[bookIndex]}
 		<div transition:fade={{ duration: 150 }}>
-			<div class="entry-title">{book.title}</div>
+			<button class="entry-title" onclick={() => selectBook(bookIndex)}>{book.title}</button>
 			<div class="entry-meta">By: {book.author} · Read: {book.date} · {book.rating}/10</div>
 			<p class="entry-desc">{book.description}</p>
 		</div>
@@ -332,13 +335,24 @@ import { onMount } from 'svelte';
 		gap: 20px;
 	}
 
+	.list-cover-btn {
+		flex-shrink: 0;
+		background: none;
+		border: none;
+		padding: 0;
+		cursor: pointer;
+		display: block;
+	}
+
 	.list-cover {
 		height: 100px;
 		width: auto;
-		flex-shrink: 0;
 		border: 1px solid var(--color-border);
 		display: block;
+		transition: opacity 0.15s;
 	}
+
+	.list-cover-btn:hover .list-cover { opacity: 0.75; }
 
 	@media (min-width: 640px) {
 		.list-cover { height: 130px; }
@@ -354,7 +368,15 @@ import { onMount } from 'svelte';
 		font-size: var(--text-lead);
 		font-weight: 500;
 		margin-bottom: 2px;
+		background: none;
+		border: none;
+		padding: 0;
+		cursor: pointer;
+		text-align: left;
+		transition: color 0.15s;
 	}
+
+	.entry-title:hover { color: var(--color-text); }
 
 	@media (min-width: 768px) {
 		.entry-title { font-size: var(--text-display); }
