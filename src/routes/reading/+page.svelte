@@ -150,8 +150,6 @@
 
 	<hr class="divider" />
 
-	<!-- List: always in DOM, collapses via CSS grid when a book is selected.
-	     This avoids any layout jump from Svelte mounting/unmounting large content. -->
 	<div class="list-panel" class:list-collapsed={bookIndex !== -1}>
 		<div class="list-inner">
 			{#each sortedBooks as book, i}
@@ -372,10 +370,6 @@
 
 	.list-cover-btn:hover .list-cover { opacity: 0.75; }
 
-	@media (min-width: 768px) {
-		.list-cover { height: 130px; }
-	}
-
 	.list-info {
 		flex: 1;
 		min-width: 0;
@@ -397,6 +391,7 @@
 	.entry-title:hover { color: var(--color-text); }
 
 	@media (min-width: 768px) {
+		.list-cover  { height: 130px; }
 		.entry-title { font-size: var(--text-display); }
 	}
 
