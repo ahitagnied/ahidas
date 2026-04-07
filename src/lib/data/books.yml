@@ -1,0 +1,179 @@
+- title: "Several Short Sentences About Writing"
+  author: "Verlyn Klinkenborg"
+  date: "July 2023"
+  rating: 10
+  coverImage: "https://covers.openlibrary.org/b/isbn/9780307279415-L.jpg"
+  spineColor: "#2C3E50"
+  textColor: "#ECF0F1"
+  description: "The most insightful book on writing I've found. The author's philosophy is simple — the sentence is the fundamental unit of writing. If you focus on making each sentence great, your writing will be great. The value density of this book is what all books should aspire to be."
+
+- title: "On Intelligence"
+  author: "Jeff Hawkins"
+  date: "December 2020"
+  rating: 9
+  coverImage: "https://covers.openlibrary.org/b/isbn/9780805074567-L.jpg"
+  spineColor: "#1B3A4B"
+  textColor: "#C8DADF"
+  description: "The best explanation of the neuroscientific basis of intelligence. Highlights the key principles enabling intelligence in the brain: hierarchical structure, memory-prediction frameworks, invariant representations, and auto-associations. Written decades ago, many of its insights directly correspond to the most defining advances in modern AI."
+
+- title: "Zero to One"
+  author: "Peter Thiel"
+  date: "July 2022"
+  rating: 9
+  coverImage: "https://covers.openlibrary.org/b/isbn/9780804139021-L.jpg"
+  spineColor: "#1A1A2E"
+  textColor: "#C8C8E0"
+  description: "The bible of starting a massive technology company. First principles on what to work on, how to create massive value, and how to capture part of that value to build a valuable company."
+
+- title: "High Output Management"
+  author: "Andy Grove"
+  date: "May 2024"
+  rating: 9
+  coverImage: "https://covers.openlibrary.org/b/isbn/9780679762881-L.jpg"
+  spineColor: "#4A4E69"
+  textColor: "#F2E9E4"
+  description: "An insightful guide to management strategy formed by Andy Grove's decades leading Intel. Opinionated in the best way — the only reference that explains all of management in terms of its first principles."
+
+- title: "7 Powers"
+  author: "Hamilton Helmer"
+  date: "January 2024"
+  rating: 9
+  coverImage: "https://covers.openlibrary.org/b/isbn/9780998116310-L.jpg"
+  spineColor: "#6B2D3E"
+  textColor: "#F5E8E0"
+  description: "The defining work on business strategy. An exhaustive list of business strategies that yield long-term value, framed in terms of benefits to incumbents and barriers to competitors. Provides a high-level map of building companies that is often missing in how startup knowledge is communicated."
+
+- title: "The Lessons of History"
+  author: "Will & Ariel Durant"
+  date: "May 2024"
+  rating: 9
+  coverImage: "https://covers.openlibrary.org/b/isbn/9780671418957-L.jpg"
+  spineColor: "#556B2F"
+  textColor: "#F0E68C"
+  description: "After writing their 11-volume series on Western civilization, the Durants distilled their meta-observations into this 100-page masterpiece. It reveals unintuitive empirical truths about human nature through the lens of history."
+
+- title: "On Writing Well"
+  author: "William Zinsser"
+  date: "April 2023"
+  rating: 9
+  coverImage: "https://covers.openlibrary.org/b/isbn/9780060891541-L.jpg"
+  spineColor: "#C4956A"
+  textColor: "#3D1C02"
+  description: "A concise, high value density book on writing. A minimalist approach focused on stripping out everything unnecessary and making sure every word serves a purpose. Great perspective on what writing in your own voice actually means."
+
+- title: "Antifragile"
+  author: "Nassim Taleb"
+  date: "May 2024"
+  rating: 8
+  coverImage: "https://covers.openlibrary.org/b/isbn/9781400067824-L.jpg"
+  spineColor: "#2C4A52"
+  textColor: "#B2D8D8"
+  description: "In a world full of randomness and disorder, building things that benefit from volatility is the only way to ensure robustness. Taleb shows how everything that has stood the test of time is antifragile, and how to use this principle to improve decision making."
+
+- title: "Atomic Habits"
+  author: "James Clear"
+  date: "May 2021"
+  rating: 8
+  coverImage: "https://covers.openlibrary.org/b/isbn/9780735211292-L.jpg"
+  spineColor: "#F5F0E0"
+  textColor: "#2C1810"
+  description: "The definitive book on building habits. Extremely information-dense with useful strategies. Building habits is a critical skill, so reading this book is critical. The insight that identity change is the most effective form of behavior change is alone worth the read."
+
+- title: "The Almanack of Naval Ravikant"
+  author: "Eric Jorgenson"
+  date: "December 2022"
+  rating: 8
+  coverImage: "https://covers.openlibrary.org/b/isbn/9781544514215-L.jpg"
+  spineColor: "#C4622D"
+  textColor: "#FFF8F0"
+  description: "All of Naval's online advice organized into a comprehensive structure around achieving happiness and financial freedom. Very high readability with great boiled-down insights on time allocation, what to optimize for, and how to be happy."
+
+- title: "Ego is the Enemy"
+  author: "Ryan Holiday"
+  date: "January 2023"
+  rating: 8
+  coverImage: "https://covers.openlibrary.org/b/isbn/9781591847816-L.jpg"
+  spineColor: "#3D3D3D"
+  textColor: "#E8E8E8"
+  description: "Required reading for all ambitious young people. Covers the classic pitfalls of ego — especially relevant for those exposed to startups and Silicon Valley at a young age. The chapter on 'The Canvas Method' is especially valuable."
+
+- title: "Elon Musk"
+  author: "Walter Isaacson"
+  date: "July 2024"
+  rating: 8
+  coverImage: "https://covers.openlibrary.org/b/isbn/9781982181284-L.jpg"
+  spineColor: "#0A0A0A"
+  textColor: "#C0C0C0"
+  description: "Isaacson highlights the right stories to provide a full picture and let you draw your own conclusions. Elon is exceptionally agentic, aggressively first-principled, and constantly gravitates toward risk. An affirmation that you can achieve incredible results with a wide variety of dispositions as long as you possess a few essential qualities."
+
+- title: "Blitzscaling"
+  author: "Reid Hoffman"
+  date: "December 2023"
+  rating: 8
+  coverImage: "https://covers.openlibrary.org/b/isbn/9781524761417-L.jpg"
+  spineColor: "#CC2200"
+  textColor: "#FFFFFF"
+  description: "Blitzscaling is the process of scaling by strategically prioritizing rapid growth above everything else. Google, LinkedIn, Facebook, Uber, and Airbnb all used this strategy to reach massive scale. The idea of scaling rapidly to dominate the market after hitting PMF is electric."
+
+- title: "Thinking in Bets"
+  author: "Annie Duke"
+  date: "June 2024"
+  rating: 7
+  coverImage: "https://covers.openlibrary.org/b/isbn/9780735216372-L.jpg"
+  spineColor: "#1B4332"
+  textColor: "#D8F3DC"
+  description: "The correct framework for all long-term decision making. Reality is fundamentally unpredictable. Life is a game of poker, not chess — map out possibilities, assign probabilities, make decisions thoughtfully, and update beliefs from outcomes."
+
+- title: "Sapiens"
+  author: "Yuval Noah Harari"
+  date: "March 2021"
+  rating: 7
+  coverImage: "https://covers.openlibrary.org/b/isbn/9780062316097-L.jpg"
+  spineColor: "#8B3A2A"
+  textColor: "#F5E6D3"
+  description: "A creative non-traditional history of humanity exploring how shared myths have shaped our species. The lens of religions, businesses, and language as shared fictions casts new light on how civilization operates."
+
+- title: "Principles"
+  author: "Ray Dalio"
+  date: "February 2023"
+  rating: 7
+  coverImage: "https://covers.openlibrary.org/b/isbn/9781501124020-L.jpg"
+  spineColor: "#2C3E50"
+  textColor: "#BDC3C7"
+  description: "The most valuable idea: create an explicit set of personal principles for decision making. Personal principles are usually implicit and come from intuition — making them explicit is valuable. The concept of an idea meritocracy is worth internalizing."
+
+- title: "Chip War"
+  author: "Chris Miller"
+  date: "March 2024"
+  rating: 7
+  coverImage: "https://covers.openlibrary.org/b/isbn/9781982172008-L.jpg"
+  spineColor: "#5D5D5D"
+  textColor: "#E0E0E0"
+  description: "The entire history of the semiconductor industry. Fascinating to see how economic incentives created the most rapidly innovating industry in human history, and how urgently the United States and China are competing for control of the chip manufacturing supply chain."
+
+- title: "Wild Problems"
+  author: "Russ Roberts"
+  date: "January 2024"
+  rating: 8
+  coverImage: "https://covers.openlibrary.org/b/isbn/9780593418765-L.jpg"
+  spineColor: "#3D5A80"
+  textColor: "#E0FBFC"
+  description: "Some life decisions — where to live, who to marry, what to do with your life — force you to choose with incomplete information and no obvious answers. This book offers counter-intuitive frameworks for navigating these wild problems and what to optimize for to maximize flourishing."
+
+- title: "Life 3.0"
+  author: "Max Tegmark"
+  date: "June 2021"
+  rating: 7
+  coverImage: "https://covers.openlibrary.org/b/isbn/9781101946596-L.jpg"
+  spineColor: "#1A1A2E"
+  textColor: "#7B8FD4"
+  description: "A broad introduction to what the future of AI could hold for humanity, and the ethical considerations we should take into account as we move forward. The opening thought experiment is a compelling imagination of what general intelligence could look like."
+
+- title: "The Power of Now"
+  author: "Eckhart Tolle"
+  date: "February 2021"
+  rating: 7
+  coverImage: "https://covers.openlibrary.org/b/isbn/9781577311522-L.jpg"
+  spineColor: "#7B6B4E"
+  textColor: "#F5F0E0"
+  description: "The core message of spirituality condensed into an accessible format focused on the importance of the present moment as a path toward self-realization. A great first book on the topic, easier to understand than most eastern philosophy."
