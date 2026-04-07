@@ -1,179 +1,145 @@
-- title: "Several Short Sentences About Writing"
-  author: "Verlyn Klinkenborg"
-  date: "July 2023"
-  rating: 10
-  coverImage: "https://covers.openlibrary.org/b/isbn/9780307279415-L.jpg"
-  spineColor: "#2C3E50"
-  textColor: "#ECF0F1"
-  description: "The most insightful book on writing I've found. The author's philosophy is simple — the sentence is the fundamental unit of writing. If you focus on making each sentence great, your writing will be great. The value density of this book is what all books should aspire to be."
+- title: "Man's Search for Meaning"
+  author: "Viktor E. Frankl"
+  date: "August 2025"
+  rating: 9
+  coverImage: "https://m.media-amazon.com/images/I/71tdb1udZnL._SL1500_.jpg"
+  spineColor: "#b1a0bd"
+  textColor: "#255054"
+  description: |
+    Frankl argues that meaning emerges not from pleasure or power, but from how we respond to unavoidable suffering. Writing from Auschwitz, he observes that those who survived had something to live for: a task, a person, a future worth enduring hell for. The insight cuts through therapeutic abstractions: meaning isn't found, it's chosen.
+
+    What strikes me most is his refusal to romanticize trauma. Suffering doesn't automatically create meaning. Only our response to it does. This reframes every setback as a choice point: will this break me or reveal what I'm capable of? The book became my compass during difficult periods, not because it promises easy answers, but because it insists we always retain the freedom to choose our stance.
+
+    "Everything can be taken from a man but one thing: the last of the human freedoms: to choose one's attitude in any given set of circumstances, to choose one's own way."
+
+    "Those who have a 'why' to live, can bear with almost any 'how'."
+
+    "When we are no longer able to change a situation, we are challenged to change ourselves."
 
 - title: "On Intelligence"
   author: "Jeff Hawkins"
-  date: "December 2020"
+  date: "July 2025"
+  rating: 9.3
+  coverImage: "https://m.media-amazon.com/images/I/41PbdH-FFEL._SY445_SX342_.jpg"
+  spineColor: "#11599C"
+  textColor: "#ffffff"
+  description: |
+    Hawkins argues intelligence is prediction, not pattern matching. The neocortex runs one hierarchical, sparse algorithm everywhere: modeling sequences, anticipating next steps, correcting errors. This theory unifies perception, action, and understanding under a single framework: building and maintaining a temporal world model.
+
+    The challenge to modern ML is direct. Scaling transformers isn't the same as building a cortex. Real intelligence requires temporal structure, top-down prediction, sparse composition, and continual learning. Not labeled datasets and static distributions. Even as LLMs improve, the gap remains: they fit patterns, not maintain models that self-correct in real time.
+
+    The arguments lack formal rigor and implementation detail, but that's acceptable. A sharp theory that directs inquiry beats scattered heuristics. This provides orientation. Specific enough to test, practical enough to build from.
+
+- title: "Ikigai"
+  author: "Hector Garcia and Francesc Miralles"
+  date: "June 2025"
+  rating: 8.7
+  coverImage: "https://m.media-amazon.com/images/I/41nS26MN37L._SY445_SX342_.jpg"
+  spineColor: "#9FD2D6"
+  textColor: "#255054"
+  description: |
+    Ikigai locates purpose not in grand callings but in daily rituals: tea with neighbors, morning walks, communal dance. Garcia and Miralles study Okinawan centenarians to show how meaning emerges from consistency, not ambition. Purpose becomes social, not heroic.
+
+    The book's weakness is its reluctance to prescribe. "Follow what excites you" is true but insufficient without mechanisms. It describes the state but not the path. Still, the reframing matters: purpose as ember rather than explosion, maintained through small acts rather than singular breakthroughs.
+
+- title: "Hōjōki"
+  author: "Kamo no Chomei"
+  date: "May 2025"
+  rating: 5
+  coverImage: "https://m.media-amazon.com/images/I/71uGuMfWvSL._SL1500_.jpg"
+  spineColor: "#feedc4"
+  textColor: "#900C3F"
+  description: |
+    Chōmei catalogs 12th-century disasters: fires, famines, earthquakes, then retreats to a hut. The disasters are vivid but serve only as preamble. The hut life, which should be the core, offers no meditation on solitude or its effects on consciousness. At 2,000 words, it gestures toward impermanence without developing the thought. If you want Buddhist philosophy or hermit wisdom, this isn't it.
+
+- title: "Booksellers of Kabul"
+  author: "Åsne Seierstad"
+  date: "April 2025"
   rating: 9
-  coverImage: "https://covers.openlibrary.org/b/isbn/9780805074567-L.jpg"
-  spineColor: "#1B3A4B"
-  textColor: "#C8DADF"
-  description: "The best explanation of the neuroscientific basis of intelligence. Highlights the key principles enabling intelligence in the brain: hierarchical structure, memory-prediction frameworks, invariant representations, and auto-associations. Written decades ago, many of its insights directly correspond to the most defining advances in modern AI."
-
-- title: "Zero to One"
-  author: "Peter Thiel"
-  date: "July 2022"
-  rating: 9
-  coverImage: "https://covers.openlibrary.org/b/isbn/9780804139021-L.jpg"
-  spineColor: "#1A1A2E"
-  textColor: "#C8C8E0"
-  description: "The bible of starting a massive technology company. First principles on what to work on, how to create massive value, and how to capture part of that value to build a valuable company."
-
-- title: "High Output Management"
-  author: "Andy Grove"
-  date: "May 2024"
-  rating: 9
-  coverImage: "https://covers.openlibrary.org/b/isbn/9780679762881-L.jpg"
-  spineColor: "#4A4E69"
-  textColor: "#F2E9E4"
-  description: "An insightful guide to management strategy formed by Andy Grove's decades leading Intel. Opinionated in the best way — the only reference that explains all of management in terms of its first principles."
-
-- title: "7 Powers"
-  author: "Hamilton Helmer"
-  date: "January 2024"
-  rating: 9
-  coverImage: "https://covers.openlibrary.org/b/isbn/9780998116310-L.jpg"
-  spineColor: "#6B2D3E"
-  textColor: "#F5E8E0"
-  description: "The defining work on business strategy. An exhaustive list of business strategies that yield long-term value, framed in terms of benefits to incumbents and barriers to competitors. Provides a high-level map of building companies that is often missing in how startup knowledge is communicated."
-
-- title: "The Lessons of History"
-  author: "Will & Ariel Durant"
-  date: "May 2024"
-  rating: 9
-  coverImage: "https://covers.openlibrary.org/b/isbn/9780671418957-L.jpg"
-  spineColor: "#556B2F"
-  textColor: "#F0E68C"
-  description: "After writing their 11-volume series on Western civilization, the Durants distilled their meta-observations into this 100-page masterpiece. It reveals unintuitive empirical truths about human nature through the lens of history."
-
-- title: "On Writing Well"
-  author: "William Zinsser"
-  date: "April 2023"
-  rating: 9
-  coverImage: "https://covers.openlibrary.org/b/isbn/9780060891541-L.jpg"
-  spineColor: "#C4956A"
-  textColor: "#3D1C02"
-  description: "A concise, high value density book on writing. A minimalist approach focused on stripping out everything unnecessary and making sure every word serves a purpose. Great perspective on what writing in your own voice actually means."
-
-- title: "Antifragile"
-  author: "Nassim Taleb"
-  date: "May 2024"
-  rating: 8
-  coverImage: "https://covers.openlibrary.org/b/isbn/9781400067824-L.jpg"
-  spineColor: "#2C4A52"
-  textColor: "#B2D8D8"
-  description: "In a world full of randomness and disorder, building things that benefit from volatility is the only way to ensure robustness. Taleb shows how everything that has stood the test of time is antifragile, and how to use this principle to improve decision making."
-
-- title: "Atomic Habits"
-  author: "James Clear"
-  date: "May 2021"
-  rating: 8
-  coverImage: "https://covers.openlibrary.org/b/isbn/9780735211292-L.jpg"
-  spineColor: "#F5F0E0"
-  textColor: "#2C1810"
-  description: "The definitive book on building habits. Extremely information-dense with useful strategies. Building habits is a critical skill, so reading this book is critical. The insight that identity change is the most effective form of behavior change is alone worth the read."
-
-- title: "The Almanack of Naval Ravikant"
-  author: "Eric Jorgenson"
-  date: "December 2022"
-  rating: 8
-  coverImage: "https://covers.openlibrary.org/b/isbn/9781544514215-L.jpg"
-  spineColor: "#C4622D"
-  textColor: "#FFF8F0"
-  description: "All of Naval's online advice organized into a comprehensive structure around achieving happiness and financial freedom. Very high readability with great boiled-down insights on time allocation, what to optimize for, and how to be happy."
-
-- title: "Ego is the Enemy"
-  author: "Ryan Holiday"
-  date: "January 2023"
-  rating: 8
-  coverImage: "https://covers.openlibrary.org/b/isbn/9781591847816-L.jpg"
-  spineColor: "#3D3D3D"
-  textColor: "#E8E8E8"
-  description: "Required reading for all ambitious young people. Covers the classic pitfalls of ego — especially relevant for those exposed to startups and Silicon Valley at a young age. The chapter on 'The Canvas Method' is especially valuable."
-
-- title: "Elon Musk"
-  author: "Walter Isaacson"
-  date: "July 2024"
-  rating: 8
-  coverImage: "https://covers.openlibrary.org/b/isbn/9781982181284-L.jpg"
-  spineColor: "#0A0A0A"
-  textColor: "#C0C0C0"
-  description: "Isaacson highlights the right stories to provide a full picture and let you draw your own conclusions. Elon is exceptionally agentic, aggressively first-principled, and constantly gravitates toward risk. An affirmation that you can achieve incredible results with a wide variety of dispositions as long as you possess a few essential qualities."
-
-- title: "Blitzscaling"
-  author: "Reid Hoffman"
-  date: "December 2023"
-  rating: 8
-  coverImage: "https://covers.openlibrary.org/b/isbn/9781524761417-L.jpg"
-  spineColor: "#CC2200"
+  coverImage: "https://m.media-amazon.com/images/I/61KvqqXRXKL._SL1500_.jpg"
+  spineColor: "#6cbad8"
   textColor: "#FFFFFF"
-  description: "Blitzscaling is the process of scaling by strategically prioritizing rapid growth above everything else. Google, LinkedIn, Facebook, Uber, and Airbnb all used this strategy to reach massive scale. The idea of scaling rapidly to dominate the market after hitting PMF is electric."
+  description: |
+    Seierstad embeds with Sultan Khan's family to map post-Taliban Kabul. The strength is specificity: how daughters resist within constraints, how Khan reconciles old loyalties with new freedoms, how a bookshop becomes contested ground between tradition and change. The personal renders the political legible. Afghanistan's transformation visible in one household's tensions.
 
-- title: "Thinking in Bets"
-  author: "Annie Duke"
-  date: "June 2024"
+    The prose stays spare. Details accumulate without ornament, building understanding through accretion. Strong narrative journalism. Empathetic but unsentimental.
+
+- title: "Shoe Dog"
+  author: "Phil Knight"
+  date: "May 2025"
+  rating: 8.5
+  coverImage: "https://m.media-amazon.com/images/I/81lxD2yoNRL._SL1500_.jpg"
+  spineColor: "#0c191e"
+  textColor: "#F1E9DA"
+  description: |
+    Knight's memoir strips away the myth of Nike's inevitability. What emerges is contingency: cash flow crises, supplier betrayals, lawsuits, near-death moments. The company survives not through vision but through stubborn endurance and improvisation. The lesson isn't about passion or purpose. It's about continuing when stopping seems rational.
+
+    His management philosophy is anti-bureaucratic: set direction, then get out of the way. Trust people to solve problems you didn't anticipate. The book's power is in its honesty about fear, failure, and the randomness of success.
+
+    "The cowards never started, and the weak died along the way. That leaves us."
+
+    "Every runner knows this. You run and run, mile after mile, and you never quite know why. You tell yourself that you're running toward some goal, chasing some rush, but really you run because the alternative, stopping, scares you to death."
+
+    "Don't tell people how to do things, tell them what to do and let them surprise you with their results."
+
+    "There were many ways down Mount Fuji, according to my guidebook, but only one way up. Life lesson in that, I thought."
+
+- title: "The Alchemist"
+  author: "Paulo Coelho"
+  date: "April 2025"
   rating: 7
-  coverImage: "https://covers.openlibrary.org/b/isbn/9780735216372-L.jpg"
-  spineColor: "#1B4332"
-  textColor: "#D8F3DC"
-  description: "The correct framework for all long-term decision making. Reality is fundamentally unpredictable. Life is a game of poker, not chess — map out possibilities, assign probabilities, make decisions thoughtfully, and update beliefs from outcomes."
+  coverImage: "https://m.media-amazon.com/images/I/81ioPZFMeUL._SL1500_.jpg"
+  spineColor: "#f86b29"
+  textColor: "#F5F3E7"
+  description: |
+    Santiago pursues omens across deserts only to find his treasure buried where he started. The allegory is transparent: searching reveals what was always present. Coelho's prose is simple and lyrical, effective for parable. The disappointment is structural. The ending arrives abruptly, deflating the journey's momentum. The idea works better than the execution.
 
-- title: "Sapiens"
-  author: "Yuval Noah Harari"
-  date: "March 2021"
-  rating: 7
-  coverImage: "https://covers.openlibrary.org/b/isbn/9780062316097-L.jpg"
-  spineColor: "#8B3A2A"
-  textColor: "#F5E6D3"
-  description: "A creative non-traditional history of humanity exploring how shared myths have shaped our species. The lens of religions, businesses, and language as shared fictions casts new light on how civilization operates."
+    "It's this: that at a certain point in our lives, we lose control of what's happening to us, and our lives become controlled by fate. That's the world's greatest lie."
 
-- title: "Principles"
-  author: "Ray Dalio"
-  date: "February 2023"
-  rating: 7
-  coverImage: "https://covers.openlibrary.org/b/isbn/9781501124020-L.jpg"
-  spineColor: "#2C3E50"
-  textColor: "#BDC3C7"
-  description: "The most valuable idea: create an explicit set of personal principles for decision making. Personal principles are usually implicit and come from intuition — making them explicit is valuable. The concept of an idea meritocracy is worth internalizing."
+    "Because I don't live in either my past or my future. I'm interested only in the present. If you can concentrate always on the present, you'll be a happy man."
 
-- title: "Chip War"
-  author: "Chris Miller"
-  date: "March 2024"
-  rating: 7
-  coverImage: "https://covers.openlibrary.org/b/isbn/9781982172008-L.jpg"
-  spineColor: "#5D5D5D"
-  textColor: "#E0E0E0"
-  description: "The entire history of the semiconductor industry. Fascinating to see how economic incentives created the most rapidly innovating industry in human history, and how urgently the United States and China are competing for control of the chip manufacturing supply chain."
+    "The dunes are changed by the wind, but the desert never changes."
 
-- title: "Wild Problems"
-  author: "Russ Roberts"
-  date: "January 2024"
+    "Most people see the world as a threatening place, and, because they do, the world turns out, indeed, to be a threatening place."
+
+- title: "The Prophet"
+  author: "Khalil Gibran"
+  date: "March 2025"
   rating: 8
-  coverImage: "https://covers.openlibrary.org/b/isbn/9780593418765-L.jpg"
-  spineColor: "#3D5A80"
-  textColor: "#E0FBFC"
-  description: "Some life decisions — where to live, who to marry, what to do with your life — force you to choose with incomplete information and no obvious answers. This book offers counter-intuitive frameworks for navigating these wild problems and what to optimize for to maximize flourishing."
+  coverImage: "https://m.media-amazon.com/images/I/61+8wwQ2JsL._SL1200_.jpg"
+  spineColor: "#f7d00c"
+  textColor: "#6a570d"
+  description: |
+    Gibran offers poetic meditations on love, work, freedom. Each chapter self-contained, metaphor-dense, accessible. The fragmentary structure suits contemplation but resists cohesion. No argument develops; wisdom accumulates without resolution. The lyrical depth compensates somewhat, but the lack of progression or closure limits its impact.
 
-- title: "Life 3.0"
-  author: "Max Tegmark"
-  date: "June 2021"
-  rating: 7
-  coverImage: "https://covers.openlibrary.org/b/isbn/9781101946596-L.jpg"
-  spineColor: "#1A1A2E"
-  textColor: "#7B8FD4"
-  description: "A broad introduction to what the future of AI could hold for humanity, and the ethical considerations we should take into account as we move forward. The opening thought experiment is a compelling imagination of what general intelligence could look like."
+- title: "Men Without Women"
+  author: "Haruki Murakami"
+  date: "March 2025"
+  rating: 6.5
+  coverImage: "https://m.media-amazon.com/images/I/61jE8ravkbL._SL1500_.jpg"
+  spineColor: "#c1b58e"
+  textColor: "#423e32"
+  description: |
+    Seven stories of men navigating absence: widowed surgeons, reserved bartenders, all processing loss through memory and silence. Murakami's surrealism stays subtle; the emotional landscape precise. Each protagonist confronts the impossibility of return: places, people, selves all shift imperceptibly. The prose is spare, the affect subdued. Strong on mood, light on event.
 
-- title: "The Power of Now"
-  author: "Eckhart Tolle"
-  date: "February 2021"
-  rating: 7
-  coverImage: "https://covers.openlibrary.org/b/isbn/9781577311522-L.jpg"
-  spineColor: "#7B6B4E"
-  textColor: "#F5F0E0"
-  description: "The core message of spirituality condensed into an accessible format focused on the importance of the present moment as a path toward self-realization. A great first book on the topic, easier to understand than most eastern philosophy."
+    "Whether you want to or not. But the place you return to is always slightly different from the place you left. That's the rule. It can never be exactly the same."
+
+- title: "The Secret History"
+  author: "Donna Tartt"
+  date: "February 2025"
+  rating: 9
+  coverImage: "https://m.media-amazon.com/images/I/71HcEbK3pEL._SL1500_.jpg"
+  spineColor: "#25231d"
+  textColor: "#eee1ba"
+  description: |
+    Tartt builds an insular academic world: Greek rituals, Vermont winters, a tight circle of students who commit murder. The atmosphere is thick, the psychological suspense real. The weakness is indulgence: ornate prose, long introspections, details that slow momentum. The moral unraveling is compelling but could be sharper. Still, the obsession and guilt land. Dark academia as a study in how isolation breeds extremity.
+
+- title: "If Cats Disappeared from the World"
+  author: "Genki Kawamura"
+  date: "January 2025"
+  rating: 5
+  coverImage: "https://m.media-amazon.com/images/I/713Q37iExNL._SL1500_.jpg"
+  spineColor: "#f5f3da"
+  textColor: "#474639"
+  description: |
+    Each time something disappears from the world, the protagonist gains a day of life. The conceit has potential. What would you sacrifice for time? But the execution is unpolished. The prose feels rushed, dialogue simplistic, themes underdeveloped. A few moments of tenderness between owner and cat work, but regret and redemption never deepen. Quick, under 200 pages, forgettable.

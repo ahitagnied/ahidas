@@ -163,7 +163,9 @@
 						<button class="entry-title" onclick={() => selectBook(idx)}>{book.title}</button>
 						<div class="entry-author">{book.author}</div>
 						<div class="entry-meta">Read: {book.date} · {book.rating}/10</div>
-						<p class="entry-desc">{book.description}</p>
+						{#each book.description.trim().split('\n\n') as para}
+							<p class="entry-desc">{para}</p>
+						{/each}
 					</div>
 				</div>
 			{/each}
@@ -175,9 +177,15 @@
 		<div in:fade={{ duration: 200 }} out:fade={{ duration: 200 }}>
 			<button class="entry-title" onclick={() => selectBook(bookIndex)}>{book.title}</button>
 			<div class="entry-meta">By: {book.author} · Read: {book.date} · {book.rating}/10</div>
-			<p class="entry-desc">{book.description}</p>
+			{#each book.description.trim().split('\n\n') as para}
+				<p class="entry-desc">{para}</p>
+			{/each}
 		</div>
 	{/if}
+
+	<p class="text-muted pt-12 text-center text-[length:var(--text-label)]">
+		Maintained since February, 2026. Design inspired by <a href="https://adammaj.com/reading">Adam Majumdar</a>
+	</p>
 </div>
 
 <style>
@@ -409,4 +417,8 @@
 		line-height: 1.6;
 		margin: 0;
 	}
+
+	.entry-desc + .entry-desc { margin-top: 1em; }
+
+
 </style>
