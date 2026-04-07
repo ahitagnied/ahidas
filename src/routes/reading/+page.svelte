@@ -3,9 +3,11 @@
 	import ThemeToggle from '$lib/components/ThemeToggle.svelte';
 	import booksData from '$lib/data/books.yml?raw';
 	import yaml from 'js-yaml';
-	import { onMount } from 'svelte';
+	import { fade } from 'svelte/transition';
+import { onMount } from 'svelte';
 
 	const books = yaml.load(booksData);
+	$: sortedBooks = [...books].sort((a, b) => b.rating - a.rating);
 
 	let bookIndex = -1;
 	let scroll = 0;
@@ -101,7 +103,6 @@
 		<div class="text-body mb-0.5 font-[500] text-[length:var(--text-lead)] md:text-[length:var(--text-display)]">
 			Reading
 		</div>
-		<div class="text-muted text-[length:var(--text-label)]">{books.length} books</div>
 	</div>
 
 	<div class="shelf">
@@ -149,6 +150,32 @@
 			<Icon icon="mdi:chevron-right" width="12" height="12" />
 		</div>
 	</div>
+
+	<hr class="divider" />
+
+	{#if bookIndex === -1}
+		<div transition:fade={{ duration: 150 }}>
+			{#each sortedBooks as book, i}
+				{#if i > 0}<hr class="divider" />{/if}
+				<div class="list-entry">
+					<img src={book.coverImage} alt={book.title} class="list-cover" />
+					<div class="list-info">
+						<div class="entry-title">{book.title}</div>
+						<div class="entry-author">{book.author}</div>
+						<div class="entry-meta">Read: {book.date} · {book.rating}/10</div>
+						<p class="entry-desc">{book.description}</p>
+					</div>
+				</div>
+			{/each}
+		</div>
+	{:else}
+		{@const book = books[bookIndex]}
+		<div transition:fade={{ duration: 150 }}>
+			<div class="entry-title">{book.title}</div>
+			<div class="entry-meta">By: {book.author} · Read: {book.date} · {book.rating}/10</div>
+			<p class="entry-desc">{book.description}</p>
+		</div>
+	{/if}
 </div>
 
 <style>
@@ -291,4 +318,61 @@
 
 	.arrow-left  { left: 0;  background: linear-gradient(to right, var(--color-bg) 60%, transparent); }
 	.arrow-right { right: 0; background: linear-gradient(to left,  var(--color-bg) 60%, transparent); }
+
+	.divider {
+		border: none;
+		border-top: 1px solid var(--color-border);
+		margin: 28px 0;
+	}
+
+	.list-entry {
+		display: flex;
+		flex-direction: row;
+		align-items: flex-start;
+		gap: 20px;
+	}
+
+	.list-cover {
+		height: 100px;
+		width: auto;
+		flex-shrink: 0;
+		border: 1px solid var(--color-border);
+		display: block;
+	}
+
+	@media (min-width: 640px) {
+		.list-cover { height: 130px; }
+	}
+
+	.list-info {
+		flex: 1;
+		min-width: 0;
+	}
+
+	.entry-title {
+		color: var(--color-text-hover);
+		font-size: var(--text-lead);
+		font-weight: 500;
+		margin-bottom: 2px;
+	}
+
+	@media (min-width: 768px) {
+		.entry-title { font-size: var(--text-display); }
+	}
+
+	.entry-author {
+		color: var(--color-text-muted);
+		margin-bottom: 2px;
+	}
+
+	.entry-meta {
+		color: var(--color-text-muted);
+		margin-bottom: 8px;
+	}
+
+	.entry-desc {
+		color: var(--color-text);
+		line-height: 1.6;
+		margin: 0;
+	}
 </style>
