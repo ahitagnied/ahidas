@@ -41,13 +41,7 @@
 		}
 		bookIndex = i;
 		const openMax = Math.max(0, (W + 12) * (books.length - booksInViewport) + COVER + 5);
-		const bookLeft = i * (W + 12);
-		const bookRight = bookLeft + BOOK;
-		if (bookRight > scroll + viewportWidth) {
-			scroll = clamp(bookRight - viewportWidth, 0, openMax);
-		} else if (bookLeft < scroll) {
-			scroll = clamp(bookLeft, 0, openMax);
-		}
+		scroll = clamp((i - (booksInViewport - 4.5) / 2) * (W + 11), 0, openMax);
 	}
 
 	onMount(() => {
@@ -138,7 +132,8 @@
 							<span class="title">{book.title}</span>
 						</div>
 						<div class="cover"
-							style:transform="translate3d(0,0,0) rotateY({open ? '30deg' : '88.8deg'})">
+							style:transform="translate3d(0,0,0) rotateY({open ? '30deg' : '88.8deg'})"
+							style:background-color={book.spineColor ?? '#555'}>
 							<span class="paper-overlay cover-paper"></span>
 							<span class="binding"></span>
 							<img src={book.coverImage} alt="{book.title} cover" class="cover-img" loading="lazy" />
@@ -275,7 +270,7 @@
 	.cover-img {
 		width: var(--COVER);
 		height: var(--H);
-		object-fit: cover;
+		object-fit: fill;
 		display: block;
 	}
 
