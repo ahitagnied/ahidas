@@ -6,8 +6,7 @@
 	import { fade } from 'svelte/transition';
 	import { onMount } from 'svelte';
 
-	const books = yaml.load(booksData);
-	const sortedBooks = [...books].sort((a, b) => b.rating - a.rating);
+	const books = yaml.load(booksData).sort((a, b) => new Date(b.date) - new Date(a.date));
 
 	let bookIndex = -1;
 	let scroll = 0;
@@ -154,15 +153,14 @@
 
 	<div class="list-panel" class:list-collapsed={bookIndex !== -1}>
 		<div class="list-inner">
-			{#each sortedBooks as book, i}
-				{@const idx = books.indexOf(book)}
+			{#each books as book, i}
 				{#if i > 0}<hr class="divider" />{/if}
 				<div class="list-entry">
-					<button class="list-cover-btn" onclick={() => selectBook(idx)} aria-label="Open {book.title}">
+					<button class="list-cover-btn" onclick={() => selectBook(i)} aria-label="Open {book.title}">
 						<img src={book.coverImage} alt={book.title} class="list-cover" />
 					</button>
 					<div class="list-info">
-						<button class="entry-title" onclick={() => selectBook(idx)}>{book.title}</button>
+						<button class="entry-title" onclick={() => selectBook(i)}>{book.title}</button>
 						<div class="entry-author">{book.author}</div>
 						<div class="entry-meta">Read: {book.date} · {book.rating}/10</div>
 						{#each book.description.trim().split('\n\n') as para}
@@ -234,30 +232,28 @@
 		outline: none;
 	}
 
+	.spine, .cover {
+		filter: brightness(0.8) contrast(2);
+		transform-style: preserve-3d;
+		transition: all 500ms ease;
+		height: var(--H);
+		overflow: hidden;
+	}
+
 	.spine {
 		display: flex;
 		align-items: flex-start;
 		justify-content: center;
 		width: var(--W);
-		height: var(--H);
 		flex-shrink: 0;
 		transform-origin: right;
-		transform-style: preserve-3d;
-		filter: brightness(0.8) contrast(2);
-		overflow: hidden;
-		transition: all 500ms ease;
 	}
 
 	.cover {
 		position: relative;
 		flex-shrink: 0;
-		overflow: hidden;
 		width: var(--COVER);
-		height: var(--H);
 		transform-origin: left;
-		transform-style: preserve-3d;
-		filter: brightness(0.8) contrast(2);
-		transition: all 500ms ease;
 	}
 
 	/* position:fixed inside a transformed ancestor anchors to that ancestor, not the viewport */
@@ -433,7 +429,7 @@
 
 	.footer-note {
 		margin-top: auto;
-		padding-top: 2.0rem;
+		padding-top: 2rem;
 		margin-bottom: -1.5rem;
 		text-align: center;
 	}
