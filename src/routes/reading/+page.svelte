@@ -4,10 +4,10 @@
 	import booksData from '$lib/data/books.yml?raw';
 	import yaml from 'js-yaml';
 	import { fade } from 'svelte/transition';
-import { onMount } from 'svelte';
+	import { onMount } from 'svelte';
 
 	const books = yaml.load(booksData);
-	$: sortedBooks = [...books].sort((a, b) => b.rating - a.rating);
+	const sortedBooks = [...books].sort((a, b) => b.rating - a.rating);
 
 	let bookIndex = -1;
 	let scroll = 0;
@@ -19,7 +19,6 @@ import { onMount } from 'svelte';
 	/** @type {ReturnType<typeof setInterval>} */ let scrollTimer;
 
 	const W = 41.5;
-	const H = 220;
 	const COVER = W * 4;
 	const BOOK  = W * 5;
 
@@ -99,10 +98,8 @@ import { onMount } from 'svelte';
 		<ThemeToggle />
 	</div>
 
-	<div class="mb-8">
-		<div class="text-body mb-0.5 font-[500] text-[length:var(--text-lead)] md:text-[length:var(--text-display)]">
-			Reading
-		</div>
+	<div class="text-body mb-8 font-[500] text-[length:var(--text-lead)] md:text-[length:var(--text-display)]">
+		Reading
 	</div>
 
 	<div class="shelf">
@@ -153,8 +150,10 @@ import { onMount } from 'svelte';
 
 	<hr class="divider" />
 
-	{#if bookIndex === -1}
-		<div transition:fade={{ duration: 150 }}>
+	<!-- List: always in DOM, collapses via CSS grid when a book is selected.
+	     This avoids any layout jump from Svelte mounting/unmounting large content. -->
+	<div class="list-panel" class:list-collapsed={bookIndex !== -1}>
+		<div class="list-inner">
 			{#each sortedBooks as book, i}
 				{@const idx = books.indexOf(book)}
 				{#if i > 0}<hr class="divider" />{/if}
@@ -171,9 +170,11 @@ import { onMount } from 'svelte';
 				</div>
 			{/each}
 		</div>
-	{:else}
+	</div>
+
+	{#if bookIndex > -1}
 		{@const book = books[bookIndex]}
-		<div transition:fade={{ duration: 150 }}>
+		<div in:fade={{ duration: 200 }} out:fade={{ duration: 200 }}>
 			<button class="entry-title" onclick={() => selectBook(bookIndex)}>{book.title}</button>
 			<div class="entry-meta">By: {book.author} · Read: {book.date} · {book.rating}/10</div>
 			<p class="entry-desc">{book.description}</p>
@@ -322,6 +323,23 @@ import { onMount } from 'svelte';
 	.arrow-left  { left: 0;  background: linear-gradient(to right, var(--color-bg) 60%, transparent); }
 	.arrow-right { right: 0; background: linear-gradient(to left,  var(--color-bg) 60%, transparent); }
 
+	/* CSS grid trick: animates height 0 → auto without JS measurement */
+	.list-panel {
+		display: grid;
+		grid-template-rows: 1fr;
+		transition: grid-template-rows 250ms ease, opacity 200ms ease;
+	}
+
+	.list-panel.list-collapsed {
+		grid-template-rows: 0fr;
+		opacity: 0;
+		pointer-events: none;
+	}
+
+	.list-inner {
+		overflow: hidden;
+	}
+
 	.divider {
 		border: none;
 		border-top: 1px solid var(--color-border);
@@ -354,7 +372,7 @@ import { onMount } from 'svelte';
 
 	.list-cover-btn:hover .list-cover { opacity: 0.75; }
 
-	@media (min-width: 640px) {
+	@media (min-width: 768px) {
 		.list-cover { height: 130px; }
 	}
 
@@ -393,7 +411,6 @@ import { onMount } from 'svelte';
 	}
 
 	.entry-desc {
-		color: var(--color-text);
 		line-height: 1.6;
 		margin: 0;
 	}
