@@ -91,16 +91,14 @@
 
 <div class="page-container">
 <div class="page-inner">
-	<div class="mb-4 flex items-center justify-between">
-		<a href="/" class="back-link group">
-			<Icon icon="mdi:arrow-bottom-left" class="arrow-icon" />
-			Back
-		</a>
+	<div class="flex justify-between items-center mb-[1.2em]">
+		<h1 class="mb-0">
+			<a href="/" class="section-link group">
+				Reading
+				<Icon icon="mdi:arrow-bottom-left" class="arrow-icon" />
+			</a>
+		</h1>
 		<ThemeToggle />
-	</div>
-
-	<div class="text-body mb-8 font-[500] text-[length:var(--text-lead)] md:text-[length:var(--text-display)]">
-		Reading
 	</div>
 
 	<div class="shelf">
@@ -162,7 +160,7 @@
 					<div class="list-info">
 						<button class="entry-title" onclick={() => selectBook(i)}>{book.title}</button>
 						<div class="entry-author">{book.author}</div>
-						<div class="entry-meta">Read: {book.date} · {book.rating}/10</div>
+						<div class="entry-meta">{book.currentlyReading ? 'Currently reading' : `Read: ${book.date} · ${book.rating}/10`}</div>
 						{#each book.description.trim().split('\n\n') as para}
 							<p class="entry-desc">{para}</p>
 						{/each}
@@ -176,7 +174,7 @@
 		{@const book = books[bookIndex]}
 		<div in:fade={{ duration: 200 }} out:fade={{ duration: 200 }}>
 			<button class="entry-title" onclick={() => selectBook(bookIndex)}>{book.title}</button>
-			<div class="entry-meta">By: {book.author} · Read: {book.date} · {book.rating}/10</div>
+			<div class="entry-meta">By: {book.author} · {book.currentlyReading ? 'Currently reading' : `Read: ${book.date} · ${book.rating}/10`}</div>
 			{#each book.description.trim().split('\n\n') as para}
 				<p class="entry-desc">{para}</p>
 			{/each}
