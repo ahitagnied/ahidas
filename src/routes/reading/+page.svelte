@@ -43,6 +43,7 @@
 		bookIndex = i;
 		const openMax = Math.max(0, (W + 12) * (books.length - booksInViewport) + COVER + 5);
 		scroll = clamp((i - (booksInViewport - 4.5) / 2) * (W + 11), 0, openMax);
+		window.scrollTo({ top: 0, behavior: 'instant' });
 	}
 
 	onMount(() => {
@@ -90,6 +91,7 @@
 </svg>
 
 <div class="page-container">
+<div class="page-inner">
 	<div class="mb-4 flex items-center justify-between">
 		<a href="/" class="back-link group">
 			<Icon icon="mdi:arrow-bottom-left" class="arrow-icon" />
@@ -183,9 +185,12 @@
 		</div>
 	{/if}
 
-	<p class="text-muted pt-12 text-center text-[length:var(--text-label)]">
-		Maintained since February, 2026. Design inspired by <a href="https://adammaj.com/reading">Adam Majumdar</a>
-	</p>
+	{#if bookIndex === -1}
+		<p class="footer-note text-muted text-[length:var(--text-label)]">
+			Maintained since February, 2026. Design inspired by <a href="https://adammaj.com/reading">Adam Majumdar</a>
+		</p>
+	{/if}
+</div>
 </div>
 
 <style>
@@ -420,5 +425,16 @@
 
 	.entry-desc + .entry-desc { margin-top: 1em; }
 
+	.page-inner {
+		display: flex;
+		flex-direction: column;
+		min-height: calc(100vh - 6rem);
+	}
 
+	.footer-note {
+		margin-top: auto;
+		padding-top: 2.0rem;
+		margin-bottom: -1.5rem;
+		text-align: center;
+	}
 </style>

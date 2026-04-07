@@ -1,6 +1,34 @@
+- title: "The Alchemist"
+  author: "Paulo Coelho"
+  date: "April 2026"
+  rating: 7
+  coverImage: "https://m.media-amazon.com/images/I/81ioPZFMeUL._SL1500_.jpg"
+  spineColor: "#f86b29"
+  textColor: "#F5F3E7"
+  description: |
+    Santiago pursues omens across deserts only to find his treasure buried where he started. The allegory is transparent: searching reveals what was always present. Coelho's prose is simple and lyrical, effective for parable. The disappointment is structural. The ending arrives abruptly, deflating the journey's momentum. The idea works better than the execution.
+
+    "It's this: that at a certain point in our lives, we lose control of what's happening to us, and our lives become controlled by fate. That's the world's greatest lie."
+
+    "Because I don't live in either my past or my future. I'm interested only in the present. If you can concentrate always on the present, you'll be a happy man."
+
+    "The dunes are changed by the wind, but the desert never changes."
+
+    "Most people see the world as a threatening place, and, because they do, the world turns out, indeed, to be a threatening place."
+
+- title: "The Secret History"
+  author: "Donna Tartt"
+  date: "April 2026"
+  rating: 9
+  coverImage: "https://m.media-amazon.com/images/I/71HcEbK3pEL._SL1500_.jpg"
+  spineColor: "#25231d"
+  textColor: "#eee1ba"
+  description: |
+    Tartt builds an insular academic world: Greek rituals, Vermont winters, a tight circle of students who commit murder. The atmosphere is thick, the psychological suspense real. The weakness is indulgence: ornate prose, long introspections, details that slow momentum. The moral unraveling is compelling but could be sharper. Still, the obsession and guilt land. Dark academia as a study in how isolation breeds extremity.
+
 - title: "Man's Search for Meaning"
   author: "Viktor E. Frankl"
-  date: "August 2025"
+  date: "March 2026"
   rating: 9
   coverImage: "https://m.media-amazon.com/images/I/71tdb1udZnL._SL1500_.jpg"
   spineColor: "#b1a0bd"
@@ -16,45 +44,9 @@
 
     "When we are no longer able to change a situation, we are challenged to change ourselves."
 
-- title: "On Intelligence"
-  author: "Jeff Hawkins"
-  date: "July 2025"
-  rating: 9.3
-  coverImage: "https://m.media-amazon.com/images/I/41PbdH-FFEL._SY445_SX342_.jpg"
-  spineColor: "#11599C"
-  textColor: "#ffffff"
-  description: |
-    Hawkins argues intelligence is prediction, not pattern matching. The neocortex runs one hierarchical, sparse algorithm everywhere: modeling sequences, anticipating next steps, correcting errors. This theory unifies perception, action, and understanding under a single framework: building and maintaining a temporal world model.
-
-    The challenge to modern ML is direct. Scaling transformers isn't the same as building a cortex. Real intelligence requires temporal structure, top-down prediction, sparse composition, and continual learning. Not labeled datasets and static distributions. Even as LLMs improve, the gap remains: they fit patterns, not maintain models that self-correct in real time.
-
-    The arguments lack formal rigor and implementation detail, but that's acceptable. A sharp theory that directs inquiry beats scattered heuristics. This provides orientation. Specific enough to test, practical enough to build from.
-
-- title: "Ikigai"
-  author: "Hector Garcia and Francesc Miralles"
-  date: "June 2025"
-  rating: 8.7
-  coverImage: "https://m.media-amazon.com/images/I/41nS26MN37L._SY445_SX342_.jpg"
-  spineColor: "#9FD2D6"
-  textColor: "#255054"
-  description: |
-    Ikigai locates purpose not in grand callings but in daily rituals: tea with neighbors, morning walks, communal dance. Garcia and Miralles study Okinawan centenarians to show how meaning emerges from consistency, not ambition. Purpose becomes social, not heroic.
-
-    The book's weakness is its reluctance to prescribe. "Follow what excites you" is true but insufficient without mechanisms. It describes the state but not the path. Still, the reframing matters: purpose as ember rather than explosion, maintained through small acts rather than singular breakthroughs.
-
-- title: "Hōjōki"
-  author: "Kamo no Chomei"
-  date: "May 2025"
-  rating: 5
-  coverImage: "https://m.media-amazon.com/images/I/71uGuMfWvSL._SL1500_.jpg"
-  spineColor: "#feedc4"
-  textColor: "#900C3F"
-  description: |
-    Chōmei catalogs 12th-century disasters: fires, famines, earthquakes, then retreats to a hut. The disasters are vivid but serve only as preamble. The hut life, which should be the core, offers no meditation on solitude or its effects on consciousness. At 2,000 words, it gestures toward impermanence without developing the thought. If you want Buddhist philosophy or hermit wisdom, this isn't it.
-
 - title: "Booksellers of Kabul"
   author: "Åsne Seierstad"
-  date: "April 2025"
+  date: "March 2026"
   rating: 9
   coverImage: "https://m.media-amazon.com/images/I/61KvqqXRXKL._SL1500_.jpg"
   spineColor: "#6cbad8"
@@ -64,9 +56,33 @@
 
     The prose stays spare. Details accumulate without ornament, building understanding through accretion. Strong narrative journalism. Empathetic but unsentimental.
 
+- title: "Men Without Women"
+  author: "Haruki Murakami"
+  date: "March 2026"
+  rating: 6.5
+  coverImage: "https://m.media-amazon.com/images/I/61jE8ravkbL._SL1500_.jpg"
+  spineColor: "#c1b58e"
+  textColor: "#423e32"
+  description: |
+    Seven stories of men navigating absence: widowed surgeons, reserved bartenders, all processing loss through memory and silence. Murakami's surrealism stays subtle; the emotional landscape precise. Each protagonist confronts the impossibility of return: places, people, selves all shift imperceptibly. The prose is spare, the affect subdued. Strong on mood, light on event.
+
+    "Whether you want to or not. But the place you return to is always slightly different from the place you left. That's the rule. It can never be exactly the same."
+
+- title: "Ikigai"
+  author: "Hector Garcia and Francesc Miralles"
+  date: "February 2026"
+  rating: 8.7
+  coverImage: "https://m.media-amazon.com/images/I/41nS26MN37L._SY445_SX342_.jpg"
+  spineColor: "#9FD2D6"
+  textColor: "#255054"
+  description: |
+    Ikigai locates purpose not in grand callings but in daily rituals: tea with neighbors, morning walks, communal dance. Garcia and Miralles study Okinawan centenarians to show how meaning emerges from consistency, not ambition. Purpose becomes social, not heroic.
+
+    The book's weakness is its reluctance to prescribe. "Follow what excites you" is true but insufficient without mechanisms. It describes the state but not the path. Still, the reframing matters: purpose as ember rather than explosion, maintained through small acts rather than singular breakthroughs.
+
 - title: "Shoe Dog"
   author: "Phil Knight"
-  date: "May 2025"
+  date: "February 2026"
   rating: 8.5
   coverImage: "https://m.media-amazon.com/images/I/81lxD2yoNRL._SL1500_.jpg"
   spineColor: "#0c191e"
@@ -84,62 +100,46 @@
 
     "There were many ways down Mount Fuji, according to my guidebook, but only one way up. Life lesson in that, I thought."
 
-- title: "The Alchemist"
-  author: "Paulo Coelho"
-  date: "April 2025"
-  rating: 7
-  coverImage: "https://m.media-amazon.com/images/I/81ioPZFMeUL._SL1500_.jpg"
-  spineColor: "#f86b29"
-  textColor: "#F5F3E7"
-  description: |
-    Santiago pursues omens across deserts only to find his treasure buried where he started. The allegory is transparent: searching reveals what was always present. Coelho's prose is simple and lyrical, effective for parable. The disappointment is structural. The ending arrives abruptly, deflating the journey's momentum. The idea works better than the execution.
-
-    "It's this: that at a certain point in our lives, we lose control of what's happening to us, and our lives become controlled by fate. That's the world's greatest lie."
-
-    "Because I don't live in either my past or my future. I'm interested only in the present. If you can concentrate always on the present, you'll be a happy man."
-
-    "The dunes are changed by the wind, but the desert never changes."
-
-    "Most people see the world as a threatening place, and, because they do, the world turns out, indeed, to be a threatening place."
-
-- title: "The Prophet"
-  author: "Khalil Gibran"
-  date: "March 2025"
-  rating: 8
-  coverImage: "https://m.media-amazon.com/images/I/61+8wwQ2JsL._SL1200_.jpg"
-  spineColor: "#f7d00c"
-  textColor: "#6a570d"
-  description: |
-    Gibran offers poetic meditations on love, work, freedom. Each chapter self-contained, metaphor-dense, accessible. The fragmentary structure suits contemplation but resists cohesion. No argument develops; wisdom accumulates without resolution. The lyrical depth compensates somewhat, but the lack of progression or closure limits its impact.
-
-- title: "Men Without Women"
-  author: "Haruki Murakami"
-  date: "March 2025"
-  rating: 6.5
-  coverImage: "https://m.media-amazon.com/images/I/61jE8ravkbL._SL1500_.jpg"
-  spineColor: "#c1b58e"
-  textColor: "#423e32"
-  description: |
-    Seven stories of men navigating absence: widowed surgeons, reserved bartenders, all processing loss through memory and silence. Murakami's surrealism stays subtle; the emotional landscape precise. Each protagonist confronts the impossibility of return: places, people, selves all shift imperceptibly. The prose is spare, the affect subdued. Strong on mood, light on event.
-
-    "Whether you want to or not. But the place you return to is always slightly different from the place you left. That's the rule. It can never be exactly the same."
-
-- title: "The Secret History"
-  author: "Donna Tartt"
-  date: "February 2025"
-  rating: 9
-  coverImage: "https://m.media-amazon.com/images/I/71HcEbK3pEL._SL1500_.jpg"
-  spineColor: "#25231d"
-  textColor: "#eee1ba"
-  description: |
-    Tartt builds an insular academic world: Greek rituals, Vermont winters, a tight circle of students who commit murder. The atmosphere is thick, the psychological suspense real. The weakness is indulgence: ornate prose, long introspections, details that slow momentum. The moral unraveling is compelling but could be sharper. Still, the obsession and guilt land. Dark academia as a study in how isolation breeds extremity.
-
 - title: "If Cats Disappeared from the World"
   author: "Genki Kawamura"
-  date: "January 2025"
+  date: "February 2026"
   rating: 5
   coverImage: "https://m.media-amazon.com/images/I/713Q37iExNL._SL1500_.jpg"
   spineColor: "#f5f3da"
   textColor: "#474639"
   description: |
     Each time something disappears from the world, the protagonist gains a day of life. The conceit has potential. What would you sacrifice for time? But the execution is unpolished. The prose feels rushed, dialogue simplistic, themes underdeveloped. A few moments of tenderness between owner and cat work, but regret and redemption never deepen. Quick, under 200 pages, forgettable.
+
+- title: "On Intelligence"
+  author: "Jeff Hawkins"
+  date: "January 2026"
+  rating: 9.3
+  coverImage: "https://m.media-amazon.com/images/I/41PbdH-FFEL._SY445_SX342_.jpg"
+  spineColor: "#11599C"
+  textColor: "#ffffff"
+  description: |
+    Hawkins argues intelligence is prediction, not pattern matching. The neocortex runs one hierarchical, sparse algorithm everywhere: modeling sequences, anticipating next steps, correcting errors. This theory unifies perception, action, and understanding under a single framework: building and maintaining a temporal world model.
+
+    The challenge to modern ML is direct. Scaling transformers isn't the same as building a cortex. Real intelligence requires temporal structure, top-down prediction, sparse composition, and continual learning. Not labeled datasets and static distributions. Even as LLMs improve, the gap remains: they fit patterns, not maintain models that self-correct in real time.
+
+    The arguments lack formal rigor and implementation detail, but that's acceptable. A sharp theory that directs inquiry beats scattered heuristics. This provides orientation. Specific enough to test, practical enough to build from.
+
+- title: "Hōjōki"
+  author: "Kamo no Chomei"
+  date: "January 2026"
+  rating: 5
+  coverImage: "https://m.media-amazon.com/images/I/71uGuMfWvSL._SL1500_.jpg"
+  spineColor: "#feedc4"
+  textColor: "#900C3F"
+  description: |
+    Chōmei catalogs 12th-century disasters: fires, famines, earthquakes, then retreats to a hut. The disasters are vivid but serve only as preamble. The hut life, which should be the core, offers no meditation on solitude or its effects on consciousness. At 2,000 words, it gestures toward impermanence without developing the thought. If you want Buddhist philosophy or hermit wisdom, this isn't it.
+
+- title: "The Prophet"
+  author: "Khalil Gibran"
+  date: "January 2026"
+  rating: 8
+  coverImage: "https://m.media-amazon.com/images/I/61+8wwQ2JsL._SL1200_.jpg"
+  spineColor: "#f7d00c"
+  textColor: "#6a570d"
+  description: |
+    Gibran offers poetic meditations on love, work, freedom. Each chapter self-contained, metaphor-dense, accessible. The fragmentary structure suits contemplation but resists cohesion. No argument develops; wisdom accumulates without resolution. The lyrical depth compensates somewhat, but the lack of progression or closure limits its impact.
