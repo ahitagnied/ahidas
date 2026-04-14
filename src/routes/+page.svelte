@@ -83,15 +83,29 @@
 		<EssayItem item={essay} />
 	{/each}
 
-	<h1 id="contact" class="pt-[25px]">CONTACT</h1>
+	<h1 id="elsewhere" class="pt-[25px]">ELSEWHERE</h1>
 
-	<p>
-		I am easy to reach — book a <a href="https://calendly.com/ahitagnid/new-meeting">meeting</a>
-		with a short blurb about what you want to talk about, or write to me at
-		adas [at] rice [dot] edu. I am also on
-		<a href="https://x.com/ahitagnied" target="_blank" rel="noopener noreferrer">Twitter</a>,
-		<a href="https://github.com/ahitagnied" target="_blank" rel="noopener noreferrer">GitHub</a>, &
-		<a href="https://linkedin.com/in/ahitagnid" target="_blank" rel="noopener noreferrer">LinkedIn</a>.
-	</p>
+	<div class="flex flex-col md:flex-row md:items-start md:gap-8">
+		<div class="md:w-1/2">
+			<p class="mb-0">
+				I am easy to reach — book a <a href="https://calendly.com/ahitagnid/new-meeting">meeting</a>
+				with a short blurb about what you want to talk about, or write to me at
+				ahitagnis [at] gmail [dot] com.
+			</p>
+			<p class="mt-3 mb-0">
+				I am also on
+				<a href="https://x.com/ahitagnied" target="_blank" rel="noopener noreferrer">Twitter</a>,
+				<a href="https://github.com/ahitagnied" target="_blank" rel="noopener noreferrer">GitHub</a>, &
+				<a href="https://linkedin.com/in/ahitagnid" target="_blank" rel="noopener noreferrer">LinkedIn</a>.
+				Most of my research stays in <a href="https://scholar.google.com/citations?user=GLTc7LcAAAAJ&hl=en"
+				target="_blank" rel="noopener noreferrer">Google Scholar</a>.
+			</p>
+		</div>
+		<img
+			src="/profile.webp"
+			alt="Ahitagni"
+			class="mt-4 md:mt-0 md:w-1/2 rounded object-cover"
+		/>
+	</div>
 
 </div>
