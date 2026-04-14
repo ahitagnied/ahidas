@@ -70,6 +70,7 @@ html.dark {
 		@apply mb-[8px] uppercase;
 		color: var(--color-text-heading);
 		font-size: 0.75rem;
+		font-weight: 600;
 	}
 }
 

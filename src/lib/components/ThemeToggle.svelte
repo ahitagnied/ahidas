@@ -26,7 +26,7 @@
 	aria-label={dark ? 'Switch to light mode' : 'Switch to dark mode'}
 >
 	<Icon
-		icon={dark ? 'mdi:weather-sunny' : 'mdi:weather-night'}
+		icon={dark ? 'tabler:sun' : 'mdi:weather-night'}
 		class="h-[1.1rem] w-[1.1rem]"
 	/>
 </button>
