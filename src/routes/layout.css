@@ -1,6 +1,11 @@
 @import 'tailwindcss';
 @plugin '@tailwindcss/typography';
 
+@theme {
+	--content-width: 684px;
+	--breakpoint-md: 684px;
+}
+
 :root {
 	--text-micro:   0.5rem;    /* 8px */
 	--text-label:   0.6875rem; /* 11px */
@@ -55,7 +60,7 @@ html.dark {
 		-moz-osx-font-smoothing: grayscale;
 	}
 
-	@media (min-width: 768px) {
+	@media (min-width: theme(--breakpoint-md)) {
 		body {
 			font-size: var(--text-lead);
 		}
@@ -65,12 +70,14 @@ html.dark {
 		@apply mb-[8px] uppercase;
 		color: var(--color-text-heading);
 		font-size: 0.75rem;
+		font-weight: 600;
 	}
 }
 
 @layer components {
 	.page-container {
-		@apply mx-auto min-h-screen w-full max-w-[700px] px-6 py-12;
+		@apply mx-auto min-h-screen w-full px-6 py-12;
+		max-width: theme(--content-width);
 	}
 
 	.page-container p {
@@ -216,7 +223,7 @@ html.dark {
 	padding: 0.5em 0;
 }
 
-@media (min-width: 768px) {
+@media (min-width: theme(--breakpoint-md)) {
 	.prose {
 		font-size: var(--text-lead);
 	}

@@ -190,6 +190,8 @@
 </div>
 
 <style>
+	@reference "../layout.css";
+
 	.paper-svg {
 		position: absolute;
 		inset: 0;
@@ -397,7 +399,7 @@
 
 	.entry-title:hover { color: var(--color-text); }
 
-	@media (min-width: 768px) {
+	@media (min-width: theme(--breakpoint-md)) {
 		.list-cover  { height: 130px; }
 		.entry-title { font-size: var(--text-display); }
 	}
