@@ -190,6 +190,8 @@
 </div>
 
 <style>
+	@reference "../layout.css";
+
 	.paper-svg {
 		position: absolute;
 		inset: 0;
