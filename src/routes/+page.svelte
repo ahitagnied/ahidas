@@ -21,7 +21,7 @@
 <div class="page-container">
 	<div class="flex justify-between items-center mb-3">
 		<div
-			class="font-[500] text-[1rem] md:text-[1.125rem]"
+			class="font-[500] text-body text-[length:var(--text-lead)] md:text-[length:var(--text-display)]"
 		>
 			Hi, I am Ahitagni!
 		</div>
