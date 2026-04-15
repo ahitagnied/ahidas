@@ -57,7 +57,7 @@
 	</p>
 
 	<p>
-		<a href="/about">Here</a> is a longer informal bio. I also like to <a href="/reading">read</a>
+		<a href="/about">Here</a> are some things I believe. I also like to <a href="/reading">read</a>
 		and <a href="https://www.ahidas.com/essays/">write</a> about things that interest me.
 	</p>
 
@@ -88,17 +88,10 @@
 	<div class="flex flex-col md:flex-row md:items-start md:gap-8">
 		<div class="md:w-1/2">
 			<p class="mb-0">
-				I am easy to reach — book a <a href="https://calendly.com/ahitagnid/new-meeting">meeting</a>
-				with a short blurb about what you want to talk about, or write to me at
-				ahitagnis [at] gmail [dot] com.
+				Outside of work I sail, paint, play ping-pong, and hike. Currently based in San Francisco.
 			</p>
 			<p class="mt-3 mb-0">
-				I am also on
-				<a href="https://x.com/ahitagnied" target="_blank" rel="noopener noreferrer">Twitter</a>,
-				<a href="https://github.com/ahitagnied" target="_blank" rel="noopener noreferrer">GitHub</a>, &
-				<a href="https://linkedin.com/in/ahitagnid" target="_blank" rel="noopener noreferrer">LinkedIn</a>.
-				Most of my research stays in <a href="https://scholar.google.com/citations?user=GLTc7LcAAAAJ&hl=en"
-				target="_blank" rel="noopener noreferrer">Google Scholar</a>.
+				I am easy to reach — please say hi at ahitagnis [at] gmail [dot] com or <a href="https://calendly.com/ahitagnid/new-meeting">grab a time</a>. Most of my technical work lives on <a href="https://github.com/ahitagnied" target="_blank" rel="noopener noreferrer">GitHub</a> and <a href="https://scholar.google.com/citations?user=GLTc7LcAAAAJ&hl=en" target="_blank" rel="noopener noreferrer">Google Scholar</a>. I sometimes post on <a href="https://x.com/ahitagnied" target="_blank" rel="noopener noreferrer">X</a> and <a href="https://linkedin.com/in/ahitagnid" target="_blank" rel="noopener noreferrer">LinkedIn</a>.
 			</p>
 		</div>
 		<img
