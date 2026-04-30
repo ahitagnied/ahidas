@@ -28,31 +28,27 @@
 		<ThemeToggle />
 	</div>
 
-	<h1 id="about" class="pt-[25px]">ABOUT</h1>
-
-	<p>
+	<p class="pt-[20px]">
 		I am the Founding Engineer at <a href="https://optica.industries/">Optica Industries</a>,
 		building the next American Metal Factory. We are backed by Lightspeed, SV Angel, & Neo.
 	</p>
 
 	<p>
 		I am a part of <a href="https://neo.com/">Neo</a> & scout for
-		<a href="https://www.clayvc.io/">Clay VC</a>. Previously, I worked on Robot Learning for
-		Industrial Humanoids at <a href="https://personainc.ai/">Persona AI</a> & researched Video
-		Understanding at <a href="https://www.sievedata.com/">Sieve Data</a> that powered
-		Petabyte-scale video datasets for Frontier AI Labs.
+		<a href="https://www.clayvc.io/">Clay VC</a>. Previously, I worked on Humanoids at 
+		<a href="https://personainc.ai/">Persona AI</a> & researched Video Understanding at 
+		<a href="https://www.sievedata.com/">Sieve Data</a> to power Petabyte-scale video
+		datasets for Frontier AI Labs.
 	</p>
 
 	<p>
-		My current research interest is World Modelling &
-		<a href="https://openreview.net/pdf?id=BZ5a1r-kVsf">JEPAs</a>.
-		I research Multimodal JEPAs, 3D Vision, & Imaging with
+		I am interested in World Modelling and
+		<a href="https://openreview.net/pdf?id=BZ5a1r-kVsf">JEPAs</a>, advised by
 		<a href="https://scholar.google.com/citations?user=S1x_xqcAAAAJ&hl=en">Randall Balesteiero</a>,
-		<a href="https://vivekboominathan.com/">Vivek Boominathan</a>, &
-		<a href="https://computationalimaging.rice.edu/team/ashok-veeraraghavan/">Ashok Veeraradhavan</a>.
-		Previously, I worked on Colloidal Robotics & Nanoelectronics at the
-		<a href="https://www.media.mit.edu/groups/nano-cybernetic-biotrek/overview/">MIT Media Lab</a>,
-		<a href="https://ajayan.rice.edu/">Ajayan Group</a> &
+		<a href="https://computationalimaging.rice.edu/team/ashok-veeraraghavan/">Ashok Veeraraghavan</a>, &
+		<a href="https://vivekboominathan.com/">Vivek Boominathan</a>. Before this, I've researched at the
+		<a href="https://www.media.mit.edu/groups/nano-cybernetic-biotrek/overview/">MIT Media Lab</a> in Cambridge,
+		<a href="https://ajayan.rice.edu/">Ajayan Group</a> at Rice, and
 		<a href="https://scholar.google.com/citations?user=JlmilbMAAAAJ&hl=en">IIT Guwahati</a>.
 	</p>
 
@@ -61,7 +57,7 @@
 		and <a href="https://www.ahidas.com/essays/">write</a> about things that interest me.
 	</p>
 
-	<h1 class="pt-[25px]">
+	<h1 class="pt-[20px]">
 		<a href="/research" class="section-link group">
 			Research
 			<Icon icon="mdi:arrow-top-right" class="arrow-icon" />
@@ -72,7 +68,7 @@
 		<ResearchItem {item} />
 	{/each}
 
-	<h1 class="pt-[25px]">
+	<h1 class="pt-[20px]">
 		<a href="/essays" class="section-link group">
 			Essays
 			<Icon icon="mdi:arrow-top-right" class="arrow-icon" />
@@ -83,7 +79,7 @@
 		<EssayItem item={essay} />
 	{/each}
 
-	<h1 id="elsewhere" class="pt-[25px]">ELSEWHERE</h1>
+	<h1 id="elsewhere" class="pt-[20px]">ELSEWHERE</h1>
 
 	<div class="flex flex-col md:flex-row md:items-start md:gap-8">
 		<div class="md:w-1/2">
