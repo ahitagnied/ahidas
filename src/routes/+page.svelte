@@ -79,9 +79,8 @@
 		<EssayItem item={essay} />
 	{/each}
 
-	<h1 id="elsewhere" class="pt-[20px]">ELSEWHERE</h1>
 
-	<div class="flex flex-col md:flex-row md:items-start md:gap-8">
+	<div class="pt-[20px] flex flex-col md:flex-row md:items-start md:gap-8">
 		<div class="md:w-1/2">
 			<p class="mb-0">
 				Outside of work I sail, paint, play ping-pong, and hike. Currently based in San Francisco.
