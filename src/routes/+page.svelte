@@ -44,9 +44,9 @@
 	<p>
 		I am interested in World Modelling and
 		<a href="https://openreview.net/pdf?id=BZ5a1r-kVsf">JEPAs</a>, advised by
-		<a href="https://scholar.google.com/citations?user=S1x_xqcAAAAJ&hl=en">Randall Balesteiero</a>,
-		<a href="https://computationalimaging.rice.edu/team/ashok-veeraraghavan/">Ashok Veeraraghavan</a>, &
-		<a href="https://vivekboominathan.com/">Vivek Boominathan</a>. Before this, I've researched at the
+		<a href="https://vivekboominathan.com/">Vivek Boominathan</a>,
+		<a href="https://scholar.google.com/citations?user=S1x_xqcAAAAJ&hl=en">Randall Balesteiero</a>, &
+		<a href="https://computationalimaging.rice.edu/team/ashok-veeraraghavan/">Ashok Veeraraghavan</a>. Before this, I've researched at the
 		<a href="https://www.media.mit.edu/groups/nano-cybernetic-biotrek/overview/">MIT Media Lab</a> in Cambridge,
 		<a href="https://ajayan.rice.edu/">Ajayan Group</a> at Rice, and
 		<a href="https://scholar.google.com/citations?user=JlmilbMAAAAJ&hl=en">IIT Guwahati</a>.
