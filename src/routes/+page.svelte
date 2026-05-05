@@ -80,20 +80,18 @@
 	{/each}
 
 
-	<div class="pt-[20px] flex flex-col md:flex-row md:items-start md:gap-8">
-		<div class="md:w-1/2">
-			<p class="mb-0">
-				Outside of work I sail, paint, play ping-pong, and hike. Currently based in San Francisco.
-			</p>
-			<p class="mt-3 mb-0">
-				I am easy to reach — please say hi at ahitagnis [at] gmail [dot] com or <a href="https://calendly.com/ahitagnid/new-meeting">grab a time</a>. Most of my technical work lives on <a href="https://github.com/ahitagnied" target="_blank" rel="noopener noreferrer">GitHub</a> and <a href="https://scholar.google.com/citations?user=GLTc7LcAAAAJ&hl=en" target="_blank" rel="noopener noreferrer">Google Scholar</a>. I sometimes post on <a href="https://x.com/ahitagnied" target="_blank" rel="noopener noreferrer">X</a> and <a href="https://linkedin.com/in/ahitagnid" target="_blank" rel="noopener noreferrer">LinkedIn</a>.
-			</p>
-		</div>
+	<div class="pt-[26px]">
 		<img
-			src="/profile.webp"
-			alt="Ahitagni"
-			class="mt-4 md:mt-0 md:w-1/2 rounded object-cover"
+			src="/denali.webp"
+			alt="Denali"
+			class="w-full rounded-[3px] object-cover"
 		/>
+		<p class="mt-4 mb-0">
+			Outside of work I sail, paint, and hike. Currently based in San Francisco.
+		</p>
+		<p class="mt-3 mb-0">
+			I am easy to reach — please say hi at ahitagnis [at] gmail [dot] com or <a href="https://calendly.com/ahitagnid/new-meeting">grab a time</a>. Most of my technical work lives on <a href="https://github.com/ahitagnied" target="_blank" rel="noopener noreferrer">GitHub</a> and <a href="https://scholar.google.com/citations?user=GLTc7LcAAAAJ&hl=en" target="_blank" rel="noopener noreferrer">Google Scholar</a>. I sometimes post on <a href="https://x.com/ahitagnied" target="_blank" rel="noopener noreferrer">X</a> and <a href="https://linkedin.com/in/ahitagnid" target="_blank" rel="noopener noreferrer">LinkedIn</a>.
+		</p>
 	</div>
 
 </div>
