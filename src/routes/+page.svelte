@@ -23,7 +23,7 @@
 		<div
 			class="font-[500] text-body text-[length:var(--text-lead)] md:text-[length:var(--text-display)]"
 		>
-			Hi, I am Ahitagni!
+			Ahitagni D
 		</div>
 		<ThemeToggle />
 	</div>
