@@ -34,11 +34,9 @@
 	</p>
 
 	<p>
-		I am a part of <a href="https://neo.com/">Neo</a> & scout for
-		<a href="https://www.clayvc.io/">Clay VC</a>. Previously, I worked on Humanoids at 
-		<a href="https://personainc.ai/">Persona AI</a> & researched Video Understanding at 
-		<a href="https://www.sievedata.com/">Sieve Data</a> to power Petabyte-scale video
-		datasets for Frontier AI Labs.
+		Previously, I worked on Humanoids at <a href="https://personainc.ai/">Persona AI</a>
+		& researched Video Understanding at <a href="https://www.sievedata.com/">Sieve Data</a> 
+		to power Petabyte-scale video datasets for Frontier AI Labs.
 	</p>
 
 	<p>
