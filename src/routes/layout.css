@@ -187,6 +187,17 @@ html.dark {
 	.theme-toggle:hover {
 		color: var(--color-text-hover);
 	}
+
+	.page-stamp {
+		display: block;
+		margin-top: 1.2em;
+		margin-left: auto;
+		height: 50px;
+		aspect-ratio: 1;
+		user-select: none;
+		-webkit-user-drag: none;
+		pointer-events: none;
+	}
 }
 
 /* Prose — styles for {@html} rendered markdown content */
