@@ -5,6 +5,7 @@
 	import yaml from 'js-yaml';
 	import { fade } from 'svelte/transition';
 	import { onMount } from 'svelte';
+	import { link } from '$lib/utils/refLink.js';
 
 	const books = yaml.load(booksData).sort((a, b) => new Date(b.date) - new Date(a.date));
 
@@ -183,7 +184,7 @@
 
 	{#if bookIndex === -1}
 		<p class="footer-note text-muted text-[length:var(--text-label)]">
-			Maintained since February, 2026. Design inspired by <a href="https://adammaj.com/reading">Adam Majumdar</a>
+			Maintained since February, 2026. Design inspired by {@html link('https://adammaj.com/reading', 'Adam Majumdar')}
 		</p>
 	{/if}
 </div>

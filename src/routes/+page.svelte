@@ -6,6 +6,7 @@
 	import researchData from '$lib/data/research.yml?raw';
 	import yaml from 'js-yaml';
 	import { getPublishedEssays } from '$lib/utils/essays.js';
+	import { link, refLink } from '$lib/utils/refLink.js';
 
 	const researchItems = yaml.load(researchData);
 	const displayItems = researchItems.slice(0, 5);
@@ -29,30 +30,30 @@
 	</div>
 
 	<p class="pt-[20px]">
-		I am the Founding Engineer at <a href="https://optica.industries/">Optica Industries</a>,
+		I am the Founding Engineer at {@html link('https://optica.industries/', 'Optica Industries')},
 		building the next American Metal Factory. We are backed by Lightspeed, SV Angel, & Neo.
 	</p>
 
 	<p>
-		Previously, I worked on Humanoids at <a href="https://personainc.ai/">Persona AI</a>
-		& researched Video Understanding at <a href="https://www.sievedata.com/">Sieve Data</a> 
+		Previously, I worked on Humanoids at {@html link('https://personainc.ai/', 'Persona AI')}
+		& researched Video Understanding at {@html link('https://www.sievedata.com/', 'Sieve Data')}
 		to power Petabyte-scale video datasets for Frontier AI Labs.
 	</p>
 
 	<p>
 		I am interested in World Modelling and
-		<a href="https://openreview.net/pdf?id=BZ5a1r-kVsf">JEPAs</a>, advised by
-		<a href="https://vivekboominathan.com/">Vivek Boominathan</a>,
-		<a href="https://scholar.google.com/citations?user=S1x_xqcAAAAJ&hl=en">Randall Balesteiero</a>, &
-		<a href="https://computationalimaging.rice.edu/team/ashok-veeraraghavan/">Ashok Veeraraghavan</a>. Before this, I've researched at the
-		<a href="https://www.media.mit.edu/groups/nano-cybernetic-biotrek/overview/">MIT Media Lab</a> in Cambridge,
-		<a href="https://ajayan.rice.edu/">Ajayan Group</a> at Rice, and
-		<a href="https://scholar.google.com/citations?user=JlmilbMAAAAJ&hl=en">IIT Guwahati</a>.
+		{@html link('https://openreview.net/pdf?id=BZ5a1r-kVsf', 'JEPAs')}, advised by
+		{@html link('https://vivekboominathan.com/', 'Vivek Boominathan')},
+		{@html link('https://scholar.google.com/citations?user=S1x_xqcAAAAJ&hl=en', 'Randall Balesteiero')}, &
+		{@html link('https://computationalimaging.rice.edu/team/ashok-veeraraghavan/', 'Ashok Veeraraghavan')}. Before this, I've researched at the
+		{@html link('https://www.media.mit.edu/groups/nano-cybernetic-biotrek/overview/', 'MIT Media Lab')} in Cambridge,
+		{@html link('https://ajayan.rice.edu/', 'Ajayan Group')} at Rice, and
+		{@html link('https://scholar.google.com/citations?user=JlmilbMAAAAJ&hl=en', 'IIT Guwahati')}.
 	</p>
 
 	<p>
-		<a href="/about">Here</a> are some things I believe. I also like to <a href="/reading">read</a>
-		and <a href="https://www.ahidas.com/essays/">write</a> about things that interest me.
+		{@html link('/about', 'Here')} are some things I believe. I also like to {@html link('/reading', 'read')}
+		and {@html link('https://www.ahidas.com/essays/', 'write')} about things that interest me.
 	</p>
 
 	<h1 class="pt-[20px]">
@@ -77,13 +78,47 @@
 		<EssayItem item={essay} />
 	{/each}
 
-	<p class="pt-[20px] mb-0">
-		Outside of work I sail, paint, and hike. Currently based in San Francisco.
+	<img src="/denali.webp" alt="" class="w-full my-2" />
+
+	<h1 class="pt-[20px]">
+		Interests
+	</h1>
+
+	<p>
+		Robots will soon automate most of the physical world. Many models are
+		already proving to be useful enough for deployment. This posits a
+		reality where deployment & foundational model research can
+		symbiotically accelerate each other.
+	</p>
+	<p>
+		The key is models that understand the world. I am interested 
+		in robotic manipulation, particularly using JEPAs and action-conditioned 
+		WM approaches to VLA.{@html refLink('https://le-wm.github.io/', 1)}
+	</p>
+	<p>
+		I am generally interested in startups,{@html refLink('https://www.ahidas.com/about', 2)}
+		especially ones building and  deploying embodied AI. Many physical industries 
+		are yet to realise what recent learning-based methods make possible.
+	</p>
+	<p>
+		A new wave of reindustrialisation,{@html refLink('https://optica.industries/', 3)}
+		where AI moves beyond software and starts reshaping how the physical world is built,
+		operated, and automated is underway. If you are building in this space,
+		{@html link('https://calendly.com/ahitagnid/new-meeting', 'would love to chat')}.
 	</p>
 
-	<p class="pt-[20px]">
-		I am easy to reach — please say hi at ahitagnis [at] gmail [dot] com or <a href="https://calendly.com/ahitagnid/new-meeting">grab a time</a>. Most of my technical work lives on <a href="https://github.com/ahitagnied" target="_blank" rel="noopener noreferrer">GitHub</a> and <a href="https://scholar.google.com/citations?user=GLTc7LcAAAAJ&hl=en" target="_blank" rel="noopener noreferrer">Google Scholar</a>. I sometimes post on <a href="https://x.com/ahitagnied" target="_blank" rel="noopener noreferrer">X</a> and <a href="https://linkedin.com/in/ahitagnid" target="_blank" rel="noopener noreferrer">LinkedIn</a>.
-	</p>
-
-	<img src="/stamp.jpg" alt="" class="page-stamp" draggable="false" />
+	<div class="grid grid-cols-2 pt-[20px]">
+		<div>
+			<p class="mb-0">I love to sail, travel, and take pictures</p>
+			<p class="mb-0">Currently based in San Francisco.</p>
+			<p class="mt-[1.2em] mb-0">ahitagnis [at] gmail [dot] com</p>
+		</div>
+		<div class="text-right">
+			<p class="mb-0">{@html link('https://x.com/ahitagnied', 'Twitter', { external: true })}</p>
+			<p class="mb-0">{@html link('https://www.linkedin.com/in/ahitagnid/', 'LinkedIn', { external: true })}</p>
+			<p class="mt-[1.2em] mb-0">
+				{@html link('https://scholar.google.com/citations?user=GLTc7LcAAAAJ&hl=en', 'Google Scholar', { external: true })}
+			</p>
+		</div>
+	</div>
 </div>
