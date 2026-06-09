@@ -78,34 +78,6 @@
 		<EssayItem item={essay} />
 	{/each}
 
-	<img src="/denali.webp" alt="" class="w-full my-2" />
-
-	<h1 class="pt-[20px]">
-		Interests
-	</h1>
-
-	<p>
-		Robots will soon automate most of the physical world. Many models are
-		already proving to be useful enough for deployment. This posits a
-		reality where deployment & foundational model research can
-		symbiotically accelerate each other.
-	</p>
-	<p>
-		The key is models that understand the world. I am interested 
-		in robotic manipulation, particularly using JEPAs and action-conditioned 
-		WM approaches to VLA.{@html refLink('https://le-wm.github.io/', 1)}
-	</p>
-	<p>
-		I am generally interested in startups,{@html refLink('https://www.ahidas.com/about', 2)}
-		especially ones building and  deploying embodied AI. Many physical industries 
-		are yet to realise what recent learning-based methods make possible.
-	</p>
-	<p>
-		A new wave of reindustrialisation,{@html refLink('https://optica.industries/', 3)}
-		where AI moves beyond software and starts reshaping how the physical world is built,
-		operated, and automated is underway. If you are building in this space,
-		{@html link('https://calendly.com/ahitagnid/new-meeting', 'would love to chat')}.
-	</p>
 
 	<div class="grid grid-cols-[7fr_3fr] pt-[20px]">
 		<div>
