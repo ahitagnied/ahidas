@@ -107,7 +107,7 @@
 		{@html link('https://calendly.com/ahitagnid/new-meeting', 'would love to chat')}.
 	</p>
 
-	<div class="grid grid-cols-2 pt-[20px]">
+	<div class="grid grid-cols-[7fr_3fr] pt-[20px]">
 		<div>
 			<p class="mb-0">I love to sail, travel, and take pictures</p>
 			<p class="mb-0">Currently based in San Francisco.</p>
@@ -117,7 +117,7 @@
 			<p class="mb-0">{@html link('https://x.com/ahitagnied', 'Twitter', { external: true })}</p>
 			<p class="mb-0">{@html link('https://www.linkedin.com/in/ahitagnid/', 'LinkedIn', { external: true })}</p>
 			<p class="mt-[1.2em] mb-0">
-				{@html link('https://scholar.google.com/citations?user=GLTc7LcAAAAJ&hl=en', 'Google Scholar', { external: true })}
+				{@html link('https://scholar.google.com/citations?user=GLTc7LcAAAAJ&hl=en', 'Scholar', { external: true })}
 			</p>
 		</div>
 	</div>
