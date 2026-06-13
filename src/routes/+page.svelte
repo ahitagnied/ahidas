@@ -93,4 +93,16 @@
 			</p>
 		</div>
 	</div>
+
+	<div class="flex justify-end items-center gap-[0.4em] pt-[20px] md:gap-[0.6em]">
+		<p class="mb-0 text-right text-muted text-[length:var(--text-label)] md:text-[length:var(--text-caption)]">
+			© 2023-2026 Ahitagni Das<br />Made in San Francisco
+		</p>
+		<img
+			src="/stamp.webp"
+			alt=""
+			class="h-12 shrink-0 select-none pointer-events-none md:h-[70px]"
+			draggable="false"
+		/>
+	</div>
 </div>
