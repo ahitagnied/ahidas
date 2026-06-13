@@ -101,7 +101,7 @@
 		<img
 			src="/stamp.webp"
 			alt=""
-			class="h-12 shrink-0 select-none pointer-events-none md:h-[70px]"
+			class="h-[50px] shrink-0 select-none pointer-events-none md:h-[60px]"
 			draggable="false"
 		/>
 	</div>
