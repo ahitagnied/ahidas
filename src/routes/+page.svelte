@@ -94,7 +94,7 @@
 		</div>
 	</div>
 
-	<div class="flex justify-end items-center gap-[0.4em] pt-[20px] md:gap-[0.6em]">
+	<div class="flex justify-end items-center gap-[0.6em] pt-[20px] md:gap-[0.8em]">
 		<p class="mb-0 text-right text-muted text-[length:var(--text-label)] md:text-[length:var(--text-caption)]">
 			© 2023-2026 Ahitagni Das<br />Made in San Francisco
 		</p>
