@@ -18,14 +18,14 @@ export function renderMarkdown(text) {
 	const withMath = stripped
 		.replace(/\$\$([\s\S]*?)\$\$/g, (match, math) => {
 			try {
-				return katex.renderToString(math.trim(), { displayMode: true, throwOnError: false });
+				return katex.renderToString(math.trim(), { displayMode: true, throwOnError: false, output: 'html' });
 			} catch {
 				return match;
 			}
 		})
 		.replace(/\$([^$\n]+?)\$/g, (match, math) => {
 			try {
-				return katex.renderToString(math.trim(), { displayMode: false, throwOnError: false });
+				return katex.renderToString(math.trim(), { displayMode: false, throwOnError: false, output: 'html' });
 			} catch {
 				return match;
 			}
