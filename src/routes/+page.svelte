@@ -24,9 +24,8 @@
 		<div
 			class="font-[500] text-body text-[length:var(--text-lead)] md:text-[length:var(--text-display)]"
 		>
-			Hi! I am Ahi
+			Ahitagni Das
 		</div>
-		<ThemeToggle />
 	</div>
 
 	<p class="pt-[20px]">
