@@ -2,7 +2,6 @@
 	import Icon from '@iconify/svelte';
 	import ResearchItem from '$lib/components/ResearchItem.svelte';
 	import EssayItem from '$lib/components/EssayItem.svelte';
-	import ThemeToggle from '$lib/components/ThemeToggle.svelte';
 	import researchData from '$lib/data/research.yml?raw';
 	import yaml from 'js-yaml';
 	import { getPublishedEssays } from '$lib/utils/essays.js';
@@ -20,13 +19,8 @@
 </svelte:head>
 
 <div class="page-container">
-	<div class="flex justify-between items-center mb-3">
-		<div
-			class="font-[500] text-body text-[length:var(--text-lead)] md:text-[length:var(--text-display)]"
-		>
-			Ahitagni Das
-		</div>
-		<ThemeToggle />
+	<div class="mb-3 font-[500] text-body text-[length:var(--text-lead)] md:text-[length:var(--text-display)]">
+		Ahitagni Das
 	</div>
 
 	<p class="pt-[20px]">

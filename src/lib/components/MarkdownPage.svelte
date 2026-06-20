@@ -1,6 +1,5 @@
 <script>
 	import Icon from '@iconify/svelte';
-	import ThemeToggle from '$lib/components/ThemeToggle.svelte';
 
 	/** @type {string} */
 	export let title;
@@ -18,12 +17,11 @@
 </svelte:head>
 
 <div class="page-container">
-	<div class="flex justify-between items-center mb-4">
+	<div class="mb-4">
 		<a href={backHref} class="back-link group">
 			<Icon icon="mdi:arrow-bottom-left" class="arrow-icon" />
 			Back
 		</a>
-		<ThemeToggle />
 	</div>
 
 	<div class="mb-6">
