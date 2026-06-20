@@ -145,6 +145,16 @@ html.dark {
 		font-weight: 600;
 	}
 
+	.research-link {
+		@apply no-underline transition-colors;
+		font-size: var(--text-caption);
+		color: var(--color-text-muted);
+	}
+
+	.research-link:hover {
+		color: var(--color-text-hover);
+	}
+
 	@media (min-width: theme(--breakpoint-md)) {
 		.research-authors,
 		.research-meta {
