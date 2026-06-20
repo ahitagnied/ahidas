@@ -1,6 +1,5 @@
 <script>
 	import Icon from '@iconify/svelte';
-	import ThemeToggle from '$lib/components/ThemeToggle.svelte';
 	import booksData from '$lib/data/books.yml?raw';
 	import yaml from 'js-yaml';
 	import { fade } from 'svelte/transition';
@@ -92,15 +91,12 @@
 
 <div class="page-container">
 <div class="page-inner">
-	<div class="flex justify-between items-center mb-[1.2em]">
-		<h1 class="mb-0">
-			<a href="/" class="section-link group">
-				Reading
-				<Icon icon="mdi:arrow-bottom-left" class="arrow-icon" />
-			</a>
-		</h1>
-		<ThemeToggle />
-	</div>
+	<h1 class="mb-[1.2em]">
+		<a href="/" class="section-link group">
+			Reading
+			<Icon icon="mdi:arrow-bottom-left" class="arrow-icon" />
+		</a>
+	</h1>
 
 	<div class="shelf">
 		<div bind:this={scrollLeftEl} class="arrow arrow-left"

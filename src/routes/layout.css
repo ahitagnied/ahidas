@@ -28,16 +28,6 @@
 	--color-text-hover:   #1f2937; /* hover state, prose h1/h2 */
 }
 
-html.dark {
-	--color-bg:           #100F0F; /* Flexoki bg */
-	--color-text:         #CECDC3; /* Flexoki tx — primary text */
-	--color-text-heading: #878580; /* Flexoki tx-2 — section labels: ABOUT, RESEARCH… */
-	--color-text-muted:   #878580; /* Flexoki tx-2 — muted (dates, journals) */
-	--color-text-authors: #9E9C94;
-	--color-text-author-self: #DAD8CE;
-	--color-border:       #282726; /* Flexoki ui — borders */
-	--color-text-hover:   #DAD8CE; /* Flexoki base-150 — hover/emphasis */
-}
 
 @layer base {
 	html {
@@ -185,18 +175,6 @@ html.dark {
 		@apply h-4 w-3 transition-transform group-hover:rotate-45;
 	}
 
-	.theme-toggle {
-		@apply inline-flex items-center justify-center transition-colors cursor-pointer;
-		color: var(--color-text-muted);
-		background: none;
-		border: none;
-		padding: 0;
-		line-height: 1;
-	}
-
-	.theme-toggle:hover {
-		color: var(--color-text-hover);
-	}
 }
 
 /* Prose — styles for {@html} rendered markdown content */

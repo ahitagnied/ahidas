@@ -2,7 +2,6 @@
 	import Icon from '@iconify/svelte';
 	import ResearchItem from '$lib/components/ResearchItem.svelte';
 	import EssayItem from '$lib/components/EssayItem.svelte';
-	import ThemeToggle from '$lib/components/ThemeToggle.svelte';
 	import researchData from '$lib/data/research.yml?raw';
 	import yaml from 'js-yaml';
 	import { getPublishedEssays } from '$lib/utils/essays.js';
