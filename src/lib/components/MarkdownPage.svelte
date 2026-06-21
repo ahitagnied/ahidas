@@ -25,7 +25,7 @@
 	</div>
 
 	<div class="mb-6">
-		<div class="mb-1 font-[500] text-body text-[length:var(--text-lead)] md:text-[length:var(--text-display)]">
+		<div class="mb-1 font-[500] item-title text-[length:var(--text-lead)] md:text-[length:var(--text-display)]">
 			{title}
 		</div>
 		{#if date}

@@ -25,10 +25,10 @@
 			rel="noopener noreferrer"
 			class="no-underline block group"
 		>
-			<div class="text-body">{item.title}</div>
+			<div class="item-title">{item.title}</div>
 		</a>
 	{:else}
-		<div class="text-body">{item.title}</div>
+		<div class="item-title">{item.title}</div>
 	{/if}
 	{#if item.authors?.length}
 		<div class="research-authors">

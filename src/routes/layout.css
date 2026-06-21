@@ -19,11 +19,10 @@
 	--font-size: 16px;
 
 	--color-bg:           #ffffff; /* page background */
-	--color-text:         #4b5563; /* body copy, links, essay title */
-	--color-text-heading: #6b7280; /* section labels (ABOUT, RESEARCH…), section-link arrows */
+	--color-text:         #4b5563; /* body copy */
+	--color-text-title:   #363d4d; /* item titles, inline links */
+	--color-text-heading: #757d8a; /* section labels (ABOUT, RESEARCH…), section-link arrows */
 	--color-text-muted:   #9ca3af; /* dates, journal names, secondary info */
-	--color-text-authors: var(--color-text-heading);
-	--color-text-author-self: var(--color-text);
 	--color-border:       #d1d5db; /* footnote divider line */
 	--color-text-hover:   #1f2937; /* hover state, prose h1/h2 */
 }
@@ -83,8 +82,8 @@
 
 	.page-container a {
 		@apply underline underline-offset-3;
-		color: var(--color-text);
-		text-decoration-color: var(--color-text);
+		color: var(--color-text-title);
+		text-decoration-color: var(--color-text-title);
 	}
 
 	.page-container h1 a {
@@ -100,24 +99,22 @@
 		@apply no-underline;
 	}
 
-	/* Replaces text-gray-600 + group-hover:text-gray-800 in component markup */
-	.text-body {
-		color: var(--color-text);
+	.item-title {
+		color: var(--color-text-title);
 		transition: color 0.15s;
 	}
 
-	.group:hover .text-body {
+	.group:hover .item-title {
 		color: var(--color-text-hover);
 	}
 
-	/* Replaces text-gray-400 in component markup */
 	.text-muted {
 		color: var(--color-text-muted);
 	}
 
 	/* Research section — authors, journal line */
 	.research-authors {
-		color: var(--color-text-authors);
+		color: var(--color-text-heading);
 		font-size: var(--text-caption);
 		line-height: 1.5;
 	}
@@ -125,14 +122,13 @@
 	.research-meta {
 		color: var(--color-text-muted);
 		font-size: var(--text-caption);
-		font-style: italic;
 		line-height: 1.5;
 		margin-top: 0.125rem;
 	}
 
 	.research-author-self {
-		color: var(--color-text-author-self);
-		font-weight: 600;
+		color: var(--color-text-title);
+		font-weight: 500;
 	}
 
 	@media (min-width: theme(--breakpoint-md)) {
@@ -173,6 +169,7 @@
 	font-size: var(--text-body);
 }
 .prose a {
+	color: var(--color-text);
 	text-decoration: none;
 }
 .prose :is(h1, h2) {
@@ -244,12 +241,6 @@
 	.prose h2 {
 		font-size: var(--text-display);
 	}
-}
-
-/* Prose links — @tailwindcss/typography sets color in @layer utilities, so override unlayered */
-.prose a {
-	color: var(--color-text);
-	text-decoration-color: var(--color-text);
 }
 
 .prose a:hover {

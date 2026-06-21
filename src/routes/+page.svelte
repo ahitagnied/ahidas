@@ -19,7 +19,7 @@
 </svelte:head>
 
 <div class="page-container">
-	<div class="mb-3 font-[500] text-body text-[length:var(--text-lead)] md:text-[length:var(--text-display)]">
+	<div class="font-[500] item-title text-[length:var(--text-lead)] md:text-[length:var(--text-display)]">
 		Ahitagni Das
 	</div>
 
