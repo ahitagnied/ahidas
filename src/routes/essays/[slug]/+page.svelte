@@ -16,6 +16,6 @@
 <MarkdownPage
 	title={essay.title}
 	date={essay.date}
-	backHref="/essays"
+	section="Essays"
 	{htmlContent}
 />

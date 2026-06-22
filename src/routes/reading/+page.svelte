@@ -91,12 +91,9 @@
 
 <div class="page-container">
 <div class="page-inner">
-	<h1 class="mb-[1.2em]">
-		<a href="/" class="section-link group">
-			Reading
-			<Icon icon="mdi:arrow-bottom-left" class="arrow-icon" />
-		</a>
-	</h1>
+	<div class="mb-[1.2em] item-title">
+		<a href="/" class="no-underline" style="color: inherit">Ahitagni Das</a><span class="text-muted">{' — '}Shelf</span>
+	</div>
 
 	<div class="shelf">
 		<div bind:this={scrollLeftEl} class="arrow arrow-left"

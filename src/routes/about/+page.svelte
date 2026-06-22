@@ -6,4 +6,4 @@
 	const htmlContent = renderMarkdown(aboutText);
 </script>
 
-<MarkdownPage title="About" backHref="/" {htmlContent} />
+<MarkdownPage title="About" {htmlContent} />

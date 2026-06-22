@@ -1,14 +1,12 @@
 <script>
-	import Icon from '@iconify/svelte';
-
 	/** @type {string} */
 	export let title;
-	/** @type {string} */
-	export let backHref;
 	/** @type {string} */
 	export let htmlContent;
 	/** @type {string | undefined} */
 	export let date = undefined;
+	/** @type {string | undefined} */
+	export let section = undefined;
 </script>
 
 <svelte:head>
@@ -17,19 +15,17 @@
 </svelte:head>
 
 <div class="page-container">
-	<div class="mb-4">
-		<a href={backHref} class="back-link group">
-			<Icon icon="mdi:arrow-bottom-left" class="arrow-icon" />
-			Back
-		</a>
-	</div>
-
 	<div class="mb-6">
-		<div class="mb-1 font-[500] item-title text-[length:var(--text-lead)] md:text-[length:var(--text-display)]">
-			{title}
+		<div class="mb-[1.2em] item-title">
+			<a href="/" class="no-underline" style="color: inherit">Ahitagni Das</a>{#if section}<span class="text-muted">{' — '}</span><a href="/{section.toLowerCase()}" class="no-underline" style="color: var(--color-text-muted)">{section}</a>{:else}<span class="text-muted">{' — '}{title}</span>{/if}
 		</div>
-		{#if date}
-			<div class="text-muted text-[length:var(--text-label)]">{date}</div>
+		{#if section}
+			<div class="mb-1 font-[500] item-title text-[length:var(--text-lead)] md:text-[length:var(--text-display)]">
+				{title}
+			</div>
+			{#if date}
+				<div class="text-muted text-[length:var(--text-caption)] md:text-[length:var(--text-caption-md)]">{date}</div>
+			{/if}
 		{/if}
 	</div>
 

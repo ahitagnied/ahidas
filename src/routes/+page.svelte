@@ -1,11 +1,10 @@
 <script>
-	import Icon from '@iconify/svelte';
 	import ResearchItem from '$lib/components/ResearchItem.svelte';
 	import EssayItem from '$lib/components/EssayItem.svelte';
 	import researchData from '$lib/data/research.yml?raw';
 	import yaml from 'js-yaml';
 	import { getPublishedEssays } from '$lib/utils/essays.js';
-	import { link, refLink } from '$lib/utils/refLink.js';
+	import { link } from '$lib/utils/refLink.js';
 
 	const researchItems = yaml.load(researchData);
 	const displayItems = researchItems.slice(0, 5);
@@ -19,8 +18,13 @@
 </svelte:head>
 
 <div class="page-container">
-	<div class="font-[500] item-title text-[length:var(--text-lead)] md:text-[length:var(--text-display)]">
-		Ahitagni Das
+	<div class="flex justify-between items-baseline">
+		<span class="item-title">Ahitagni Das</span>
+		<div class="flex gap-[1.2em]">
+			<a href="/publications" class="section-link">Publications</a>
+			<a href="/essays" class="section-link">Essays</a>
+			<a href="/reading" class="section-link">Shelf</a>
+		</div>
 	</div>
 
 	<p class="pt-[20px]">
@@ -50,28 +54,17 @@
 		and {@html link('https://www.ahidas.com/essays/', 'write')} about things that interest me.
 	</p>
 
-	<h1 class="pt-[20px]">
-		<a href="/research" class="section-link group">
-			Research
-			<Icon icon="mdi:arrow-top-right" class="arrow-icon" />
-		</a>
-	</h1>
+	<h1 class="pt-[20px]">Publications</h1>
 
 	{#each displayItems as item (item.title)}
 		<ResearchItem {item} />
 	{/each}
 
-	<h1 class="pt-[20px]">
-		<a href="/essays" class="section-link group">
-			Essays
-			<Icon icon="mdi:arrow-top-right" class="arrow-icon" />
-		</a>
-	</h1>
+	<h1 class="pt-[20px]">Essays</h1>
 
 	{#each displayEssays as essay (essay.slug)}
 		<EssayItem item={essay} />
 	{/each}
-
 
 	<div class="grid grid-cols-[7fr_3fr] pt-[20px]">
 		<div>
