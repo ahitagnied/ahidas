@@ -19,11 +19,16 @@
 </svelte:head>
 
 <div class="page-container">
-	<div class="font-[500] item-title text-[length:var(--text-lead)] md:text-[length:var(--text-display)]">
-		Ahitagni Das
+	<div class="flex items-baseline justify-between">
+		<a href="/" class="item-title no-underline">Ahitagni Das</a>
+		<div class="flex gap-4">
+			<a href="/research" class="section-link">Publications</a>
+			<a href="/essays" class="section-link">Essays</a>
+			<a href="/reading" class="section-link">Shelf</a>
+		</div>
 	</div>
 
-	<p class="pt-[20px]">
+	<p class="pt-[30px]">
 		I am the Founding Engineer at {@html link('https://optica.industries/', 'Optica Industries')},
 		building the next American Metal Factory. We are backed by Lightspeed, SV Angel, & Neo.
 	</p>
@@ -49,28 +54,6 @@
 		{@html link('/about', 'Here')} are some things I believe. I also like to {@html link('/reading', 'read')}
 		and {@html link('https://www.ahidas.com/essays/', 'write')} about things that interest me.
 	</p>
-
-	<h1 class="pt-[20px]">
-		<a href="/research" class="section-link group">
-			Research
-			<Icon icon="mdi:arrow-top-right" class="arrow-icon" />
-		</a>
-	</h1>
-
-	{#each displayItems as item (item.title)}
-		<ResearchItem {item} />
-	{/each}
-
-	<h1 class="pt-[20px]">
-		<a href="/essays" class="section-link group">
-			Essays
-			<Icon icon="mdi:arrow-top-right" class="arrow-icon" />
-		</a>
-	</h1>
-
-	{#each displayEssays as essay (essay.slug)}
-		<EssayItem item={essay} />
-	{/each}
 
 
 	<div class="grid grid-cols-[7fr_3fr] pt-[20px]">

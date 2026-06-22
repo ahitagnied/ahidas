@@ -17,19 +17,13 @@
 </svelte:head>
 
 <div class="page-container">
-	<div class="mb-4">
-		<a href={backHref} class="back-link group">
-			<Icon icon="mdi:arrow-bottom-left" class="arrow-icon" />
-			Back
-		</a>
-	</div>
-
 	<div class="mb-6">
-		<div class="mb-1 font-[500] item-title text-[length:var(--text-lead)] md:text-[length:var(--text-display)]">
-			{title}
+		<div class="item-title">
+			<a href={backHref} class="no-underline" style="color: inherit">Ahitagni Das</a>
+			<span class="text-muted"> — {title}</span>
 		</div>
 		{#if date}
-			<div class="text-muted text-[length:var(--text-label)]">{date}</div>
+			<div class="text-muted text-[length:var(--text-label)] mt-1">{date}</div>
 		{/if}
 	</div>
 

@@ -11,12 +11,10 @@
 </svelte:head>
 
 <div class="page-container">
-	<h1 class="mb-[1.2em]">
-		<a href="/" class="section-link group">
-			Essays
-			<Icon icon="mdi:arrow-bottom-left" class="arrow-icon" />
-		</a>
-	</h1>
+	<div class="mb-[1.2em] item-title">
+		<a href="/" class="no-underline" style="color: inherit">Ahitagni Das</a>
+		<span class="text-muted"> — Essays</span>
+	</div>
 
 	{#each essays as essay (essay.slug)}
 		<EssayItem item={essay} />
