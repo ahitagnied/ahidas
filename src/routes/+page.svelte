@@ -18,7 +18,7 @@
 </svelte:head>
 
 <div class="page-container">
-	<div class="flex justify-between items-baseline">
+	<div class="flex justify-between items-baseline mb-[1.2em]">
 		<span class="item-title">Ahitagni Das</span>
 		<div class="flex gap-[1.2em]">
 			<a href="/publications" class="section-link">Publications</a>
@@ -53,18 +53,6 @@
 		{@html link('/about', 'Here')} are some things I believe. I also like to {@html link('/reading', 'read')}
 		and {@html link('https://www.ahidas.com/essays/', 'write')} about things that interest me.
 	</p>
-
-	<h1 class="pt-[20px]">Publications</h1>
-
-	{#each displayItems as item (item.title)}
-		<ResearchItem {item} />
-	{/each}
-
-	<h1 class="pt-[20px]">Essays</h1>
-
-	{#each displayEssays as essay (essay.slug)}
-		<EssayItem item={essay} />
-	{/each}
 
 	<div class="grid grid-cols-[7fr_3fr] pt-[20px]">
 		<div>
