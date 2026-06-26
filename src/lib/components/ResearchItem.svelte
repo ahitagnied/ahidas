@@ -6,33 +6,37 @@
 		authors?: string[];
 		journal: string;
 		year: number;
-		url?: string;
+		image?: string;
+		description?: string;
+		links?: Record<string, string>;
 	};
 
 	let { item }: { item: ResearchEntry } = $props();
 
-	const hasUrl = $derived.by(() => {
-		const url = item.url?.trim();
-		return Boolean(url && url !== '-');
-	});
+	const links = $derived(Object.entries(item.links ?? {}));
 </script>
 
-<div class="pb-3 font-[500]">
-	{#if hasUrl}
-		<a
-			href={item.url}
-			target="_blank"
-			rel="noopener noreferrer"
-			class="no-underline block group"
-		>
-			<div class="item-title">{item.title}</div>
-		</a>
-	{:else}
-		<div class="item-title">{item.title}</div>
+<div class="flex items-center gap-4 pb-8">
+	{#if item.image}
+		<img src={item.image} alt="" class="w-[150px] h-[150px] shrink-0 object-cover" draggable="false" />
 	{/if}
-	{#if item.authors?.length}
+	<div class="flex flex-col gap-[0.3em]">
+		<div class="item-title">{item.title}</div>
+
+		{#if links.length}
+			<div class="flex flex-wrap gap-[5px]">
+				{#each links as [label, url]}
+					{#if url?.trim()}
+						<a href={url} target="_blank" rel="noopener noreferrer" class="research-tag">{label}</a>
+					{:else}
+						<span class="research-tag research-tag--inactive">{label}</span>
+					{/if}
+				{/each}
+			</div>
+		{/if}
+
 		<div class="research-authors">
-			{#each item.authors as author, i}
+			{#each item.authors ?? [] as author, i}
 				{#if i > 0}<span>, </span>{/if}
 				{#if author === AUTHOR_SELF}
 					<span class="research-author-self">{author}</span>
@@ -40,7 +44,11 @@
 					{author}
 				{/if}
 			{/each}
+			<span class="text-muted"> · {item.journal}, {item.year}</span>
 		</div>
-	{/if}
-	<div class="research-meta">{item.journal}, {item.year}</div>
+
+		{#if item.description}
+			<div class="research-description">{item.description}</div>
+		{/if}
+	</div>
 </div>

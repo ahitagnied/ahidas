@@ -2,22 +2,38 @@
   authors: ['Ahitagni Das', 'Qiuyi Hua', 'Vivek Boominathan', 'Randall Balesteiero']
   journal: 'In Submission'
   year: 2026
-  url: ''
+  image: '/images/research/clipa.webp'
+  description: 'Extends JEPA-style predictive learning to vision-language, replacing contrastive negatives with image-to-text prediction and geometric regularization.'
+  links:
+    arXiv: ''
+    Code: ''
+    Project: ''
 
 - title: 'PanoLess: Environment Reconstruction from Partial Reflective Views'
   authors: ['Ahitagni Das', 'Vivek Boominathan', 'Ashok Veeraraghavan']
   journal: 'European Conference on Computer Vision (ECCV)'
   year: 2026
-  url: ''
+  image: '/images/research/panoless.webp'
+  description: 'Reconstructs surrounding environments from partial reflective views using 2D Gaussian splats and a neural cubemap.'
+  links:
+    arXiv: ''
+    Code: ''
+    Project: ''
 
 - title: 'Enhancing the Performance of Li/Na-Ion Batteries with h-BN'
   authors: ['Ahitagni Das', 'Atin Pramanik', 'Mingrui Xu', 'Xinting Shuai', 'Abhijit Biswas', 'Robert Vajtai', 'Pulickel M. Ajayan']
   journal: 'ACS Nano'
   year: 2025
-  url: 'https://pubs.acs.org/doi/abs/10.1021/acsnano.5c11425'
+  image: '/images/research/hbn.webp'
+  description: 'Shows h-BN additives improve Li/Na-ion battery performance through enhanced ion transport and structural stability.'
+  links:
+    Paper: 'https://pubs.acs.org/doi/abs/10.1021/acsnano.5c11425'
 
 - title: 'An Outlook on Sodium-Ion Battery Technology Toward Practical Application'
   authors: ['Mingrui Xu', 'Xi Chen', 'Sreehari K. Saju', 'Ahitagni Das', 'Atin Pramanik', 'Pulickel M. Ajayan']
   journal: 'Journal of Materials Science'
   year: 2024
-  url: 'https://link.springer.com/article/10.1007/s10853-024-10503-z'
+  image: '/images/research/sodium-ion.webp'
+  description: 'Reviews sodium-ion battery technology progress, challenges, and pathways toward practical large-scale energy storage.'
+  links:
+    Paper: 'https://link.springer.com/article/10.1007/s10853-024-10503-z'

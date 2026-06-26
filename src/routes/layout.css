@@ -123,12 +123,47 @@
 		color: var(--color-text-muted);
 		font-size: var(--text-caption);
 		line-height: 1.5;
-		margin-top: 0.125rem;
 	}
 
 	.research-author-self {
 		color: var(--color-text-title);
 		font-weight: 500;
+	}
+
+	.research-description {
+		color: var(--color-text);
+		font-size: var(--text-caption);
+		line-height: 1.5;
+	}
+
+	@media (min-width: theme(--breakpoint-md)) {
+		.research-description {
+			font-size: var(--text-caption-md);
+		}
+	}
+
+	.research-tag {
+		@apply inline-block transition-colors;
+		text-decoration: none !important;
+		font-size: 0.5rem;
+		font-weight: 600;
+		letter-spacing: 0.05em;
+		text-transform: uppercase;
+		line-height: 1;
+		padding: 2px 5px;
+		border: 1px solid var(--color-border);
+		background: transparent;
+		color: var(--color-text-heading) !important;
+	}
+
+	.research-tag:not(.research-tag--inactive):hover {
+		border-color: var(--color-text-hover);
+		color: var(--color-text-hover) !important;
+	}
+
+	.research-tag--inactive {
+		color: var(--color-text-muted) !important;
+		cursor: default;
 	}
 
 	@media (min-width: theme(--breakpoint-md)) {
