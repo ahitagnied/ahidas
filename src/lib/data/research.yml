@@ -1,14 +1,3 @@
-- title: 'CLIPA: Non-Contrastive Vision-Language Pre-Training'
-  authors: ['Ahitagni Das', 'Qiuyi Hua', 'Vivek Boominathan', 'Randall Balesteiero']
-  journal: 'In Submission'
-  year: 2026
-  image: '/images/research/clipa.webp'
-  description: 'Extends JEPA-style predictive learning to vision-language, replacing contrastive negatives with image-to-text prediction and geometric regularization.'
-  links:
-    arXiv: ''
-    Code: ''
-    Project: ''
-
 - title: 'PanoLess: Environment Reconstruction from Partial Reflective Views'
   authors: ['Ahitagni Das', 'Vivek Boominathan', 'Ashok Veeraraghavan']
   journal: 'European Conference on Computer Vision (ECCV)'
