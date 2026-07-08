@@ -32,12 +32,12 @@ I am working towards realising what I want the outcome of my life to be, there's
 	- The best collaborators make you think faster, not just work faster.
 	- Compounding is the most powerful force in knowledge. The person who goes one level deeper every year for a decade is in a different universe from everyone else.
 
-Most of this I learned by being wrong first. I'm probably still wrong about some of it. That's the point. I am open to all problems, but here is a small subset that really interest me.
+I am open to all problems, but here is a small subset that really interest me.
 
-- A complete theory of intelligence. How does understanding emerge from experience?
-	- Why certain arrangements of matter produce understanding at all. What is the physical basis of intelligence?
-- The simulation-to-reality gap. How do you build a robot that learns the real world without ever having to live in it?
-- Large-scale self-supervised learning. Can we recover the latent structure of the world directly from observations?
+- The evolution of unsupervised intelligence in humans.
+	- Why certain arrangements of matter produce understanding at all. What is the physical basis of intelligence? What conditions must be true for intelligence to develop through evolution?
+- How do we create machines with the same capacity for understanding, locomotion, and manipulation as humans — and one day, beyond them?
+- Art
 
 ---
 
