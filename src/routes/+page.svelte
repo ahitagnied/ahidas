@@ -41,11 +41,11 @@
 	<p>
 		I am interested in World Modelling and
 		{@html link('https://openreview.net/pdf?id=BZ5a1r-kVsf', 'JEPAs')}, advised by
-		{@html link('https://vivekboominathan.com/', 'Vivek Boominathan')},
+		{@html link('https://scholar.google.com/citations?user=wwf-WgUAAAAJ&hl=en', 'Vivek Boominathan')},
 		{@html link('https://scholar.google.com/citations?user=S1x_xqcAAAAJ&hl=en', 'Randall Balesteiero')}, &
-		{@html link('https://computationalimaging.rice.edu/team/ashok-veeraraghavan/', 'Ashok Veeraraghavan')}. Before this, I've researched at the
+		{@html link('https://scholar.google.com/citations?user=tI-oUmsAAAAJ&hl=en', 'Ashok Veeraraghavan')}. Before this, I've researched at the
 		{@html link('https://www.media.mit.edu/groups/nano-cybernetic-biotrek/overview/', 'MIT Media Lab')} in Cambridge,
-		{@html link('https://ajayan.rice.edu/', 'Ajayan Group')} at Rice, and
+		{@html link('https://scholar.google.com/citations?user=S5oLGEgAAAAJ&hl=en', 'Ajayan Group')} at Rice, and
 		{@html link('https://scholar.google.com/citations?user=JlmilbMAAAAJ&hl=en', 'IIT Guwahati')}.
 	</p>
 
