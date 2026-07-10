@@ -10,7 +10,6 @@ I am working towards realising what I want the outcome of my life to be, there's
 - _The physical world is under-indexed. The most important problems left are ones you can touch._
 	- Intelligence without embodiment is incomplete.
 	- Manufacturing is a leverage point.
-	- Software optimised everything it could reach. What it couldn't reach is where the real work is. The next decade belongs to people who can do both.
 	- The gap between what we can simulate and what we can build in the real world is the most honest measure of how much we don't understand.
 - _On How To Think_
 	- First principles thinking is only useful if you actually know enough principles.
@@ -20,6 +19,7 @@ I am working towards realising what I want the outcome of my life to be, there's
 	- Contrarianism is not the same as being right. But consensus is almost never where the interesting questions live.
 	- Uncertainty is information. Certainty too early is a sign you stopped asking questions.
 	- The scientific method is underrated in industry: Form a hypothesis. Test it cheaply. Update hard.
+	- Compounding is the most powerful force in knowledge.
 - _On Building_
 	- Taste is a technical skill. You cannot build something that matters without it.
 		- Ambition without taste produces noise. Taste without ambition produces nothing.
@@ -30,7 +30,6 @@ I am working towards realising what I want the outcome of my life to be, there's
 	- Curiosity is a skill, not a trait. It atrophies if you don't use it.
 	- Talent is more evenly distributed than opportunity.
 	- The best collaborators make you think faster, not just work faster.
-	- Compounding is the most powerful force in knowledge. The person who goes one level deeper every year for a decade is in a different universe from everyone else.
 
 I am open to all problems, but here is a small subset that really interest me.
 
