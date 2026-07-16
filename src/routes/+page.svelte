@@ -23,7 +23,6 @@
 		<div class="flex gap-[1.2em]">
 			<a href="/publications" class="section-link">Publications</a>
 			<a href="/essays" class="section-link">Essays</a>
-			<a href="/reading" class="section-link">Shelf</a>
 		</div>
 	</div>
 
@@ -51,8 +50,8 @@
 				{@html link('https://scholar.google.com/citations?user=JlmilbMAAAAJ&hl=en', 'IIT Guwahati')}.
 			</p>
 			<p>
-				{@html link('/about', 'Here')} are some things I believe. I also like to {@html link('/reading', 'read')}
-				and {@html link('https://www.ahidas.com/essays/', 'write')} about things that interest me.
+				{@html link('/about', 'Here')} are some things I believe. I also like to
+				{@html link('https://www.ahidas.com/essays/', 'write')} about things that interest me.
 			</p>
 		</div>
 	</div>
