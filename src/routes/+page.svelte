@@ -26,34 +26,31 @@
 		</div>
 	</div>
 
-	<div class="flex items-start gap-4 pt-[20px]">
-		<img src="/profile.webp" alt="" class="w-[150px] h-[150px] shrink-0 object-cover" draggable="false" />
-		<div class="flex flex-col gap-[0.3em]">
-			<p class="mt-0">
-				I am the Founding Engineer at {@html link('https://optica.industries/', 'Optica Industries')},
-				building the next American Metal Factory. We are backed by Lightspeed, SV Angel, & Neo.
-			</p>
-			<p>
-				Previously, I worked on Humanoids at {@html link('https://personainc.ai/', 'Persona AI')}
-				& researched Video Understanding at {@html link('https://www.sievedata.com/', 'Sieve Data')}
-				to power Petabyte-scale video datasets for Frontier AI Labs.
-			</p>
-			<p>
-				I am interested in World Modelling and
-				{@html link('https://openreview.net/pdf?id=BZ5a1r-kVsf', 'JEPAs')}, advised by
-				{@html link('https://scholar.google.com/citations?user=wwf-WgUAAAAJ&hl=en', 'Vivek Boominathan')},
-				{@html link('https://scholar.google.com/citations?user=S1x_xqcAAAAJ&hl=en', 'Randall Balesteiero')}, &
-				{@html link('https://scholar.google.com/citations?user=tI-oUmsAAAAJ&hl=en', 'Ashok Veeraraghavan')}.
-				Before this, I've researched at the
-				{@html link('https://www.media.mit.edu/groups/nano-cybernetic-biotrek/overview/', 'MIT Media Lab')} in Cambridge,
-				{@html link('https://scholar.google.com/citations?user=S5oLGEgAAAAJ&hl=en', 'Ajayan Group')} at Rice, and
-				{@html link('https://scholar.google.com/citations?user=JlmilbMAAAAJ&hl=en', 'IIT Guwahati')}.
-			</p>
-			<p>
-				{@html link('/about', 'Here')} are some things I believe. I also like to
-				{@html link('https://www.ahidas.com/essays/', 'write')} about things that interest me.
-			</p>
-		</div>
+	<div class="flex flex-col gap-[0.3em] pt-[20px]">
+		<p class="mt-0">
+			I am the Founding Engineer at {@html link('https://optica.industries/', 'Optica Industries')},
+			building the next American Metal Factory. We are backed by Lightspeed, SV Angel, & Neo.
+		</p>
+		<p>
+			Previously, I worked on Humanoids at {@html link('https://personainc.ai/', 'Persona AI')}
+			& researched Video Understanding at {@html link('https://www.sievedata.com/', 'Sieve Data')}
+			to power Petabyte-scale video datasets for Frontier AI Labs.
+		</p>
+		<p>
+			I am interested in World Modelling and
+			{@html link('https://openreview.net/pdf?id=BZ5a1r-kVsf', 'JEPAs')}, advised by
+			{@html link('https://scholar.google.com/citations?user=wwf-WgUAAAAJ&hl=en', 'Vivek Boominathan')},
+			{@html link('https://scholar.google.com/citations?user=S1x_xqcAAAAJ&hl=en', 'Randall Balesteiero')}, &
+			{@html link('https://scholar.google.com/citations?user=tI-oUmsAAAAJ&hl=en', 'Ashok Veeraraghavan')}.
+			Before this, I've researched at the
+			{@html link('https://www.media.mit.edu/groups/nano-cybernetic-biotrek/overview/', 'MIT Media Lab')} in Cambridge,
+			{@html link('https://scholar.google.com/citations?user=S5oLGEgAAAAJ&hl=en', 'Ajayan Group')} at Rice, and
+			{@html link('https://scholar.google.com/citations?user=JlmilbMAAAAJ&hl=en', 'IIT Guwahati')}.
+		</p>
+		<p>
+			{@html link('/about', 'Here')} are some things I believe. I also like to
+			{@html link('https://www.ahidas.com/essays/', 'write')} about things that interest me.
+		</p>
 	</div>
 
 	<div class="pt-[20px]">
