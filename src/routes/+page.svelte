@@ -29,7 +29,7 @@
 	<div class="flex flex-col gap-[0.3em] pt-[20px]">
 		<p class="mt-0">
 			I am the Founding Engineer at {@html link('https://optica.industries/', 'Optica Industries')},
-			building the next American Metal Factory. We are backed by Lightspeed, SV Angel, & Neo.
+			where I lead ML and Perception. We are backed by Addition, Lightspeed, & Neo.
 		</p>
 		<p>
 			Previously, I worked on Humanoids at {@html link('https://personainc.ai/', 'Persona AI')}
@@ -37,14 +37,14 @@
 			to power Petabyte-scale video datasets for Frontier AI Labs.
 		</p>
 		<p>
-			I am interested in World Modelling and
+			I am interested in Inverse Problems and
 			{@html link('https://openreview.net/pdf?id=BZ5a1r-kVsf', 'JEPAs')}, advised by
 			{@html link('https://scholar.google.com/citations?user=wwf-WgUAAAAJ&hl=en', 'Vivek Boominathan')},
 			{@html link('https://scholar.google.com/citations?user=S1x_xqcAAAAJ&hl=en', 'Randall Balesteiero')}, &
 			{@html link('https://scholar.google.com/citations?user=tI-oUmsAAAAJ&hl=en', 'Ashok Veeraraghavan')}.
-			Before this, I've researched at the
-			{@html link('https://www.media.mit.edu/groups/nano-cybernetic-biotrek/overview/', 'MIT Media Lab')} in Cambridge,
-			{@html link('https://scholar.google.com/citations?user=S5oLGEgAAAAJ&hl=en', 'Ajayan Group')} at Rice, and
+			Before this, I've worked on Chip Design, Nano Neuro-electronics, and  Energy at the
+			{@html link('https://www.media.mit.edu/groups/nano-cybernetic-biotrek/overview/', 'MIT Media Lab')},
+			{@html link('https://scholar.google.com/citations?user=S5oLGEgAAAAJ&hl=en', 'Ajayan Group')}, and
 			{@html link('https://scholar.google.com/citations?user=JlmilbMAAAAJ&hl=en', 'IIT Guwahati')}.
 		</p>
 		<p>
