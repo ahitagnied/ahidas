@@ -5,9 +5,9 @@
   image: '/images/research/panoless.webp'
   description: 'Reconstructs surrounding environments from partial reflective views using 2D Gaussian splats and a neural cubemap.'
   links:
-    arXiv: ''
-    Code: ''
-    Project: ''
+    arXiv: 'https://arxiv.org/abs/2607.25362'
+    Code: 'https://github.com/vb-glee/panoless'
+    Project: 'https://vb-glee.github.io/panoless/'
 
 - title: 'Enhancing the Performance of Li/Na-Ion Batteries with h-BN'
   authors: ['Ahitagni Das', 'Atin Pramanik', 'Mingrui Xu', 'Xinting Shuai', 'Abhijit Biswas', 'Robert Vajtai', 'Pulickel M. Ajayan']
