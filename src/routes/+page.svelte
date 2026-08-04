@@ -1,16 +1,5 @@
 <script>
-	import ResearchItem from '$lib/components/ResearchItem.svelte';
-	import EssayItem from '$lib/components/EssayItem.svelte';
-	import researchData from '$lib/data/research.yml?raw';
-	import yaml from 'js-yaml';
-	import { getPublishedEssays } from '$lib/utils/essays.js';
 	import { link } from '$lib/utils/refLink.js';
-
-	const researchItems = yaml.load(researchData);
-	const displayItems = researchItems.slice(0, 3);
-
-	const essays = getPublishedEssays();
-	const displayEssays = essays.slice(0, 5);
 </script>
 
 <svelte:head>
@@ -51,13 +40,6 @@
 			{@html link('/about', 'Here')} are some things I believe. I also like to
 			{@html link('https://www.ahidas.com/essays/', 'write')} about things that interest me.
 		</p>
-	</div>
-
-	<div class="pt-[20px]">
-		<a href="/publications" class="item-title">Research</a>
-		{#each displayItems as item}
-			<ResearchItem {item} />
-		{/each}
 	</div>
 
 	<div class="grid grid-cols-[7fr_3fr] pt-[20px]">
