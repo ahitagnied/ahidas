@@ -7,12 +7,9 @@
 </svelte:head>
 
 <div class="page-container">
-	<div class="flex justify-between items-baseline mb-[1.2em]">
-		<span class="item-title">Ahitagni Das</span>
-		<div class="flex gap-[1.2em]">
-			<a href="/publications" class="section-link">Publications</a>
-			<a href="/essays" class="section-link">Essays</a>
-		</div>
+	<div class="mb-[1.2em]">
+		<div class="item-title text-[color:var(--color-text-hover)]">Ahitagni Das</div>
+		<div class="text-muted">adas [at] rice [.] edu</div>
 	</div>
 
 	<div class="flex flex-col gap-[0.3em] pt-[20px]">
@@ -21,51 +18,37 @@
 			where I lead ML and Perception. We are backed by Addition, Lightspeed, & Neo.
 		</p>
 		<p>
-			Previously, I worked on Humanoids at {@html link('https://personainc.ai/', 'Persona AI')}
-			& researched Video Understanding at {@html link('https://www.sievedata.com/', 'Sieve Data')}
-			to power Petabyte-scale video datasets for Frontier AI Labs.
+			I enjoy research and am interested in improving
+			{@html link('https://openreview.net/pdf?id=BZ5a1r-kVsf', 'JEPA')} through Physics Understanding
+			and Hierarchical Abstraction. I am advised by
+			{@html link('https://scholar.google.com/citations?user=wwf-WgUAAAAJ&hl=en', 'Vivek Boominathan')},
+			{@html link('https://scholar.google.com/citations?user=S1x_xqcAAAAJ&hl=en', 'Randall Balestriero')}, and
+			{@html link('https://scholar.google.com/citations?user=tI-oUmsAAAAJ&hl=en', 'Ashok Veeraraghavan')}.
 		</p>
 		<p>
-			I am interested in Inverse Problems and
-			{@html link('https://openreview.net/pdf?id=BZ5a1r-kVsf', 'JEPAs')}, advised by
-			{@html link('https://scholar.google.com/citations?user=wwf-WgUAAAAJ&hl=en', 'Vivek Boominathan')},
-			{@html link('https://scholar.google.com/citations?user=S1x_xqcAAAAJ&hl=en', 'Randall Balestriero')}, &
-			{@html link('https://scholar.google.com/citations?user=tI-oUmsAAAAJ&hl=en', 'Ashok Veeraraghavan')}.
-			Before this, I've worked on Chip Design, Nano Neuro-electronics, and  Energy at the
+			Before this, I spent about a year working on Humanoids at {@html link('https://personainc.ai/', 
+			'Persona AI')} and Multimodal Intelligence at {@html link('https://www.sievedata.com/', 'Sieve')}.
+			I've also worked on Chip Design, Nano Neuro-electronics, and  Energy at the
 			{@html link('https://www.media.mit.edu/groups/nano-cybernetic-biotrek/overview/', 'MIT Media Lab')},
 			{@html link('https://scholar.google.com/citations?user=S5oLGEgAAAAJ&hl=en', 'Ajayan Group')}, and
 			{@html link('https://scholar.google.com/citations?user=JlmilbMAAAAJ&hl=en', 'IIT Guwahati')}.
 		</p>
 		<p>
 			{@html link('/about', 'Here')} are some things I believe. I also like to
-			{@html link('https://www.ahidas.com/essays/', 'write')} about things that interest me.
+			{@html link('/essays', 'write')} about things that interest me, sail, travel, and take pictures.
 		</p>
 	</div>
 
-	<div class="grid grid-cols-[7fr_3fr] pt-[20px]">
-		<div>
-			<p class="mb-0">I love to sail, travel, and take pictures</p>
-			<p class="mb-0">Currently based in San Francisco.</p>
-			<p class="mt-[1.2em] mb-0">ahitagnis [at] gmail [dot] com</p>
+	<div class="flex gap-[1.5em] pt-[20px]">
+		<div class="link-accent flex flex-col items-start">
+			{@html link('/about', 'About')}
+			{@html link('/publications', 'Publications')}
+			{@html link('/essays', 'Essays')}
 		</div>
-		<div class="text-right">
-			<p class="mb-0">{@html link('https://x.com/ahitagnied', 'Twitter', { external: true })}</p>
-			<p class="mb-0">{@html link('https://www.linkedin.com/in/ahitagnid/', 'LinkedIn', { external: true })}</p>
-			<p class="mt-[1.2em] mb-0">
-				{@html link('https://scholar.google.com/citations?user=GLTc7LcAAAAJ&hl=en', 'Scholar', { external: true })}
-			</p>
+		<div class="flex flex-col items-start">
+			{@html link('https://www.linkedin.com/in/ahitagnid/', 'LinkedIn', { external: true })}
+			{@html link('https://scholar.google.com/citations?user=GLTc7LcAAAAJ&hl=en', 'Scholar', { external: true })}
+			{@html link('https://x.com/ahitagnied', 'Twitter', { external: true })}
 		</div>
-	</div>
-
-	<div class="flex justify-end items-center gap-[0.6em] pt-[20px] md:gap-[0.8em]">
-		<p class="mb-0 text-right text-muted text-[length:var(--text-label)] md:text-[length:var(--text-caption)]">
-			© 2023-2026 Ahitagni Das<br />Made in San Francisco
-		</p>
-		<img
-			src="/stamp.webp"
-			alt=""
-			class="h-[50px] w-[50px] shrink-0 select-none pointer-events-none md:h-[60px] md:w-[60px]"
-			draggable="false"
-		/>
 	</div>
 </div>

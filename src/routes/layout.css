@@ -21,10 +21,11 @@
 	--color-bg:           #ffffff; /* page background */
 	--color-text:         #4b5563; /* body copy */
 	--color-text-title:   #363d4d; /* item titles, inline links */
-	--color-text-heading: #757d8a; /* section labels (ABOUT, RESEARCH…), section-link arrows */
+	--color-text-heading: #757d8a; /* section labels (ABOUT, RESEARCH…) */
 	--color-text-muted:   #9ca3af; /* dates, journal names, secondary info */
 	--color-border:       #d1d5db; /* footnote divider line */
 	--color-text-hover:   #1f2937; /* hover state, prose h1/h2 */
+	--color-accent:       #7f1d1d; /* internal nav links */
 }
 
 
@@ -67,6 +68,12 @@
 		font-size: 0.75rem;
 		font-weight: 600;
 	}
+
+	@media (min-width: theme(--breakpoint-md)) {
+		h1 {
+			font-size: var(--text-caption);
+		}
+	}
 }
 
 @layer components {
@@ -86,6 +93,11 @@
 		text-decoration-color: var(--color-text-title);
 	}
 
+	.link-accent a {
+		color: var(--color-accent);
+		text-decoration-color: var(--color-accent);
+	}
+
 	.page-container h1 a {
 		@apply no-underline;
 		color: var(--color-text-heading);
@@ -93,10 +105,6 @@
 
 	.page-container h1 a:hover {
 		color: var(--color-text-hover);
-	}
-
-	.page-container .back-link {
-		@apply no-underline;
 	}
 
 	.item-title {
@@ -115,12 +123,6 @@
 	/* Research section — authors, journal line */
 	.research-authors {
 		color: var(--color-text-heading);
-		font-size: var(--text-caption);
-		line-height: 1.5;
-	}
-
-	.research-meta {
-		color: var(--color-text-muted);
 		font-size: var(--text-caption);
 		line-height: 1.5;
 	}
@@ -167,35 +169,10 @@
 	}
 
 	@media (min-width: theme(--breakpoint-md)) {
-		.research-authors,
-		.research-meta {
+		.research-authors {
 			font-size: var(--text-caption-md);
 		}
 	}
-
-	.section-link {
-		@apply no-underline inline-flex items-center gap-1 transition-colors;
-		color: var(--color-text-heading);
-	}
-
-	.section-link:hover {
-		color: var(--color-text-hover);
-	}
-
-	.back-link {
-		@apply no-underline inline-flex items-center gap-1 transition-colors;
-		color: var(--color-text);
-		font-size: var(--text-label);
-	}
-
-	.back-link:hover {
-		color: var(--color-text-hover);
-	}
-
-	.arrow-icon {
-		@apply h-4 w-3 transition-transform group-hover:rotate-45;
-	}
-
 }
 
 /* Prose — styles for {@html} rendered markdown content */
