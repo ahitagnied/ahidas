@@ -1,3 +1,12 @@
+- title: 'LeVLWM: Text-Goal Control with Vision-Language World Model'
+  authors: ['Qiuyi Hua *', 'Ahitagni Das *', 'Vivek Boominathan', 'Randall Balestriero']
+  journal: 'Under review'
+  year: 2026
+  image: '/images/research/levlwm.webp'
+  description: 'A JEPA-based, text-conditioned world model that plans toward goals specified in language.'
+  links:
+    arXiv: ''
+
 - title: 'PanoLess: Environment Reconstruction from Partial Reflective Views'
   authors: ['Ahitagni Das', 'Vivek Boominathan', 'Ashok Veeraraghavan']
   journal: 'European Conference on Computer Vision (ECCV)'

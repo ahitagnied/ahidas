@@ -1,5 +1,6 @@
 <script lang="ts">
 	const AUTHOR_SELF = 'Ahitagni Das';
+	const isSelf = (author: string) => author.replace(/[\s*†‡]+$/, '') === AUTHOR_SELF;
 
 	type ResearchEntry = {
 		title: string;
@@ -38,7 +39,7 @@
 		<div class="research-authors">
 			{#each item.authors ?? [] as author, i}
 				{#if i > 0}<span>, </span>{/if}
-				{#if author === AUTHOR_SELF}
+				{#if isSelf(author)}
 					<span class="research-author-self">{author}</span>
 				{:else}
 					{author}
