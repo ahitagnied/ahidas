@@ -15,27 +15,22 @@
 	<div class="flex flex-col gap-[0.3em] pt-[20px]">
 		<p class="mt-0">
 			I am the Founding Engineer at {@html link('https://optica.industries/', 'Optica Industries')},
-			where I lead ML and Perception. We are backed by Addition, Lightspeed, & Neo.
+			where I lead ML & Perception. We are backed by Addition, LSVP, & Neo.
 		</p>
 		<p>
-			I enjoy research and am interested in improving
-			{@html link('https://openreview.net/pdf?id=BZ5a1r-kVsf', 'JEPA')} through Physics Understanding
-			and Hierarchical Abstraction. I am advised by
+			I enjoy {@html link('/publications', 'research')} and am interested in improving
+			{@html link('https://openreview.net/pdf?id=BZ5a1r-kVsf', 'JEPA')} & WMs for Robotics. I am advised by
 			{@html link('https://scholar.google.com/citations?user=wwf-WgUAAAAJ&hl=en', 'Vivek Boominathan')},
-			{@html link('https://scholar.google.com/citations?user=S1x_xqcAAAAJ&hl=en', 'Randall Balestriero')}, and
+			{@html link('https://scholar.google.com/citations?user=S1x_xqcAAAAJ&hl=en', 'Randall Balestriero')}, &
 			{@html link('https://scholar.google.com/citations?user=tI-oUmsAAAAJ&hl=en', 'Ashok Veeraraghavan')}.
 		</p>
 		<p>
-			Before this, I spent about a year working on Humanoids at {@html link('https://personainc.ai/', 
-			'Persona AI')} and Multimodal Intelligence at {@html link('https://www.sievedata.com/', 'Sieve')}.
-			I've also worked on Chip Design, Nano Neuro-electronics, and  Energy at the
+			Previously, I worked on Humanoids at {@html link('https://personainc.ai/', 
+			'Persona AI')}, Multimodal Intelligence at {@html link('https://www.sievedata.com/', 'Sieve')},
+			and Chip Design + Nano-electronics at the
 			{@html link('https://www.media.mit.edu/groups/nano-cybernetic-biotrek/overview/', 'MIT Media Lab')},
-			{@html link('https://scholar.google.com/citations?user=S5oLGEgAAAAJ&hl=en', 'Ajayan Group')}, and
+			{@html link('https://scholar.google.com/citations?user=S5oLGEgAAAAJ&hl=en', 'Ajayan Group')}, &
 			{@html link('https://scholar.google.com/citations?user=JlmilbMAAAAJ&hl=en', 'IIT Guwahati')}.
-		</p>
-		<p>
-			{@html link('/about', 'Here')} are some things I believe. I also like to
-			{@html link('/essays', 'write')} about things that interest me, sail, travel, and take pictures.
 		</p>
 	</div>
 
