@@ -7,9 +7,12 @@
 </svelte:head>
 
 <div class="page-container">
-	<div class="mb-[1.2em]">
+	<div class="mb-[1.2em] flex items-baseline justify-between gap-[1.5em]">
 		<div class="item-title text-[color:var(--color-text-hover)]">Ahitagni Das</div>
-		<div class="text-muted">adas [at] rice [.] edu</div>
+		<div class="link-accent flex shrink-0 gap-[1em]">
+			{@html link('/publications', 'Publications')}
+			{@html link('/essays', 'Essays')}
+		</div>
 	</div>
 
 	<div class="flex flex-col gap-[0.3em] pt-[20px]">
@@ -32,18 +35,10 @@
 			{@html link('https://scholar.google.com/citations?user=S5oLGEgAAAAJ&hl=en', 'Ajayan Group')}, &
 			{@html link('https://scholar.google.com/citations?user=JlmilbMAAAAJ&hl=en', 'IIT Guwahati')}.
 		</p>
-	</div>
-
-	<div class="flex gap-[1.5em] pt-[20px]">
-		<div class="link-accent flex flex-col items-start">
-			{@html link('/about', 'About')}
-			{@html link('/publications', 'Publications')}
-			{@html link('/essays', 'Essays')}
-		</div>
-		<div class="flex flex-col items-start">
-			{@html link('https://www.linkedin.com/in/ahitagnid/', 'LinkedIn', { external: true })}
+		<p>
+			{@html link('/about', 'Here')} is more about me. I am also on
 			{@html link('https://scholar.google.com/citations?user=GLTc7LcAAAAJ&hl=en', 'Scholar', { external: true })}
-			{@html link('https://x.com/ahitagnied', 'Twitter', { external: true })}
-		</div>
+			& {@html link('https://x.com/ahitagnied', 'Twitter', { external: true })}.
+		</p>
 	</div>
 </div>
