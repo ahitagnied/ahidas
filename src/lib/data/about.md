@@ -1,9 +1,5 @@
 I grew up in Kolkata, wanting to be a Physicist. For all its flaws, I have always wanted to solve really hard problems.[^1] I am currently a
-student at Rice University where I study Mathematics and Electrical Engineering. Some things about me:
-
-- I'm currently building [Optica Industries](https://optica.industries/)
-- I love [writing](https://www.ahidas.com/essays), creating at the intersection of intelligence & embodiment, and startups. 
-- I spent about a decade learning visual arts (Japanese Ceramics & Oil Painting) and about 2 years practicing astrophotography. From art I derive taste, and from taste, art.
+student at Rice University where I study Mathematics and Electrical Engineering. 
 
 I am working towards realising what I want the outcome of my life to be, there's a lot I do not know, but here are some things I believe that guide my search:
 
@@ -36,7 +32,6 @@ I am open to all problems, but here is a small subset that really interest me.
 - The evolution of unsupervised intelligence in humans.
 	- Why certain arrangements of matter produce understanding at all. What is the physical basis of intelligence? What conditions must be true for intelligence to develop through evolution?
 - How do we create machines with the same capacity for understanding, locomotion, and manipulation as humans — and one day, beyond them?
-- Art
 
 ---
 
