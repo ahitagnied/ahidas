@@ -1,6 +1,17 @@
 @import 'tailwindcss';
 @plugin '@tailwindcss/typography';
 
+@font-face {
+	font-family: 'Diatype Variable';
+	src:
+		local('Diatype Variable'),
+		local('ABCDiatype Variable'),
+		local('ABC Diatype Variable');
+	font-weight: 100 900;
+	font-style: normal;
+	font-display: swap;
+}
+
 @theme {
 	--content-width: 684px;
 	--breakpoint-md: 684px;
@@ -17,9 +28,10 @@
 	--text-display: 1.0625rem; /* 17px */
 
 	--font-size: 16px;
+	--font-weight-body: 450;
 
 	--color-bg:           #ffffff; /* page background */
-	--color-text:         #4b5563; /* body copy */
+	--color-text:         #3f4855; /* body copy */
 	--color-text-title:   #363d4d; /* item titles, inline links */
 	--color-text-heading: #757d8a; /* section labels (ABOUT, RESEARCH…) */
 	--color-text-muted:   #9ca3af; /* dates, journal names, secondary info */
@@ -39,12 +51,14 @@
 	}
 
 	body {
-		@apply min-h-screen w-full leading-[1.6] font-[500] tracking-[-0.01em];
+		@apply min-h-screen w-full leading-[1.6] tracking-[-0.01em];
+		font-weight: var(--font-weight-body);
 		background-color: var(--color-bg);
 		color: var(--color-text);
 		font-size: var(--text-body);
 		font-family:
-			Diatype Variable,
+			'Diatype Variable',
+			'Inter Variable',
 			ui-sans-serif,
 			system-ui,
 			sans-serif;

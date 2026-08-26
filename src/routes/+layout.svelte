@@ -3,6 +3,7 @@
 	import { fly } from 'svelte/transition';
 	import { page } from '$app/stores';
 	import { onMount } from 'svelte';
+	import '@fontsource-variable/inter';
 	import './layout.css';
 
 	let { children } = $props();
