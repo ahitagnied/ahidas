@@ -90,12 +90,14 @@
 	.page-container a {
 		@apply underline underline-offset-3;
 		color: var(--color-text-title);
-		text-decoration-color: var(--color-text-title);
+		text-decoration-thickness: 1px;
+		text-decoration-color: color-mix(in srgb, var(--color-text-title) 25%, transparent);
 	}
 
 	.link-accent a {
 		color: var(--color-accent);
-		text-decoration-color: var(--color-accent);
+		text-decoration-thickness: 1px;
+		text-decoration-color: color-mix(in srgb, var(--color-accent) 25%, transparent);
 	}
 
 	.page-container h1 a {
