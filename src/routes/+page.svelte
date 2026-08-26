@@ -7,8 +7,13 @@
 </svelte:head>
 
 <div class="page-container">
-	<div class="mb-[1.2em] flex items-baseline justify-between gap-[1.5em]">
-		<div class="item-title text-[color:var(--color-text-hover)]">Ahitagni Das</div>
+	<div class="mb-[1.2em] flex items-start justify-between gap-[1.5em]">
+		<div>
+			<div class="item-title text-[14px] font-[400] leading-tight text-[color:var(--color-text-hover)] md:text-[16px]">
+				Ahitagni Das
+			</div>
+			<p class="mb-0 mt-[0.25em]">adas [at] rice [dot] edu</p>
+		</div>
 		<div class="link-accent flex shrink-0 gap-[1em]">
 			{@html link('/publications', 'Publications')}
 			{@html link('/essays', 'Essays')}
