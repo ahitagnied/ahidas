@@ -2,6 +2,10 @@
   description: Text-Goal Control with Vision-Language World Model
   image: /research/media/levlwm.jpg
   venue: Under Review
+  links:
+    arXiv: '-'
+    website: '-'
+    code: '-'
 - title: PanoLess
   description: Environment Reconstruction from Partial Reflective Views
   image: /research/media/panoless.mp4

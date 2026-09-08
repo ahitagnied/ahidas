@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { papers, orderedLinks, linkText, isVideo } from '$lib/research';
+	import { papers, orderedLinks, linkText, isUrl, isVideo } from '$lib/research';
 
 	const thumb = 'imbg size-32 shrink-0 rounded-l-[4px] object-cover opacity-90';
 </script>
@@ -25,7 +25,11 @@
 				<div class="mt-[8px] grid grid-cols-[max-content_1fr] items-baseline gap-x-[6px]">
 					{#each orderedLinks(paper.links) as [label, url] (label)}
 						<span class="row-label">{label}</span>
-						<a class="truncate" href={url}>{linkText(url)}</a>
+						{#if isUrl(url)}
+							<a class="truncate" href={url}>{linkText(url)}</a>
+						{:else}
+							<span class="truncate text-[grey]">{url}</span>
+						{/if}
 					{/each}
 				</div>
 			</div>

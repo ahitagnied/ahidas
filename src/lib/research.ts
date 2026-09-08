@@ -26,7 +26,14 @@ export function isVideo(url: string): boolean {
 	return /\.(mp4|webm|mov)$/i.test(url);
 }
 
+export function isUrl(value: string): boolean {
+	return URL.canParse(value);
+}
+
+/** Falls back to the raw value for placeholders like "[soon]". */
 export function linkText(url: string): string {
+	if (!isUrl(url)) return url;
+
 	const { hostname, pathname } = new URL(url);
 	const host = hostname.replace(/^www\./, '');
 	const segments = pathname.split('/').filter(Boolean);

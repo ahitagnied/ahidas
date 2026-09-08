@@ -1,6 +1,4 @@
 <script lang="ts">
-	import '@fontsource-variable/instrument-sans';
-	import '@fontsource-variable/instrument-sans/wght-italic.css';
 	import './layout.css';
 	import favicon from '$lib/assets/favicon.ico';
 
