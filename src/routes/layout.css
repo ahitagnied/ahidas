@@ -1,2 +1,62 @@
 @import 'tailwindcss';
-@plugin '@tailwindcss/typography';
+
+@theme {
+	--font-sans: 'Instrument Sans Variable', 'Instrument Sans', ui-sans-serif, system-ui, sans-serif;
+
+	--text-name: 19px;
+	--text-body: 14px;
+
+	--breakpoint-wide: 680px;
+
+	--spacing-frame: 40px;
+	--spacing-row: 15px;
+}
+
+@layer base {
+	body {
+		font-size: var(--text-body);
+		line-height: 1.5;
+		padding-block: var(--spacing-frame);
+	}
+}
+
+@layer components {
+	.row-label {
+		font-family: serif;
+		font-size: 16px;
+		font-style: normal;
+		font-weight: normal;
+		line-height: 1;
+		color: grey;
+	}
+
+	.research-grid a:hover {
+		color: red;
+	}
+
+	.about a {
+		color: #111;
+		text-decoration: underline;
+		text-decoration-thickness: 1px;
+		text-underline-offset: 3px;
+		text-decoration-color: rgb(17 17 17 / 0.35);
+		transition: text-decoration-color 150ms ease;
+	}
+
+	.about a:hover {
+		text-decoration-color: currentColor;
+	}
+
+	.imbg {
+		filter: grayscale(20%);
+	}
+
+	.imbg:hover {
+		filter: grayscale(0%);
+	}
+}
+
+@utility site {
+	width: min(100% - 40px, 680px);
+	margin-inline: auto;
+}

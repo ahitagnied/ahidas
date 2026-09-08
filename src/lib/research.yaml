@@ -1,0 +1,24 @@
+- title: Le VL World Model
+  description: Text-Goal Control with Vision-Language World Model
+  image: /research/media/levlwm.jpg
+  venue: Under Review
+- title: PanoLess
+  description: Environment Reconstruction from Partial Reflective Views
+  image: /research/media/panoless.mp4
+  venue: ECCV 2026
+  links:
+    code: https://github.com/vb-glee/panoless
+    website: https://vb-glee.github.io/panoless/
+    arXiv: https://arxiv.org/abs/2607.25362
+- title: hBN in Li/Na-ion batteries
+  description: Advances and opportunities for hBN in Li/Na-ion batteries
+  image: /research/media/hbn.jpg
+  venue: ACS Nano 2025
+  links:
+    paper: https://pubs.acs.org/doi/abs/10.1021/acsnano.5c11425
+- title: Outlook on Na-ion Battery
+  description: Review of cathode and anode materials positioning Na-ion as an alternative to Li-ion
+  image: /research/media/na-ion.jpg
+  venue: Journal of Materials Science 2024
+  links:
+    paper: https://link.springer.com/article/10.1007/s10853-024-10503-z
