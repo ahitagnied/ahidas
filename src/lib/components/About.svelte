@@ -1,11 +1,11 @@
 <section class="about site pt-[calc(2*var(--spacing-row))]">
 	<div class="space-y-[18px] text-[13.5px] leading-[1.5]">
 		<p>
-			I am interested in Large-scale Video Pretraining and WM+IDMs for 
+			I work on Pretraining and WM+IDMs for 
 			Manipulation. I am advised by
 			<a href="https://scholar.google.com/citations?user=wwf-WgUAAAAJ&hl=en">Vivek Boominathan</a>,
 			<a href="https://scholar.google.com/citations?user=S1x_xqcAAAAJ&hl=en">Randall Balestriero</a
-			>, and
+			>, &
 			<a href="https://scholar.google.com/citations?user=tI-oUmsAAAAJ&hl=en">Ashok Veeraraghavan</a
 			>.
 		</p>
@@ -19,7 +19,7 @@
 		<p>
 			Previously, I worked on VLAs at <a href="https://personainc.ai/">Persona AI</a>,
 			Multimodal Intelligence at <a href="https://www.sievedata.com/">Sieve</a>, 
-			and Energy, Nano-Neuroelectronics at the
+			& Energy, Nano Neuro-electronics at the
 			<a href="https://www.media.mit.edu/groups/nano-cybernetic-biotrek/overview/">MIT Media Lab</a
 			>,
 			<a href="https://scholar.google.com/citations?user=S5oLGEgAAAAJ&hl=en">Ajayan Group</a>, &
