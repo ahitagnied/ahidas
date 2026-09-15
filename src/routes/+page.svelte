@@ -10,5 +10,8 @@
 
 <main>
 	<About />
-	<div class="pt-[18px]"><ResearchGrid /></div>
+	<h2 class="site pt-[calc(2*var(--spacing-row))] text-name font-normal tracking-[-0.015em]">
+		Research
+	</h2>
+	<ResearchGrid />
 </main>
