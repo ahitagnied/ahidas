@@ -8,7 +8,7 @@
 <svelte:head><link rel="icon" href={favicon} /></svelte:head>
 
 <header class="site">
-	<h1 class="text-name font-normal tracking-[-0.015em]">Ahitagni Das</h1>
+	<h1 class="text-name font-normal leading-none tracking-[-0.015em]">Ahitagni Das</h1>
 </header>
 
 {@render children()}

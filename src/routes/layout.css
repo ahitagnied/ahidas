@@ -49,6 +49,11 @@
 		text-decoration-color: currentColor;
 	}
 
+	.meta a {
+		color: inherit;
+		text-decoration: none;
+	}
+
 	.imbg {
 		filter: grayscale(20%);
 	}

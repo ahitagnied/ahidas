@@ -1,5 +1,5 @@
 <section
-	class="about site grid gap-x-[24px] pt-[calc(2*var(--spacing-row))] wide:grid-cols-[7fr_3fr]"
+	class="about site grid gap-x-[24px] wide:grid-cols-[7fr_3fr]"
 >
 	<div class="space-y-[18px] text-[13.5px] leading-[1.5]">
 		<p>
@@ -24,11 +24,7 @@
 			<a href="https://www.media.mit.edu/groups/nano-cybernetic-biotrek/overview/">MIT Media Lab</a
 			>,
 			<a href="https://scholar.google.com/citations?user=S5oLGEgAAAAJ&hl=en">Ajayan Group</a>, &
-			<a href="https://scholar.google.com/citations?user=JlmilbMAAAAJ&hl=en">IIT Guwahati</a>. I am
-			also on
-			<a href="https://scholar.google.com/citations?user=GLTc7LcAAAAJ&hl=en">Google Scholar</a>,
-			<a href="https://github.com/ahitagnied">GitHub</a>, and
-			<a href="https://www.linkedin.com/in/ahitagnid/">LinkedIn</a>.
+			<a href="https://scholar.google.com/citations?user=JlmilbMAAAAJ&hl=en">IIT Guwahati</a>.
 		</p>
 	</div>
 

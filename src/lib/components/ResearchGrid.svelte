@@ -5,7 +5,7 @@
 </script>
 
 <div
-	class="research-grid site grid gap-y-row pt-row text-[11px] leading-[1.2] wide:grid-cols-2"
+	class="research-grid grid gap-y-row pt-row text-[11px] leading-[1.2] wide:grid-cols-2"
 >
 	{#each papers as paper, i (i)}
 		<article class="flex">
