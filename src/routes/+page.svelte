@@ -8,7 +8,7 @@
 	<meta name="description" content="Ahitagni Das" />
 </svelte:head>
 
-<main class="flex flex-col gap-y-[calc(2*var(--spacing-row))] pt-row">
+<main class="flex flex-col gap-y-[calc(2*var(--spacing-row))] pt-[calc(2*var(--spacing-row))]">
 	<About />
 
 	<section class="site">
