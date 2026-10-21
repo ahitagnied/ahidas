@@ -28,5 +28,9 @@
 		</p>
 	</div>
 
-	<img class="hidden h-fit w-full grayscale wide:block" src="/profile.jpg" alt="Ahitagni Das" />
+	<img
+		class="hidden h-auto w-full self-start grayscale wide:block"
+		src="/profile.jpg"
+		alt="Ahitagni Das"
+	/>
 </section>
