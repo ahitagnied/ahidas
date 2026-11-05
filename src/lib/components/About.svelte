@@ -1,6 +1,4 @@
-<section
-	class="about site grid gap-x-[24px] wide:grid-cols-[7fr_3fr]"
->
+<section class="about site">
 	<div class="space-y-[18px] text-[13.5px] leading-[1.5]">
 		<p>
 			I work on Pretraining and WM+IDMs for Manipulation. I am advised by
@@ -27,10 +25,4 @@
 			<a href="https://scholar.google.com/citations?user=JlmilbMAAAAJ&hl=en">IIT Guwahati</a>.
 		</p>
 	</div>
-
-	<img
-		class="hidden h-auto w-full self-start grayscale wide:block"
-		src="/profile.jpg"
-		alt="Ahitagni Das"
-	/>
 </section>
