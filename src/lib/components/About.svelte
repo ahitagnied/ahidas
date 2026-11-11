@@ -1,5 +1,5 @@
 <section class="about site">
-	<div class="space-y-[18px] text-[13.5px] leading-[1.5]">
+	<div class="space-y-[18px] text-[13.5px] leading-[1.6]">
 		<p>
 			I am a generalist trained in electrical engineering, with research interests in
 			representation learning, particularly JEPAs. I am advised by
