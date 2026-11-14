@@ -2,9 +2,10 @@
 	<div class="space-y-[18px] text-[13.5px] leading-[1.6]">
 		<p>
 			I am a generalist trained in electrical engineering, with research interests in
-			representation learning, particularly JEPAs. I am advised by
-			<a href="https://scholar.google.com/citations?user=wwf-WgUAAAAJ&hl=en">Vivek Boominathan</a> & 
-			<a href="https://scholar.google.com/citations?user=S1x_xqcAAAAJ&hl=en">Randall Balestriero</a>
+			representation learning & JEPAs. I am advised by
+			<a href="https://scholar.google.com/citations?user=wwf-WgUAAAAJ&hl=en">Vivek Boominathan</a>, 
+			<a href="https://scholar.google.com/citations?user=S1x_xqcAAAAJ&hl=en">Randall Balestriero</a>, 
+			and <a href="https://scholar.google.com/citations?user=tI-oUmsAAAAJ&hl=en">Ashok Veeraraghavan</a>
 		</p>
 
 		<p>
