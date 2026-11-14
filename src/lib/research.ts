@@ -22,10 +22,6 @@ export function orderedLinks(links: Record<string, string> = {}): [string, strin
 		.sort(([a], [b]) => rank(a) - rank(b));
 }
 
-export function isVideo(url: string): boolean {
-	return /\.(mp4|webm|mov)$/i.test(url);
-}
-
 export function isUrl(value: string): boolean {
 	return URL.canParse(value);
 }

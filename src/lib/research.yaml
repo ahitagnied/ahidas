@@ -1,3 +1,11 @@
+- title: Stable-Envs
+  description: Fast and Reproducible Envs with Controllable Variations
+  image: /research/media/stable-envs.gif
+  venue: arXiv
+  links:
+    arXiv: '-'
+    code: https://github.com/galilai-group/stable-envs
+    website: https://galilai-group.github.io/stable-envs/
 - title: Le-VLWM
   description: Text-Goal Control with Vision-Language World Model
   image: /research/media/levlwm.gif
@@ -8,7 +16,7 @@
     code: '-'
 - title: PanoLess
   description: Environment Reconstruction from Partial Reflective Views
-  image: /research/media/panoless.mp4
+  image: /research/media/panoless.gif
   venue: ECCV 2026
   links:
     code: https://github.com/vb-glee/panoless
