@@ -1,11 +1,3 @@
-- title: Stable-Envs
-  description: Fast and Reproducible Envs with Controllable Variations
-  image: /research/media/stable-envs.gif
-  venue: arXiv
-  links:
-    arXiv: '-'
-    code: https://github.com/galilai-group/stable-envs
-    website: https://galilai-group.github.io/stable-envs/
 - title: Le-VLWM
   description: Text-Goal Control with Vision-Language World Model
   image: /research/media/levlwm.gif
