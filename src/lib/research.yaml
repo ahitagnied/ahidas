@@ -8,7 +8,7 @@
     code: '-'
 - title: PanoLess
   description: Environment Reconstruction from Partial Reflective Views
-  image: /research/media/panoless.mp4
+  image: /research/media/panoless.gif
   venue: ECCV 2026
   links:
     code: https://github.com/vb-glee/panoless
