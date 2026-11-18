@@ -15,6 +15,10 @@
 }
 
 @layer base {
+	html {
+		scrollbar-gutter: stable;
+	}
+
 	body {
 		font-size: var(--text-body);
 		line-height: 1.6;
